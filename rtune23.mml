@@ -18,12 +18,12 @@ TimeSignature = 4,4;
 
 TR=1 @11 o3 
 
-TR=2 @11 o5 l8 [2 eg>cegec<g] [2 eb>dgbgd<b]
-                fa>cegfegfedfedce 
-                [2 dgd<b>] dgb>dgfed
+TR=2 @11 o5 l8 [2 P(0)eP(30)g>P(50)cP(80)eP(105)gP(60)eP(40)c<P(20)g] [2 P(0)eP(30)b>P(50)dP(80)gP(105)bP(60)gP(40)d<P(20)b]
+                P(0)fP(15)a>P(30)cP(50)e P(64)gfegfedfedce 
+                [2 dgd<b>] dgb>dgfeP(40)d
 
-            o5    [2 eg>cegec<g] [2 eb>dg>d<gd<b]
-                fa>cegb>dg fedfedce 
+            o5    [2 P(0)eP(30)g>P(50)cP(80)eP(105)gP(60)eP(40)c<P(20)g] [2 P(0)eP(30)b>P(50)dP(80)g>P(105)d<P(60)gP(40)d<P(20)b]
+                fP(5)a>P(10)cP(20)eP(30)gP(40)b>P(50)dP(64)g fedfedce 
                 [2 d<g>dg] [2 d<g>db]
 
  
