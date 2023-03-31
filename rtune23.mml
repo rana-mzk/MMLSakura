@@ -1,0 +1,29 @@
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【曲　名】rtune23
+【作曲者】rana
+【作成日】2023/3/21-4/1
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+リハビリ2
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+//_00:初期設定
+TrackName     = {"rtune23"}
+Copyright     = {"rana"}
+Tempo         = 120;
+TimeSignature = 4,4;
+
+
+TR=1 @11 o3 
+
+TR=2 @11 o5 l8 [2 eg>cegec<g] [2 eb>dgbgd<b]
+                fa>cegfegfedfedce 
+                [2 dgd<b>] dgb>dgfed
+
+            o5    [2 eg>cegec<g] [2 eb>dg>d<gd<b]
+                fa>cegb>dg fedfedce 
+                [2 d<g>dg] [2 d<g>db]
+
+ 
