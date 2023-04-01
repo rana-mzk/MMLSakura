@@ -1,78 +1,57 @@
 /*
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-【Title】rtune24
+【Title】
 【Cpomposer】rana
-【Date】2023/4/2
+【Date】2023/4/1
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-
+In2hoursDTM in 20230401(AprilFool)
+Title:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 */
 
+
+
 //_00:Setup
-TrackName     = {"rtune23"}
+TrackName     = {""}
 Copyright     = {"rana"}
 Tempo         = 120;
 TimeSignature = 4,4;
 
-//Ryhthm Macro Definition(From "Playing with PicoSakura 1" by goh)
+/*
+//Ryhthm Macro Definition(Original Definition by "Playing with PicoSakura 1" by goh)
 $c{n36,}//bass drum
 $d{n38,}//snare
-$s{n42,}//hi-hat
-$a{n46,}//hi-hat open
-$e{n49,}//Cymbal
-$b{n43,}//low-Tom
-$f{n47,}//Mid-Tom
-$g{n50,}//High-Toml
+$f+{n42,}//hi-hat
+$g+{44,}//hi-hat pedal
+$a+{n46,}//hi-hat open
+$c+{n49,}//Cymbal
+$g{n43,}//low-Tom
+$a{n45,}//Mid-Tom2
+$b{n47,}//Mid-Tom1
+$c{n48,}//Hgh-Tom2
+$d{n50,}//High-Toml1
 $y{n51,}//
+*/
+
+/*
+Drum Map
+P1 STANDARD
+P9 ROOM
+P17 POWER
+P25 ELECTRONIC
+P26 808
+P33 JAZZ
+P41 BRUSH
+P40 Orchestra
+P57 SFX
+*/
 
 
 TR=1 @11 o3 
-
-TR=2 @11 o5 l8 [2 P(0)eP(30)g>P(50)cP(80)eP(105)gP(60)eP(40)c<P(20)g] [2 P(0)eP(30)b>P(50)dP(80)gP(105)bP(60)gP(40)d<P(20)b]
-                P(0)fP(15)a>P(30)cP(50)e P(64)gfegfedfedce 
-                [2 dgd<b>] dgb>dgfeP(40)d
-
-            o5    [2 P(0)eP(30)g>P(50)cP(80)eP(105)gP(60)eP(40)c<P(20)g] [2 P(0)eP(30)b>P(50)dP(80)g>P(105)d<P(60)gP(40)d<P(20)b]
-                fP(5)a>P(10)cP(20)eP(30)gP(40)b>P(50)dP(64)g fedfedce 
-                [2 d<g>dg] [2 d<g>db]
+TR=2 @11 o5 l8
+TR=10 CH=10 
 
 /*
-駄文
 
 
-こんにちは。
-MMLのテンプレートを改造しました。
-大部分はクジラ飛行机さんのものをお借りしました。
-gohさんがリズムテンプレートを公開されていたので
-そちらも利用させていただきました。
-
-MMLをダウンロードしてみると
-結構文字化けしているものがありました。
-コンパイルが通らないものも結構あったので
-Wineでサクラを入れる必要があるなと
-思いました。
-(*普段はMacで書いています)
-
-VScodeでUTF-8からShift-JISに
-変換してみても良さそうですが
-もうちょっと調べる必要が
-ありそうですね。
-
-またみてみようと
-思います。
-
-ストトン表記で作ってみたいものの
-文字化けが怖くて
-いまのところ手がだせていません。
-
-また機会をみて
-チャレンジしてみます。
-
-コンパイル
-(macOS版)サクラ2.379(コマンドライン版)
-制作サウンドフォント
-GeneralUser GS v1.471.sf2
-
-駄文終わり
 */
