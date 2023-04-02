@@ -1,0 +1,76 @@
+#TITLE		N.tune 003
+#COMPOSER	224
+#PROGRAMER	224
+#BANK-CHANGE	3
+
+@DPCM00 = { "bfkick.dmc" 15 }
+@DPCM02 = { "snare_CH.dmc" 14 }
+
+@0 = { 0 2 2 0 0 0 1 }
+@1 = { 1 1 0 2 }
+@2 = { 2 2 1 }
+
+@v0 = { 6 6 5 }
+@v1 = { 15 12 11 10 9 9 9 9 9 9 9 9 9 9 9 9 8 8 8 8 8 8 8 8 8 8 8 7 7 7 7 7 7 7 7 7 7 7 6 6 6 6 6 6 6 6 6 6 6 5 5 5 5 5 5 5 5 5 5 5 4 4 4 4 4 4 4 4 4 4 4 3 3 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 2 2 2 1 1 1 1 1 1 1 1 1 1 }
+@v2 = { 15 12 10 9 8 }
+@v3 = { 3 6 9 10 11 12 12 12 11 11 11 10 10 9 9 9 8 8 8 7 7 7 6 6 6 5 5 5 4 4 4 3 3 3 2 2 2 1 1 1 0 }
+
+@EP0 = { -15 3 3 3 3 3 0 }
+@EP1 = { 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | -3 }
+@EP2 = { 0 0 0 0 0 | -3 }
+@EP3 = { 0 0 0 0 0 0 0 0 0 | 0 -1 }
+@EP4 = { -12 3 3 3 3 0 0 0 0 | -9 }
+@EP5 = { -15 3 3 3 3 3 0 0 0 0 0 0 0 | -2 }
+@EP6 = { -15 3 3 3 3 3 0 0 0 0 0 0 0 | -1 }
+
+@EN0 = { | 0 0 -5 0 5 }
+
+@MP1 = { 20,2,4,0 }
+
+ABCDE t150
+
+
+
+B	D2 @@0l16 @v1o2
+B	[q7e4q8>e8.q5<eq8>dq4e<q3eq2eq8aq4b>q8gq4aq3<eq2eq8e>dq4e<q3eq8aq4bq3e>q8eq4d<bq8b-q3aq8e8
+B	q8a8>aq3<a>q8gq3a<aq4aq6aq2aq8>a8<q8gq3aq8a8>q8gq3a<q6a>>q8dq3e<<q6a>>q8c+q5d<<q3aq2aq8a8q3gq8g8.]2
+B	L o2
+B	[q7e4q8>e8.q5<eq8>dq4e<q3eeq8aq4b>q8gq4aq3<eeq8e>gq4a<q3eq8aq4bq3e>q8eq4d<bq8b-q3aq8e8
+B	q8a8>aq3<a>q8gq3a<aq5aq3aaq8>a8<q8gq3aq8a8>q8gq3a<q6a>>q8dq3e<<q6a>>q8c+q5d<<q3aaq8a8q3gq8g8.]2
+B	<q8b8b8>aq5bq3<bq8b8q3bq6b8>q8aq5b<q3bq5b
+B	q7b8>q4b<q7a8q4>a<q7b8q3bb>q8aq3b<bq7b8.
+B	b8>brq8aq4bq8fq4f+<q3bbq7b8>q4b<q8b8q4b
+B	q8b2.EP4b4EPOF
+B	[o2q7e8q8e8q6>e8q7<e8>q8dq5e<q3eq8e8f+g8q3ddq8g8>q8f+q4g<q8aq4bq3ddq6g8d8gq5g+
+B	q6a8<q8a8>gq4aq8dq5e<q3aaq8a8>gq5aq8<bq5>c<q8a8q4>a8<q8g8>q4a8<q8a8>q4a<aq3bbq8b8
+B	q7>c8q8c8bq5>c<q3cq6cq3ccq8c8q6>c8q8<c8d8q3ddq8>cq5d<q8cq5dq3ddq8d8q6>d8q8|<aq6a-
+B	q8g8q3ggq8g8q3ggq8>f+q5g<q3g>q8c+q5d<q3gq8g8f+8f+8q3f+rq8b4aq6>aq8<gq6>gq8<f+q6>f+<]2
+B	o3dq5d+@v2q8e1<e2q6f>f<fb->b-<b->e-<e-
+B	@v1q8e2..ab>e4.d4.<b4q7a8.<a8.q8a8^2a2>e8.a8.b8>e8.<er8e8^2e2.^ef+ga4.<a1>[q4>a<q8gq6a]2>q8dq5eq8gq5a
+
+
+D	o1 l16
+D	[q8@v3g+4v9q4{d+dc+}8q3dc+dq6cq3c+dd+c+q6c8
+D	[q3d+c+dc+q4{d+dc+}8q3dc+dq6cq3c+dd+c+q6c8]3]2
+D	L
+D	q8@v3g+4v9q4{d+dc+}8q3dc+dq6cq3c+dd+c+q6c8
+D	[q3d+c+dc+q4{d+dc+}8q3dc+dq6cq3c+dd+c+q6c8]3
+D	q8@v3g+4v9q4{d+dc+}8q3dc+dq6cq3c+dd+c+q6c8
+D	[q3d+c+dc+q4{d+dc+}8q3dc+|dq6cq3c+dd+c+q6c8]3q8@v3g4g+4
+D	f+4[q3v8d+v5c+v4dv6c+]11q8@v3c2v7q5{cc+dd+ee}4q8@v3g4
+D	[q8@v3g+4v9q3d+c+dc+q4{d+dc+}8q3dc+dc+q6c8
+D	[q3d+c+dcd+c+dc+q4{d+dc+}8q3dc+dc+q6c8]3
+D	[q8@v3g+4v9q3d+c+dc+q4{d+dc+}8q3dc+dc+q6c8]2
+D	q8@v3|g+4v9q3d+c+q7c8@v3g8.g+8.g8v9q7f8c8q2d8q8@v3g4.e4]2
+D	g+1c4c4g8.g8.g8
+D	g+2[q3v9d+v7c+v6dv8c+]14
+D	q8@v3g+2[q3v9d+v7c+v6dv8c+]10q8@v3c4c4c+4d4
+
+E	o0 l16
+E	[c4d4c4d8.c]8 L
+E	[c4d4c4d8.c]7 c4d4cd8d32d32{ddd}8dd
+E	[c4]12c2.d32d8..
+E	[c4d4c8.cd8c8c8c8d8c8c4d4c4d4c4d4c4d8.cc8c8d4
+E	c8.cd8c4c8d8c8c4d4c4|d4c4d8c8[d32d.|c]3c8d8c8d4[d32d.]3]2
+E	d8{ddd}8c1c4c4cddcddcd
+E	[c4]29c8.d32d32dddd32d32dddd

@@ -1,0 +1,91 @@
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【曲　名】rtune6
+【作曲者】rana
+【作成日】2022/11/20 (for ピコサクラ)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ドラムの打ち込み頑張りました◎
+
+普段はフリー音源サイトを運営しています。
+https://www.soundescape.info/
+毎日更新のブログはもうちょっと一年更新達成です。
+https://tatsuyakitahara.com/
+Spotifyのプロフィール
+https://open.spotify.com/artist/2q4GOk5mIsa3SyXvXN2J2m?si=50_Cz-JATb-uHZ7gvHSrFA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+//_00:初期設定
+TrackName     = {"rtune7"}
+Copyright     = {"rana"}
+Tempo         = 80;
+TimeSignature = 4,4;
+
+/*Tone Map
+FF7.sf2
+
+@5 vibra
+@6 voice(word)
+@7 voice
+@10 musicbox
+@16 bell
+@17 harpsicode
+@18 organ
+@19 organ
+@25 guitar
+@26 guitar
+@27 guitar
+@29 ???
+@31 synth
+@34 synth
+@35 gutiar
+@37 ??
+@39 ??
+@40 synth strings
+@46 pizz
+@47 ??
+@48 timpani
+@49 strings
+@50 strings
+@51 strings
+@52 
+@53 voice
+@55
+@56 Orchestral hit
+@57 brass
+@58 brass
+@59 brass
+@60 horn
+@61 brass
+@62 synth brass
+@68 oboe
+@71 oboe
+@72 clarinet
+@74 basson
+@79
+@80
+@81 beep
+@82
+@84
+@85
+@86 synth
+@91
+@92
+@106
+@111 violin
+@116 perc
+@117 perc
+@120 symbal
+@121
+
+Drun @11　キーンカーン o3 fg
+*/
+
+//A  
+TR=8 CH=8 @5 
+                   
+TR=1 CH=1  @56 o3 'fa'1
+
+TR=10 CH=10 @10 o3 
+TR=11 CH=10 [16 r1] 
+

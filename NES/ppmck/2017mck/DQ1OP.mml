@@ -1,0 +1,26 @@
+#title		Dragon Quest 1 Overture
+#composer	Kouichi Sugiyama
+#programer	rana
+#Maker		Enix
+
+
+@v0 = { 0 8 7 6 5 4 4 0 }
+@v1 = { 12 0 }
+@v2 = { 12 12 12 12 12  0 }
+@v3 = { 15 13 11 9 8 6 5 3}
+@v4 = { 8 8 7 6 5 5 4 3 2}
+@v5 = { 14 14 13 12 12 11 11 10 10 9 8 8 7 7 6 5 4 4 3 3 2 2}
+
+@EP0 = { -1 0 }
+
+#AUTO-BANKSWITCH 0
+
+ABC t120
+
+A @v5 o4 a8. a16a8 l8 gggfg   
+A           aa+ag aa+>cd fdc<a+ a
+A           g8.g16g8a8.a18a8 afag1
+B @v5 o4 c8. f16f8 l8 ccc<a>c
+B           fgfc fgaa+ >d<a+ag f
+B           c8.c16c8f8.f16f8 f<a>fc1
+C q7 o4 f4 [r1]8

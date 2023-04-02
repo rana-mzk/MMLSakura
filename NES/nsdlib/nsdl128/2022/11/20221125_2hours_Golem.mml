@@ -1,0 +1,133 @@
+#title		"TRUTH and DEATH"
+#composer	"rana"
+#Copyright	"nsd.lib, Copyright (c) 2012 S.W. All rights reserved."
+
+#offsetPCM	$C000
+#code		"nsd_vrc6.bin"
+#bgm		1
+
+E(0) = { 13 12 11 8 D1 7 D2 6 L 5 }
+E(1) = {12 L 0 }
+E(2) = { 12 12 12 12 12 L 0 }
+
+E(3) = {      	06 08 10 11 11 11 10 10 10 10			;StringsA
+		09 D8 09 D8 08 D8 08 D8 07 D8 07 D8 L	06 }
+E(4)= {		03 05 07 08 D2 07 D4						;StringsB
+		06 D8 06 D8 05 D8 05 D8 04 D8 04 D8 L	03}
+E(5) = {       	10 07
+		13 11 09 07 05 03 02
+		04 07 05 04 03 02 02 01
+		03 05 04 03 02 02 01 L 01 }
+E(7) = {	12 10 9 7 L 5 }
+E(8) = {	13 10 9 7 D4 L 1 }
+E(9) = {	14 12 10 D4 8 D4 6 D4 5 D1 L 0 }
+E(14) = { 02 03 04 05 D4 04 D4 03 D4 02 D4 L 01 }			;Strings C
+E(15) = {02 03 04 05 D4 04 D4 03 D4 02 D4 L 01 00 }
+E(30) = { (43,15,5) (15,0,50) L 0 R L 0 }
+E(40) = { 10 9 8 7 L 0 }									;kirbyR
+E(41) = { 12 11 10 9 L 1 }
+E(42) = { 15 13 12 11 L 4 }
+E(43) = { 14 L 0 }			;kirby part2
+E(44) = { 15 L 4 }
+E(45) = { 11 D1 9 8 D7 7 D2 L 0}
+E(46) = { 15 14 13 12 L 4}
+E(47) = { 8 D2 6 5 L 0 }		;kirby part3
+E(48) = { 13 12 11 10 L 2}
+E(49) = { 2 6 8 5 L 0 }		;kirby melo
+E(50) = { 2 6 8 5 3 D8 4 D8 5 D8 6 D8 7 D8 8 D12 L 0}	;kirby longtone
+E(51) = { 5 D2 3 2 L 0 }
+E(52) = { 3 7 9 L 6 }									;kirby longton2
+E(53) = { 7 5 D2 L 0 }
+E(461)={	10 07  L 00 }
+E(462)={	10 08 07 06 05 04 03 03 02 02 01 01 L 00 }
+E(463)={	13 12 10 09 09 08 08 08
+			07 07 07 07 06 D8 05 D8 04 D9 03 D10 02 D11 01 D12 L 00 }
+E(561)={	 -2 -2 -2 -2 -1 -1 -1 -1 0 0 0 0 L -2 -2 -2 -1 -1 -1 0 0 L 0 }
+
+E(464)= { 10 02 L 00}
+E(465)= { 07 D5 06 D6 05 D6 04 D7 03 D9 02 D11 01 D10 L 00 }
+E(466)={	11 06 09 05 07 04 05 03 04 02 03 01 02 00 01 L 00 }
+E(467)={	08 06 05 04 03 02 D1 L 00 }
+E(468)={			  5 2 L 0 }		;kirby drums
+E(469)={		    6 3 1 L 0 }
+E(470)={		    7 4 2 L 0 }
+E(471)={		  8 5 3 1 L 0 }
+E(472)={		  9 6 4 2 L 0 }
+E(473)={	   10 7 5 3 1 L 0 }
+E(474)={	   11 8 6 4 2 L 0 }
+E(475)={	    10 9 7 5 3 1 0 D8 1 D8 L 0 }	;kirby drums2
+E(476)={	   13 10 8 6 4 2 0 D8 2 D8 L 0 }
+E(477)={	 14 11 9 7 5 3 1 0 D8 3 D8 L 0 }
+E(478)={	 15 12 10 8 6 4 2 0 D8 4 D8 L 0}
+E(479)={	15 12 10 8 6 L 4 }
+E(480)={	7 L 0 }		;kirby part2
+E(481)={	10 7 5 3 L 0}
+E(490)={  15 14 13 11 10 9  8 8 7 7 6 6 5 5 4 4 3 3 3 2 2 2 2 L 1 D5} ;モザイクロール
+
+E(700)={ 0 D10 2 D10 4 D10 5 D10 6 D10 4 D10 L 2 D10 3 D6 1 D6 }	;�g�̉���
+E(800)={6,12,11,10,9,8,12,7,5,4,3,2,1, L 0} // コナミスネア+クローズハット
+E(801) = {12,6, L 2} // クローズハット単体
+E(802) = {12,8,7,5,5,5,12,8,5,5,4,4,4,3,3,3,2,2, L 2} // オープンハット+クローズハット
+E(803) = {10,14,13,12,10,10,12,9,7,7,5,5,12,6,3,3,2,2,1,1, L 0} // シンバル+クローズハット
+E(804) = {10,-10, L 0}
+
+E(900) = { L 0 12}
+
+DPCM {
+
+		 c4, "an_kick.dmc",15,0
+       	 d4, "snare_CH.dmc",15,0
+				 e4, "rocktom.dmc",15,0
+}
+
+@OP(1) ={@R $05,$03,$10,$06,$74,$A1,$13,$F4};シンセ
+
+@OP(3) ={@R $01,$41,$11,$00,$A0,$A0,$83,$95} ; guitar
+
+@OP(16)={@R $A5,$21,$15,$0E,$85,$F4,$AA,$2A};Pad
+
+
+BGM(0)
+
+{
+
+
+//A
+TR1 L t92  Ev5 EC2,3 o4 v12 l8 [2 [8 egb>e<] [8 df+a>d<]]
+TR3 L  o2 q7 l8   [2 [16 e>e<] [16 d>d<]]
+TR2 L Ev4  o5 v10 l8  [2 e1^1^1^1 d1^1^1^1 ]
+TR6 L Ev3  @1 o3 v15  l8  egb>e4 dce dc<b>dcdc<b agag agab agab abag
+                         >f+edf+ edce dc<b>d cdc<b agab abag f+edf+ edcd
+                          egb>e4 dce dc<b>dcdc<b agag agab agab abag
+                         >f+edf+ edce dedc <b>c<bg agab abag f+edf+ edce
+TR7 L Ev4  o4 v8  l8  [2 g1^1^1^1 f+1^1^1^1 ]
+
+
+TR8 L o2 l8 v6 q7 [2 [16 e>e<] [16 d>d<] ]
+
+
+TR4	L  o4  Ev463En561e4 En* Ev466d8 Ev462g8 [Ev461a16a16 Ev462g8 Ev466d8 Ev462g8]31
+TR5 L o4  l4 [cccc]16
+
+
+//A to B 
+
+
+//B
+TR1  Ev5 EC2,3 o4 v12 l8  [8 <b>df+b] [8 gb>dg<] [8 egb>e<] [8 df+a>d<]
+TR3   o2 q7 l8   [16 b>b<]  [16g>g<] [16e>e<] [16 d>d<]
+TR2  Ev4  o4 v10 l8  b1^1^1^1 b1^1^1^1  e1^1^1^1  d1^1^1^1
+TR6          o4        r- b8>c+d ef+ed c+dc+<b a+ba+g    f+gf+ededc+<bc+def+gab  >   
+                     gf+gf+ eded dc+dc+ c+<b>c+<b> <babgf+ef+g f+edf+ edef+
+                       r- gb>e4 dce dc<b>dcdc<b agag agab agab abag
+                         >f+ef+a4  gf+e dedc <b>c<bg agab abag f+edf+ edce
+TR7  Ev4  o5 v8  l8  d1^1^1^1 <g1^1^1^1  g1^1^1^1  f+1^1^1^1
+
+
+TR8 o2 l8 v6 q7 [16 b>b<] [16g>g<] [16e>e<] [16 d>d<]
+
+
+TR4	 o4  Ev463En561e4 En* Ev466d8 Ev462g8 [Ev461a16a16 Ev462g8 Ev466d8 Ev462g8]31
+TR5  o4  l4 [cccc]16
+
+}

@@ -1,0 +1,20 @@
+ ; MML Template
+ 
+#TITLE "At The Cafe"
+#COMPOSER "rana"
+#PROGRAMER "rana"
+
+; Tone Define
+@0 = { | 0 , 1 , 2 }
+
+; Volume Define
+@v0 = { 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, | 0 }
+@v1 = {12,12,12,10,10,10,8,8,8,6,6,6,4,4,4,3,3,3,2,2,2,1,1,1}
+
+
+; Track
+ABC t120 v15 o4 l4
+
+A @v1 @2 l2 ecgc dcfc gcac ecgc 
+C l4 cdedcdec fgagfgaf gfefedcd c<b>cdc<b>cd
+ 

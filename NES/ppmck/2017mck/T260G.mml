@@ -1,0 +1,883 @@
+#TITLE SaGa Fro. - Last Battle T260G
+#COMPOSER K.Ito (cv:shywolf_27)
+#MAKER (c)1997 SQUARE
+#PROGRAMER shywolf_27
+#EX-FME7
+#AUTO-BANKSWITCH 0
+;OST Disc 3 Track 11 (https://vgmdb.net/album/38)
+;Note: This is one of my Famicompo Pico 4 entries (cover #86).
+ ;https://famitracker.org/fcp4/results.php?category=cover
+ ;Please play NSF in NSFPlay 2.3 or nezplug++ [...]+24.xx for best results.
+;Note 2: For some reason, MMLShare doesn't compile & play this properly; even the "Download NSF file" is broken.
+ ;So, please compile the MML yourself. I've tested it with ex11.3 (dev. Environment) and ex11.1 without problems.
+ ;You can download the DMCs from: https://www.dropbox.com/s/m8wlgy6130uvjom/GHEART.zip?dl=1
+
+@V00 = { 3 5 5 4 2 0  0 0 0  2 4 4 3 1 0  0 0 0  0 2 2 1 0 } ;Bass2X
+ @V01 = { 3 5 5 4 4 4  4 4 4 3 } ;-sus
+ @V02 = { 0 2 2 1 0 } ;-D
+@V03 = { 8 6 4 3 2 1  2 1 0 } ;rotate
+ @V04 = { 4 2 } ;-D
+ @V12 = { 9 7 5 4 3 2 } ;+
+@V05 = { 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 4 } ;stringsAPU(Section 1)
+ @V06 = { 2 2 2 1 1 1 1 1 0 } ;-R(down from 4)
+@V09 = { 1 1 1 1 2 2 2 2 2 2 3 3 3 3 3 3 3 3 4 4 4 4 4 4 4 4 4 4 4 4 3 } ;stringsAPU2(Section 3)
+ @V10 = { 3 3 3 2 2 2 2 2 1 1 1 1 1 0 } ;-R(incidental only, down from 5)
+ @V11 = { 1 1 1 1 1 0 } ;-R2(down from 3)
+@V07 = { 3 2 2 2 2 1  1 1 1 1 1 0 } ;voxAPU-D
+@V08 = { 4 2 2 2 0 0  2 1 1 1 0 } ;roboAPU-D
+@V13 = { 5 3 2 1 } ;energy
+ @V14 = { 2 1 } ;-D
+
+@V20 = { 7 7 7 7 7 7 7 7 7 7 8 8 8 8 8 8 8 8 8 8 9 } ;strings(Section 1)
+ @V21 = { 6 6 6 6 6 5 5 5 5 5 4 4 4 4 4 
+          3 3 3 3 3 2 2 2 2 2 1 1 1 1 1 0 } ;-R(incidental only, down from 10), also sus2 & sus3 release
+@V34 = { 7 7 7 7 7 7 8 8 8 8 8 8 8 8 9 9 9 9 9 9 9 9 9 9 9 9 8 } ;strings2(Section 3)
+ @V35 = { 5 5 5 5 5 5 6 6 6 6 6 6 6 6 7 } ;-D
+@V36 = { 5 6 6 7 7 7 7 8 8 8 8 8 8 9 9 9 9 9 9 9 9 
+         10 10 10 10 10 10 10 10 10 10 9 9 9 9 9 9 9 9 9 9 9 9 8 } ;strings3(Section 11)
+ @V37 = { 4 4 4 4 4 3 3 3 3 3 
+          2 2 2 2 2 1 1 1 1 1 0 } ;-R(down from 8)
+@V22 = { 7 5 3 2 3 4  3 2 1 2 3 2  1 0 1 2 1 0 } ;rotateSSG
+ @V23 = { 5 3 1 0 1 2  1 0 0 0 1 0 } ;-D
+@V24 = { 12 10 10 10 5 0  10 8 8 8 3 0  8 6 6 6 1 0  6 4 4 4 0 0  4 2 2 2 0 0  2 0 } ;robo
+ @V25 = { 9 7 7 7 2 0  7 5 5 5 0 0  5 3 3 3 0 0  3 1 1 1 0 0  1 0 } ;-D
+ @V28 = { 10 10 10 10 5 0  8 8 8 8 3 0  6 6 6 6 1 0  4 4 4 4 0 0  2 2 2 2 0 } ;-T
+ @V29 = { 12 10 10 10 10 10  10 10 10 9 9 9  9 9 9 9 4 0 } ;-sus(8.)
+ @V30 = { 10 10 10 10 10 10  10 10 10 9 9 9  9 9 9 9 4 0 } ;-Tsus(8.)
+ @V31 = { 9 7 7 7 7 7  7 7 7 6 6 6  6 6 6 6 1 0 } ;-Dsus
+ @V32 = { 12 11 11 11 11 0  9 8 8 8 8 0  6 5 5 5 5 0 } ;-acc
+ @V33 = { 9 8 8 8 8 0 } ;-Dacc
+ @V38 = { 12 11 11 11 11 11  11 11 11 10 } ;-sus2(Section 1)
+@V26 = { 11 10 9 8 7 6  5 4 5 6 7 0 } ;vox
+ @V27 = { 10 11 9 9 9 5  5 5 5 5 5 0 } ;-T
+
+@V40 = { 10 9 6 6 5 5  9 4 3 3 2 2  2 1 1 1 1 0 } ;SD+HH
+@V43 = { 10 9 6 6 5 5  4 4 3 3 2 2  2 1 1 1 1 0 } ;SD
+@V41 = { 9 4 0 } ;HH
+@V42 = { 7 7 7 6 6 0  2 2 2 1 1 0 } ;OH
+@v44 = { 11 9 9 8 8 8  7 7 7 6 6 6  6 5 5 5 5 4  4 4 4 3 3 3  3 2 2 2 2 1  1 1 1 0 } ;CC
+@V45 = { 11 8 4 4 3 3  2 2 2 1 1 0 } ;TOM
+
+@V60 = { 11 5 0 } ;HH-SSG
+@V61 = { 10 10 10 9 9 0 } ;OH-SSG
+@V62 = { 11 11 11 11 10 10 10 10 
+         9 9 9 9 9 8 8 8 8 8 
+         7 7 7 7 7 7 6 6 6 6 6 6 
+         5 5 5 5 5 5 5 4 4 4 4 4 4 4 
+         3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 2 
+         1 1 1 1 1 1 1 1 1 0 } ;CC-SSG
+@V63 = { 10 10 10 9 9 9  9 8 8 8 8 8  5 4 4 4 4 4  0 } ;OH-SSG(cut2)
+@V64 = { 10 10 10 9 9 8  8 7 7 6 6 5  5 4 4 3 3 2  2 1 1 0 } ;OH-SSG(Section 11)
+
+@00 = { | 1 0 1 2 2 2  2 2 2 } ;Bass2X
+@03 = { | 1 2 2 2 2 2 } ;rotate
+@13 = { 0 1 0 } ;energy
+
+@MP20 = { 0 2 2 } ;strings(incidental & Section 1)
+@MP34 = { 18 2 1 } ;strings2(Section 3)
+@MP36 = { 0 2 1 } ;strings3(Section 11)
+
+@EP24 = { | -3 3 0 0 0 0 } ;robo
+ @EP29 = { -3 3 0 } ;-susX
+@EP27 = { 1 -1 -1 0 } ;vox-T (with D-1)
+@EP40 = { 0 0 -1 0 0 0  5 -5 1 0 } ;SD+HH n7
+@EP43 = { 0 0 -1 0 0 0  0 0 1 0 } ;SD n7
+@EP41 = { -1 1 0 } ;HH n2
+@EP42 = { | -3 2 1 0 0 0 } ;OH n2
+@EP44 = { -14 6 3 | 1 1 -2 } ;CC n0
+@EP45 = { 0 0 3 2 1 0 } ;TOM n8/n9/n10
+
+@EN05 = { | 0 -3 3 } ;stringsAPU(m3)
+ @EN06 = { | 0 -4 4 } ;stringsAPU(M3)
+ @EN07 = { | 0 -5 5 } ;stringsAPU(P4)
+@EN28 = { | 24 -24 0 0 0 0 } ;robo-T
+ @EN30 = { 24 -24 0 } ;-Tsus
+
+@DPCM0 = { "firebd.dmc", 14,0,$30 }
+@DPCM1 = { "fsd2.dmc", 15,0,$00 }
+@DPCM2 = { "digital2.dmc", 15,0,$00 }
+@DPCM3 = { "digital.dmc", 15,0,$00 }
+@DPCM4 = { "tom1.dmc", 15,0,$00 }
+@DPCM5 = { "tom1.dmc", 14,0,$00 }
+@DPCM6 = { "tom1.dmc", 13,0,$00 }
+@DPCM7 = { "fsd2.dmc", 14,0,$00 }
+
+
+XYZABCDE @t16,6 r16
+
+ ;Intro
+X   r#384
+X   v2   @vr21 o5 l#43  MP20
+X   bv3bv4bv5bv6bv7bv8bv9bv10b#40
+ ;Section 1
+X   k2
+X   @v22       o4 l16   MPOF
+X   |:ee>e\<be>ad<a:|15
+X      b#30   ;hang
+X   @v24       o4            EP24
+X   |:r8d8e8d8e8.\g#30 :|7
+X      g8.e8 @v32aa+aged8e8@v24a8b8.>@v38EP29d8
+X   @v21                     EPOF
+X   d8<
+X   @v24                     EP24
+X      |:d8e8d8e8.\g#30 r8:|7
+X         g8.e8 @v32bab>d8<bag@v24g-8.b8@v38EP29g8.
+X   @v21                     EPOF
+X   g1
+X   v2         o5 l#11  MP20
+X      bv3bv4bv5bv6bv7bv8bv9bv10b#8   ;next
+ ;Section 2
+X   @v26       o5 l16   MPOF
+X  L|:
+X   de<b>d8e<b>de8ag8ed<b ab8>d8
+X   @v24       o4            EP24
+X      ed8e
+X   @v26       o5            EPOF
+X         ed<b>ga8g  ab\ge8de8a8f+d8<ab8> d8
+X   @v24       o4            EP24
+X            d8e8d8e8ag8ed8
+X   :|2
+X   @v26       o5            EPOF
+X         de8gagb8>d<b8ab8 e8
+X   v3         o5 l#11  MP20
+X            b#10v4bv5bv6bv7bv8bv9bv10b#8   ;(next, but with beginning shortened by #12)
+ ;Section 3
+X   k8
+X   @v24       o4 l16   MPOF EP24
+X   |:g8a8g8a8.g8.b8 a8.g8.e4@v32d@v24e8@v32g@v24a8  b8.e#30a8.e8.d8 e8.d8.e8@v32g@v24a8g#42
+X   d8e8g8a8.b8.>d8 e8.d8.<b8>d8.<b8.a8  b8.a8.g4@v32a@v24b8>@v29EP29d8. @v24EP24e1  \r8:|2
+X   v2         o5 l#11  MP20 EPOF
+X      bv3bv4bv5bv6bv7bv8bv9bv10b#8   ;next
+ ;Section 4 (2 reprise)
+X   @v26       o5 l16   MPOF
+X   |:
+X   de<b>d8e<b>de8ag8ed<b ab8>d8
+X   @v24       o4            EP24
+X      ed8e
+X   @v26       o5            EPOF
+X         ed<b>ga8g  ab\ge8de8a8f+d8<ab8> d8
+X   @v24       o4            EP24
+X            d8e8d8e8ag8ed8
+X   :|2
+X   @v26       o5            EPOF
+X         de8gagb8>d<b8ab8 e8
+X   v3         o5 l#11  MP20
+X            b#10v4bv5bv6bv7bv8bv9bv10b#8   ;(next, but with beginning shortened by #12)
+ ;Section 5 (3 reprise + different end)
+X   k8
+X   @v24       o4 l16   MPOF EP24
+X   |:g8a8g8a8.g8.b8 a8.g8.e4@v32d@v24e8@v32g@v24a8  b8.e#30a8.e8.d8 e8.d8.e8@v32g@v24a8g#42
+X   d8e8g8a8.b8.>d8 e8.d8.<b8>d8.<b8.\a8  b8.a8.g4@v32a@v24b8>@v29EP29d8. @v24EP24e1  r8:|2<
+X      g8  a8.b8.>d#60   ;cut2
+X   w#192
+X   v2         o5 l#22  MP20 EPOF
+X      bv3bv4bv5bv6bv7bv8bv9bv10b#16   ;next2
+ ;Section 6 (2 reprise)
+X   @v26       o5 l16   MPOF
+X   |:
+X   de<b>d8e<b>de8ag8ed<b ab8>d8
+X   @v24       o4            EP24
+X      ed8e
+X   @v26       o5            EPOF
+X         ed<b>ga8g  ab\ge8de8a8f+d8<ab8> d8
+X   @v24       o4            EP24
+X            d8e8d8e8ag8ed8
+X   :|2
+X   @v26       o5            EPOF
+X         de8gagb8>d<b8ab8 e8
+X   v3         o5 l#11  MP20
+X            b#10v4bv5bv6bv7bv8bv9bv10b#8   ;(next, but with beginning shortened by #12)
+ ;Section 7 (3 reprise)
+X   k8
+X   @v24       o4 l16   MPOF EP24
+X   |:g8a8g8a8.g8.b8 a8.g8.e4@v32d@v24e8@v32g@v24a8  b8.e#30a8.e8.d8 e8.d8.e8@v32g@v24a8g#42
+X   d8e8g8a8.b8.>d8 e8.d8.<b8>d8.<b8.a8  b8.a8.g4@v32a@v24b8>@v29EP29d8. @v24EP24e1  \r8:|2
+X   v2         o5 l#11  MP20 EPOF
+X      bv3bv4bv5bv6bv7bv8bv9bv10b#8   ;next
+ ;Section 8 (2 reprise)
+X   @v26       o5 l16   MPOF
+X   |:
+X   de<b>d8e<b>de8ag8ed<b ab8>d8
+X   @v24       o4            EP24
+X      ed8e
+X   @v26       o5            EPOF
+X         ed<b>ga8g  ab\ge8de8a8f+d8<ab8> d8
+X   @v24       o4            EP24
+X            d8e8d8e8ag8ed8
+X   :|2
+X   @v26       o5            EPOF
+X         de8gagb8>d<b8ab8 e8
+X   v3         o5 l#11  MP20
+X            b#10v4bv5bv6bv7bv8bv9bv10b#8   ;(next, but with beginning shortened by #12)
+ ;Section 9 (3 reprise + different end, shortened)
+X   k8
+X   @v24       o4 l16   MPOF EP24
+X   |:g8a8g8a8.g8.b8 a8.g8.e4@v32d@v24e8@v32g@v24a8  b8.e#30a8.e8.d8 e8.d8.e8@v32g@v24a8g#42
+X   d8e8g8a8.b8.>d8 e8.d8.<b8>d8.<b8.\a8  b8.a8.g4@v32a@v24b8>@v29EP29d8. @v24EP24e1  r8:|2<
+X      g8  a8.b8.>d#60   ;cut2
+ ;Section 10 (Intro reprise, half length)
+X   r#192
+X   v2         o5 l#22  MP20 EPOF
+X      bv3bv4bv5bv6bv7bv8bv9bv10b#16   ;next2
+ ;Section 11 (1 reprise + different end)
+X   k2 
+X   @v22       o4 l16   MPOF
+X   |:ee>e\<be>ad<a:|15
+X      b#30   ;hang
+X   @v36 @vr37 o5       MP36
+X   b#104v7b#76v6b#12  @v36g#104v7g#76v6g#12
+X   @v36a#104v7a#76v6a#12  @v36b1 g#72
+X      k4   ;hang
+
+ ;Intro
+Y   r#384
+Y   v2   @vr21 o5 l#43  MP20
+Y   f+#56v3f+v4f+v5f+v6f+v7f+v8f+v9f+v10f+#27
+ ;Section 1
+Y   k2
+Y   @v22       o4 l16   MPOF           D-1
+Y   |:ee>e\<be>ad<a:|15
+Y      b#30   ;hang
+Y   @v24       o3            EP24      D0
+Y   |:r8a8b8a8b8.\>d#30 :|7
+Y      d8.D-2e8 @v32aa+aged8e8@v24D0f+8g8.@v38EP29a8
+Y   @v21                     EPOF
+Y   a8<
+Y   @v24                     EP24
+Y      |:a8b8a8b8.\>d#30 r8:|7
+Y         d8.D-2e8 @v32bab>d8<bag@v24D0d8.g8@v38EP29e8.
+Y   @v21                     EPOF
+Y   e1
+Y   v2         o5 l#11  MP20
+Y      f+#15v3f+v4f+v5f+v6f+v7f+v8f+v9f+v10f+#4   ;next
+ ;Section 2
+Y   @v27       o4 l16   MPOF EP27
+Y  L|:
+Y   de<b>d8e<b>de8ag8ed<b ab8>d8
+Y   @v24       o3            EP24
+Y      ba8b
+Y   @v27       o4            EP27
+Y         ed<b>ga8g  ab\ge8de8a8f+d8<ab8> d8
+Y   @v24       o3            EP24
+Y            a8b8a8b8>ed8<ba8
+Y   :|2
+Y   @v27       o4            EP27
+Y         de8gagb8>d<b8ab8 e8
+Y   v2         o5 l#11  MP20 EPOF
+Y      f+#3v3f+v4f+v5f+v6f+v7f+v8f+v9f+v10f+#4   ;(next, but with beginning shortened by #12)
+ ;Section 3
+Y   k8
+Y   @v28       o4 l16   MPOF      EN28
+Y      d8e8d8e8.d8.f+8 e8.d8.<b#60>  f+8.<b#30>e8.<b8.a8 b8.a8.b8>d8.d#42<
+Y   a8b8>d8e8.f+8.a8 b8.a8.f+8a8.f+8.e8  f+8.e8.d#42@v30EN30a8. @v28EN28b#33   ;add #9
+Y   @v35       o5                 ENOF D-1
+Y      e4f+4a4
+Y   g#3   ;remove #9
+Y   @v24       o4            EP24      D0
+Y      d8e8d8e8.d8.f+8 e8.d8.<b#60>  f+8.<b#30>e8.<b8.a8 b8.a8.b8>d8.d#42<
+Y   a8b8>d8e8.f+8.a8 b8.a8.f+8a8.f+8.e8  f+8.e8.d#42@v29EP29a8.
+Y   @v24                     EP24
+Y   b1
+Y   v2         o5 l#11  MP20 EPOF
+Y      f+#15v3f+v4f+v5f+v6f+v7f+v8f+v9f+v10f+#4   ;next
+ ;Section 4 (2 reprise)
+Y   @v27       o4 l16   MPOF EP27
+Y   |:
+Y   de<b>d8e<b>de8ag8ed<b ab8>d8
+Y   @v24       o3            EP24
+Y      ba8b
+Y   @v27       o4            EP27
+Y         ed<b>ga8g  ab\ge8de8a8f+d8<ab8> d8
+Y   @v24       o3            EP24
+Y            a8b8a8b8>ed8<ba8
+Y   :|2
+Y   @v27       o4            EP27
+Y         de8gagb8>d<b8ab8 e8
+Y   v2         o5 l#11  MP20 EPOF
+Y      f+#3v3f+v4f+v5f+v6f+v7f+v8f+v9f+v10f+#4   ;(next, but with beginning shortened by #12)
+ ;Section 5 (3 reprise + different end)
+Y   k8
+Y   @v28       o4 l16   MPOF      EN28
+Y      d8e8d8e8.d8.f+8 e8.d8.<b#60>  f+8.<b#30>e8.<b8.a8 b8.a8.b8>d8.d#42<
+Y   a8b8>d8e8.f+8.a8 b8.a8.f+8a8.f+8.e8  f+8.e8.d#42@v30EN30a8. @v28EN28b#33   ;add #9
+Y   @v35       o5                 ENOF D-1
+Y      e4f+4a4
+Y   g#3   ;remove #9
+Y   @v24       o4            EP24      D0
+Y      d8e8d8e8.d8.f+8 e8.d8.<b#60>  f+8.<b#30>e8.<b8.a8 b8.a8.b8>d8.d#42<
+Y   a8b8>d8e8.f+8.a8 b8.a8.f+8a8.f+8.d8
+Y      e8.f+8.a#60   ;cut2
+Y   w#192
+Y   v2         o5 l#22  MP20 EPOF
+Y      f+#29v3f+v4f+v5f+v6f+v7f+v8f+v9f+v10f+#9   ;next2
+ ;Section 6 (2 reprise)
+Y   @v27       o4 l16   MPOF EP27
+Y   |:
+Y   de<b>d8e<b>de8ag8ed<b ab8>d8
+Y   @v24       o3            EP24
+Y      ba8b
+Y   @v27       o4            EP27
+Y         ed<b>ga8g  ab\ge8de8a8f+d8<ab8> d8
+Y   @v24       o3            EP24
+Y            a8b8a8b8>ed8<ba8
+Y   :|2
+Y   @v27       o4            EP27
+Y         de8gagb8>d<b8ab8 e8
+Y   v2         o5 l#11  MP20 EPOF
+Y      f+#3v3f+v4f+v5f+v6f+v7f+v8f+v9f+v10f+#4   ;(next, but with beginning shortened by #12)
+ ;Section 7 (3 reprise)
+Y   k8
+Y   @v28       o4 l16   MPOF      EN28
+Y      d8e8d8e8.d8.f+8 e8.d8.<b#60>  f+8.<b#30>e8.<b8.a8 b8.a8.b8>d8.d#42<
+Y   a8b8>d8e8.f+8.a8 b8.a8.f+8a8.f+8.e8  f+8.e8.d#42@v30EN30a8. @v28EN28b#33   ;add #9
+Y   @v35       o5                 ENOF D-1
+Y      e4f+4a4
+Y   g#3   ;remove #9
+Y   @v24       o4            EP24      D0
+Y      d8e8d8e8.d8.f+8 e8.d8.<b#60>  f+8.<b#30>e8.<b8.a8 b8.a8.b8>d8.d#42<
+Y   a8b8>d8e8.f+8.a8 b8.a8.f+8a8.f+8.e8  f+8.e8.d#42@v29EP29a8.
+Y   @v24                     EP24
+Y   b1
+Y   v2         o5 l#11  MP20 EPOF
+Y      f+#15v3f+v4f+v5f+v6f+v7f+v8f+v9f+v10f+#4   ;next
+ ;Section 8 (2 reprise)
+Y   @v27       o4 l16   MPOF EP27
+Y   |:
+Y   de<b>d8e<b>de8ag8ed<b ab8>d8
+Y   @v24       o3            EP24
+Y      ba8b
+Y   @v27       o4            EP27
+Y         ed<b>ga8g  ab\ge8de8a8f+d8<ab8> d8
+Y   @v24       o3            EP24
+Y            a8b8a8b8>ed8<ba8
+Y   :|2
+Y   @v27       o4            EP27
+Y         de8gagb8>d<b8ab8 e8
+Y   v2         o5 l#11  MP20 EPOF
+Y      f+#3v3f+v4f+v5f+v6f+v7f+v8f+v9f+v10f+#4   ;(next, but with beginning shortened by #12)
+ ;Section 9 (3 reprise + different end, shortened)
+Y   k8
+Y   @v28       o4 l16   MPOF      EN28
+Y      d8e8d8e8.d8.f+8 e8.d8.<b#60>  f+8.<b#30>e8.<b8.a8 b8.a8.b8>d8.d#42<
+Y   a8b8>d8e8.f+8.a8 b8.a8.f+8a8.f+8.e8  f+8.e8.d#42@v30EN30a8. @v28EN28b#33   ;add #9
+Y   @v35       o5                 ENOF D-1
+Y      e4f+4a4
+Y   g#3   ;remove #9
+Y   @v24       o4            EP24      D0
+Y      d8e8d8e8.d8.f+8 e8.d8.<b#60>  f+8.<b#30>e8.<b8.a8 b8.a8.b8>d8.d#42<
+Y   a8b8>d8e8.f+8.a8 b8.a8.f+8a8.f+8.d8
+Y      e8.f+8.a#60   ;cut2
+ ;Section 10 (Intro reprise, half length)
+Y   r#192
+Y   v2         o5 l#22  MP20 EPOF
+Y      f+#29v3f+v4f+v5f+v6f+v7f+v8f+v9f+v10f+#9   ;next2
+ ;Section 11 (1 reprise + different end)
+Y   k2
+Y   @v22       o4 l16   MPOF           D-1
+Y   |:ee>e\<be>ad<a:|15
+Y      b#30   ;hang
+Y   v5   @vr37 o5       MP36           D0
+Y   f+#2@v36f+#104v7f+#76v6f+#12  @v36e#104v7e#76v6e#12   ;offset +#2
+Y   @v36f+#104v7f+#76v6f+#12  @v36f+1 e#72
+Y      k#22   ;hang, offset -#2
+
+ ;Intro
+Z   r#384
+Z   v2         o5 l#43  MP20
+Z   e#70v3ev4ev5ev6ev7ev8ev9ev10e#13
+ ;Section 1
+Z              o7 l#1   MPOF          @3
+Z   v12N09b#1>v13N08c#1v12N07c+#1v12N06c+#1@v62N05c+#101   ;CC #96, add #9
+Z   @v23       o4 l16                 @1
+Z   |:ee>e\<be>ad<a:|14
+Z      b#21   ;hang, remove #9
+Z              o7 l#1                 @3
+Z   v12N09b#1>v13N08c#1v12N07c+#1v12N06c+#1@v62N05c+#92   ;CC #96
+Z   @v22       o4 l16                 @1
+Z   |:ee>e<be>ad<a:|12
+Z   @v20       o5 l2    MP20
+Z      ba
+Z              o7 l#1   MPOF          @3
+Z   v12N09b#1>v13N08c#1v12N07c+#1v12N06c+#1@v62N05c+#92   ;CC #96
+Z   @v22       o4 l16   MPOF          @1
+Z   |:ee>e<be>ad<a:|12
+Z   @v20       o5 l2    MP20
+Z      ba
+Z              o7 l#1   MPOF          @3
+Z   v12N09b#1>v13N08c#1v12N07c+#1v12N06c+#1@v62N05c+#92   ;CC #96
+Z   v2         o5 l#11  MP20          @1
+Z      e#18v3ev4ev5ev6ev7ev8ev9ev10e#1   ;next
+ ;Section 2
+Z              o8 l16   MPOF          @3 N03
+Z  L|:[@v61g@v60gg]2gg :|13
+Z      r2
+Z   v2         o5 l#11  MP20          @1
+Z         e#18v3ev4ev5ev6ev7ev8ev9ev10e#1
+ ;Section 3
+Z              o7 l#1   MPOF          @3
+Z   v12N09b#1>v13N08c#1v12N07c+#1v12N06c+#1@v62N05c+#101   ;CC #96, add #9
+Z   @v25       o4 l16        EP24 D-1 @1
+Z   a8.g8.e4@v33d@v25e8@v33g@v25a8  b8.e#30a8.e8.d8 e8.d8.e8@v33g@v25a8g#42
+Z   d8e8g8a8.b8.>d8 e8.d8.<b8>d8.<b8.a8  b8.a8.g4@v33a@v25b8>@v31EP29d8. @v25EP24e#15   ;remove #9
+Z   @v34       o5 l2    MP34 EPOF D0
+Z      e4f+4a4
+Z   |:g.a4 b.a4  :|3
+Z      g
+Z   v5            l#8  MP20
+Z         av6av7av8av9av10a
+Z              o7 l#1   MPOF          @3
+Z   v12N09b#1>v13N08c#1v12N07c+#1v12N06c+#1@v62N05c+#92   ;CC #96
+Z   v2         o5 l#11  MP20          @1
+Z      e#18v3ev4ev5ev6ev7ev8ev9ev10e#1   ;next
+ ;Section 4 (2 reprise)
+Z              o8 l16   MPOF          @3 N03
+Z   |:[@v61g@v60gg]2gg :|13
+Z      r2
+Z   v2         o5 l#11  MP20          @1
+Z      e#18v3ev4ev5ev6ev7ev8ev9ev10e#1
+ ;Section 5 (3 reprise + different end)
+Z              o7 l#1   MPOF          @3
+Z   v12N09b#1>v13N08c#1v12N07c+#1v12N06c+#1@v62N05c+#101   ;CC #96, add #9
+Z   @v25       o4 l16        EP24 D-1 @1
+Z   a8.g8.e4@v33d@v25e8@v33g@v25a8  b8.e#30a8.e8.d8 e8.d8.e8@v33g@v25a8g#42
+Z   d8e8g8a8.b8.>d8 e8.d8.<b8>d8.<b8.a8  b8.a8.g4@v33a@v25b8>@v31EP29d8. @v25EP24e#15   ;remove #9
+Z   @v34       o5 l2    MP34 EPOF D0
+Z      e4f+4a4
+Z   |:g.a4 b.a4  :|3
+Z              o7 l#1   MPOF          @3
+Z      |:v12N09b#1>v13N08c#1v12N07c+#1v12N06c+#1@v62N05c+#14:|2<v12N09b#1>v13N08c#1v12N07c+#1v12N06c+#1@v62N05c+#44   ;CC x3
+Z   @v63       o8                        N03
+Z         g#204   ;cut2
+Z   v2         o5 l#22  MP20          @1
+Z      e#37v3ev4ev5ev6ev7ev8ev9ev10e#1   ;next2
+ ;Section 6 (2 reprise)
+Z              o8 l16   MPOF          @3 N03
+Z   |:[@v61g@v60gg]2gg :|13
+Z      r2
+Z   v2         o5 l#11  MP20          @1
+Z      e#18v3ev4ev5ev6ev7ev8ev9ev10e#1
+ ;Section 7 (3 reprise)
+Z              o7 l#1   MPOF          @3
+Z   v12N09b#1>v13N08c#1v12N07c+#1v12N06c+#1@v62N05c+#101   ;CC #96, add #9
+Z   @v25       o4 l16        EP24 D-1 @1
+Z   a8.g8.e4@v33d@v25e8@v33g@v25a8  b8.e#30a8.e8.d8 e8.d8.e8@v33g@v25a8g#42
+Z   d8e8g8a8.b8.>d8 e8.d8.<b8>d8.<b8.a8  b8.a8.g4@v33a@v25b8>@v31EP29d8. @v25EP24e#15   ;remove #9
+Z   @v34       o5 l2    MP34 EPOF D0
+Z      e4f+4a4
+Z   |:g.a4 b.a4  :|3
+Z      g
+Z   v5            l#8  MP20
+Z         av6av7av8av9av10a
+Z              o7 l#1   MPOF          @3
+Z   v12N09b#1>v13N08c#1v12N07c+#1v12N06c+#1@v62N05c+#92   ;CC #96
+Z   v2         o5 l#11  MP20          @1
+Z      e#18v3ev4ev5ev6ev7ev8ev9ev10e#1   ;next
+ ;Section 8 (2 reprise)
+Z              o8 l16   MPOF          @3 N03
+Z   |:[@v61g@v60gg]2gg :|13
+Z      r2
+Z   v2         o5 l#11  MP20          @1
+Z      e#18v3ev4ev5ev6ev7ev8ev9ev10e#1
+ ;Section 9 (3 reprise + different end, shortened)
+Z              o7 l#1   MPOF          @3
+Z   v12N09b#1>v13N08c#1v12N07c+#1v12N06c+#1@v62N05c+#101   ;CC #96, add #9
+Z   @v25       o4 l16        EP24 D-1 @1
+Z   a8.g8.e4@v33d@v25e8@v33g@v25a8  b8.e#30a8.e8.d8 e8.d8.e8@v33g@v25a8g#42
+Z   d8e8g8a8.b8.>d8 e8.d8.<b8>d8.<b8.a8  b8.a8.g4@v33a@v25b8>@v31EP29d8. @v25EP24e#15   ;remove #9
+Z   @v34       o5 l2    MP34 EPOF D0
+Z      e4f+4a4
+Z   |:g.a4 b.a4  :|3
+Z              o7 l#1   MPOF          @3
+Z      |:v12N09b#1>v13N08c#1v12N07c+#1v12N06c+#1@v62N05c+#14:|2<v12N09b#1>v13N08c#1v12N07c+#1v12N06c+#1@v62N05c+#44   ;CC x3
+Z   @v63       o8                        N03
+Z         g#204   ;cut2
+ ;Section 10 (Intro reprise, half length)
+Z   v2         o5 l#22  MP20          @1
+Z      e#37v3ev4ev5ev6ev7ev8ev9ev10e#1   ;next2
+ ;Section 11 (1 reprise + different end, SSG HH+OH)
+Z              o8 l16   MPOF          @3 N03
+Z   |:[@v61g@v60gg]2gg :|15
+Z      @v61g@v60gg@v64g#30   ;hang
+Z   v5   @vr37 o5       MP36          @1
+Z   e#4@v36e#104v7e#76v6e#12  @v36c#104v7c#76v6c#12   ;offset +#4
+Z   @v36d#104v7d#76v6d#12  @v36e1 c#72
+Z      k#20   ;hang, offset -#4
+
+ ;Intro
+A   @v02       @@00 o3 l16 @q0  D-2
+A   r.|:eedeed\<b>d:|16<
+A      b32   ;remove r.
+ ;Section 1
+A   @v03 @vr04 @@03 o3     @q2  D0  SD1
+A   bb>be<b>>d<ad<|:bb>b\e<b>>d<ad:|15
+A      @q0e#30<@q2   ;hang
+A   bb>be<b>>d<ad<|:bb>be<b>>d<ad:|13<
+A      gg>gc<g>gc<g aa>ad<a>ad<a
+A   bb>be<b>>d<ad<|:bb>be<b>>d<ad:|13<
+A      gg>gc<g>gc<g aa>ad<a>ad<a
+A   @v06       @2   o5     @q0          EN06
+A      g-#192   ;next
+ ;Section 2
+A   @v07       @3   o4                  ENOF
+A  Lr.
+A   |:
+A   de<b>d8e<b>de8ag8ed<b ab8>d8
+A   @v08       @2   o4
+A      ed8e
+A   @v07       @3   o4
+A         ed<b>ga8g  ab\ge8de8a8f+d8<ab8> d8
+A   @v08       @2   o4
+A            d8e8d8e8ag8ed8
+A   :|2
+A   @v07       @3   o4
+A         de8gagb8>d<b8ab32   ;remove r.
+A   @v12       @@03 o3     @q2
+A            bb>be<b>>d<ad
+A   @v00       @@00 o3     @q0  D-2
+A               cc8c8@v01@1d8.
+ ;Section 3
+A   @v03       @@03 o3     @q2  D0
+A   |:gg>gc<g>gc\<g>ad<a>ad<a>ad< bb>be<b>be<b>ad<a>ad<a>ad  :|4<
+A      @q0g#102>@q2 ad<a>ad<a>ad<
+A   |:gg>gc<g>gc\<g>ad<a>ad<a>ad< bb>be<b>be<b>ad<a>ad<a>ad  :|4<
+A      @q0g#54
+A   @v10       @2   o5                  EN06
+A   f+#192   ;next
+ ;Section 4 (2 reprise)
+A   @v07       @3   o4                  ENOF
+A   r.
+A   |:
+A   de<b>d8e<b>de8ag8ed<b ab8>d8
+A   @v08       @2   o4
+A      ed8e
+A   @v07       @3   o4
+A         ed<b>ga8g  ab\ge8de8a8f+d8<ab8> d8
+A   @v08       @2   o4
+A            d8e8d8e8ag8ed8
+A   :|2
+A   @v07       @3   o4
+A         de8gagb8>d<b8ab32   ;remove r.
+A   @v12       @@03 o3     @q2
+A            bb>be<b>>d<ad
+A   @v00       @@00 o3     @q0  D-2
+A               cc8c8@v01@1d8.
+ ;Section 5 (3 reprise + different end)
+A   @v03       @@03 o3     @q2  D0
+A   |:gg>gc<g>gc\<g>ad<a>ad<a>ad< bb>be<b>be<b>ad<a>ad<a>ad  :|4<
+A      @q0g#102>@q2 ad<a>ad<a>ad<
+A   |:gg>gc<g>gc<g>ad<a>ad<a>ad< bb>be<b>be<b>ad<a>ad<a>ad  :|3
+A   @v11       @2   o5     @q0          EN06
+A      f+#105   ;cut2, add #9
+A   @v02       @@00 o3          D-2     ENOF
+A   |:[e|e8e8.]3e8. :|3  |:eedeed<\b>d:|2<b#3   ;next2, remove #9
+ ;Section 6 (2 reprise)
+A   @v07       @3   o4          D0
+A   r.
+A   |:
+A   de<b>d8e<b>de8ag8ed<b ab8>d8
+A   @v08       @2   o4
+A      ed8e
+A   @v07       @3   o4
+A         ed<b>ga8g  ab\ge8de8a8f+d8<ab8> d8
+A   @v08       @2   o4
+A            d8e8d8e8ag8ed8
+A   :|2
+A   @v07       @3   o4
+A         de8gagb8>d<b8ab32   ;remove r.
+A   @v12       @@03 o3     @q2
+A            bb>be<b>>d<ad
+A   @v00       @@00 o3     @q0  D-2
+A               cc8c8@v01@1d8.
+ ;Section 7 (3 reprise)
+A   @v03       @@03 o3     @q2  D0
+A   |:gg>gc<g>gc\<g>ad<a>ad<a>ad< bb>be<b>be<b>ad<a>ad<a>ad  :|4<
+A      @q0g#102>@q2 ad<a>ad<a>ad<
+A   |:gg>gc<g>gc\<g>ad<a>ad<a>ad< bb>be<b>be<b>ad<a>ad<a>ad  :|4<
+A      @q0g#54
+A   @v10       @2   o5                  EN06
+A   f+#192   ;next
+ ;Section 8 (2 reprise)
+A   @v07       @3   o4                  ENOF
+A   r.
+A   |:
+A   de<b>d8e<b>de8ag8ed<b ab8>d8
+A   @v08       @2   o4
+A      ed8e
+A   @v07       @3   o4
+A         ed<b>ga8g  ab\ge8de8a8f+d8<ab8> d8
+A   @v08       @2   o4
+A            d8e8d8e8ag8ed8
+A   :|2
+A   @v07       @3   o4
+A         de8gagb8>d<b8ab32   ;remove r.
+A   @v12       @@03 o3     @q2
+A            bb>be<b>>d<ad
+A   @v00       @@00 o3     @q0  D-2
+A               cc8c8@v01@1d8.
+ ;Section 9 (3 reprise + different end, shortened)
+A   @v03       @@03 o3     @q2  D0
+A   |:gg>gc<g>gc\<g>ad<a>ad<a>ad< bb>be<b>be<b>ad<a>ad<a>ad  :|4<
+A      @q0g#102>@q2 ad<a>ad<a>ad<
+A   |:gg>gc<g>gc<g>ad<a>ad<a>ad< bb>be<b>be<b>ad<a>ad<a>ad  :|3
+A   @v11       @2   o5     @q0          EN06
+A      f+#105   ;cut2, add #9
+ ;Section 10 (Intro reprise, half length)
+A   @v02       @@00 o3     @q0  D-2     ENOF
+A   |:eedeed\<b>d:|8<
+A      b#3   ;remove #9
+ ;Section 11 (1 reprise + different end)
+A   @v03       @@03 o3     @q2  D0
+A   bb>be<b>>d<ad<|:bb>b\e<b>>d<ad:|15
+A      @q0e#30<@q2   ;hang
+A   bb>be<b>>d<ad<|:bb>b\e<b>>d<ad:|15
+A      @q0e#30<@q2   ;hang
+
+ ;Intro
+B   @v00 @@00 o3 l16 @q1  D2
+B   |:eedeed<b>d:|16
+ ;Section 1
+B   |:eed\eed<b>d:|16
+B      e#30   ;hang
+B   |:eedeed<b>d:|14
+B   @v05 @2   o5 l2  @q0  D0 EN05
+B      gEN06g-
+B   @v00 @@00 o3 l16 @q1  D2 ENOF
+B   |:eedeed<b>d:|14
+B   @v05 @2   o5 l2  @q0  D0 EN05
+B      gEN06g-
+B   @v00 @@00 o3 l16 @q1  D2 ENOF
+B   |:ee8e8.<b>d:|2 |:eedeed<b>d:|2   ;next
+ ;Section 2
+B  L|:eedeed<b>d:|4  cc<g>cc<g>c<g>dd<a>dd<a>d<a> |:eedeed<b>d:|2
+B   |:eedeed<b>d:|4  cc<g>cc<g>cc+dd<a>dd<a>dd+ e2cc8c8@v01@1d8.@v00@@00
+ ;Section 3
+B   |:cc<g>cc<g>c<\g>dd<a>dd<a>d<a> ee<b>ee<b>e<b>dd<a>dd<a>d<a  :|4
+B      g#54> ee<b>e
+B   @v09 @2   o4 l2  @q0  D0 EN06
+B      b4>EN07d4EN06f+4
+B   |:e\f+ EN05gEN06f+ :|4
+B      v1f+#10v2f+#10v3f+#10v4f+#10v5f+#8
+B   @v00 @@00 o3 l16 @q1  D2 ENOF
+B   |:ee8e8.<b>d:|2 |:eedeed<b>d:|2   ;next
+ ;Section 4 (2 reprise)
+B   |:eedeed<b>d:|4  cc<g>cc<g>c<g>dd<a>dd<a>d<a> |:eedeed<b>d:|2
+B   |:eedeed<b>d:|4  cc<g>cc<g>cc+dd<a>dd<a>dd+ e2cc8c8@v01@@10d8.@v00@@00
+ ;Section 5 (3 reprise + different end)
+B   |:cc<g>cc<g>c<\g>dd<a>dd<a>d<a> ee<b>ee<b>e<b>dd<a>dd<a>d<a  :|4
+B      g#54> ee<b>e
+B   @v09 @2   o4 l2  @q0  D0 EN06
+B      b4>EN07d4EN06f+4
+B   |:ef+ EN05gEN06f+ :|3
+B   @v00 @@00 o3 l16 @q1  D2 ENOF
+B      c8.c8.c#60   ;cut2
+B   |:[e|e8e8.]3e8. :|3  |:eedeed<b>d:|2   ;next2
+ ;Section 6 (2 reprise)
+B   |:eedeed<b>d:|4  cc<g>cc<g>c<g>dd<a>dd<a>d<a> |:eedeed<b>d:|2
+B   |:eedeed<b>d:|4  cc<g>cc<g>cc+dd<a>dd<a>dd+ e2cc8c8@v01@1d8.@v00@@00
+ ;Section 7 (3 reprise)
+B   |:cc<g>cc<g>c<\g>dd<a>dd<a>d<a> ee<b>ee<b>e<b>dd<a>dd<a>d<a  :|4
+B      g#54> ee<b>e
+B   @v09 @2   o4 l2  @q0  D0 EN06
+B      b4>EN07d4EN06f+4
+B   |:e\f+ EN05gEN06f+ :|4
+B      v1f+#10v2f+#10v3f+#10v4f+#10v5f+#8
+B   @v00 @@00 o3 l16 @q1  D2 ENOF
+B   |:ee8e8.<b>d:|2 |:eedeed<b>d:|2   ;next
+ ;Section 8 (2 reprise)
+B   |:eedeed<b>d:|4  cc<g>cc<g>c<g>dd<a>dd<a>d<a> |:eedeed<b>d:|2
+B   |:eedeed<b>d:|4  cc<g>cc<g>cc+dd<a>dd<a>dd+ e2cc8c8@v01@1d8.@v00@@00
+ ;Section 9 (3 reprise + different end, shortened)
+B   |:cc<g>cc<g>c<\g>dd<a>dd<a>d<a> ee<b>ee<b>e<b>dd<a>dd<a>d<a  :|4
+B      g#54> ee<b>e
+B   @v09 @2   o4 l2  @q0  D0 EN06
+B      b4>EN07d4EN06f+4
+B   |:ef+ EN05gEN06f+ :|3
+B   @v00 @@00 o3 l16 @q1  D2 ENOF
+B      c8.c8.c#60   ;cut2
+ ;Section 10 (Intro reprise, half length)
+B   |:eedeed<b>d:|8
+ ;Section 11 (1 reprise + different end)
+B   |:eed\eed<b>d:|16
+B      e#30   ;hang
+B   |:eede\ed<b>d:|3
+B   @v13 @@13 o5     @q2  D0      @vr14 SD1
+B      eab>deab>deab>d
+B   @v00 @@00 o3     @q1  D2      @vr02
+B         |:eede\ed<b>d:|3
+B   @v13 @@13 o5     @q2  D0      @vr14
+B            cegb>cegb>c<bge
+B   @v00 @@00 o3     @q1  D2      @vr02
+B   |:eede\ed<b>d:|3
+B   @v13 @@13 o5     @q2  D0      @vr14
+B      def+a>def+a>def+a
+B   @v00 @@00 o3     @q1  D2      @vr02 SDOF
+B         |:eed\eed<b>d:|4
+B            e#30   ;hang
+
+ ;Intro
+C   o4 l16 @q2
+C   |:eedeed<b>d:|16
+ ;Section 1
+C   |:eede\ed<b>d:|16
+C      w4   ;hang
+C   |:eedeed<b>d:|14
+C      cc<g>cc<g>cc+dd<a>dd<a>dd+
+C   |:eedeed<b>d:|14
+C      cc<g>cc<g>cc+dd<a>dd<a>dd+
+C   |:eewew8<b>d:|2 |:eedeed<b>d:|2   ;next
+ ;Section 2
+C  L|:eedeed<b>d:|4  cc<g>cc<g>c<g>dd<a>dd<a>d<a> |:eedeed<b>d:|2
+C   |:eedeed<b>d:|4  cc<g>cc<g>cc+dd<a>dd<a>dd+ ew#42ccwcwd8.
+ ;Section 3
+C   |:cc<g>cc<g>c<g>\dd<a>dd<a>d<a> ee<b>ee<b>e<b>dd<a>dd<a>d<a  :|4>
+C      r2 ee<b>ee<b>e<b>dd<a>dd<a>d<a>
+C   |:cc<g>cc<g>c<g>\dd<a>dded<b> ee<b>ee<b>e<b>dd<a>dd<a>d<a  :|4>
+C      r2   ;cut
+C   |:eewew8<b>d:|2 |:eedeed<b>d:|2   ;next
+ ;Section 4 (2 reprise)
+C   |:eedeed<b>d:|4  cc<g>cc<g>c<g>dd<a>dd<a>d<a> |:eedeed<b>d:|2
+C   |:eedeed<b>d:|4  cc<g>cc<g>cc+dd<a>dd<a>dd+ ew#42ccwcwd8.
+ ;Section 5 (3 reprise + different end)
+C   |:cc<g>cc<g>c<g>\dd<a>dd<a>d<a> ee<b>ee<b>e<b>dd<a>dd<a>d<a  :|4>
+C      r2 ee<b>ee<b>e<b>dd<a>dd<a>d<a>
+C   |:cc<g>cc<g>c<g>dd<a>dded<b> ee<b>ee<b>e<b>dd<a>dd<a>d<a  :|3>
+C      cw8cw8cw#54   ;cut2
+C   |:[ee|wew8]3w8 :|3  |:eedeed<b>d:|2   ;next2
+ ;Section 6 (2 reprise)
+C   |:eedeed<b>d:|4  cc<g>cc<g>c<g>dd<a>dd<a>d<a> |:eedeed<b>d:|2
+C   |:eedeed<b>d:|4  cc<g>cc<g>cc+dd<a>dd<a>dd+ ew#42ccwcwd8.
+ ;Section 7 (3 reprise)
+C   |:cc<g>cc<g>c<g>\dd<a>dd<a>d<a> ee<b>ee<b>e<b>dd<a>dd<a>d<a  :|4>
+C      r2 ee<b>ee<b>e<b>dd<a>dd<a>d<a>
+C   |:cc<g>cc<g>c<g>\dd<a>dded<b> ee<b>ee<b>e<b>dd<a>dd<a>d<a  :|4>
+C      r2   ;cut
+C   |:eewew8<b>d:|2 |:eedeed<b>d:|2   ;next
+ ;Section 8 (2 reprise)
+C   |:eedeed<b>d:|4  cc<g>cc<g>c<g>dd<a>dd<a>d<a> |:eedeed<b>d:|2
+C   |:eedeed<b>d:|4  cc<g>cc<g>cc+dd<a>dd<a>dd+ ew#42ccwcwd8.
+ ;Section 9 (3 reprise + different end, shortened)
+C   |:cc<g>cc<g>c<g>\dd<a>dd<a>d<a> ee<b>ee<b>e<b>dd<a>dd<a>d<a  :|4>
+C      r2 ee<b>ee<b>e<b>dd<a>dd<a>d<a>
+C   |:cc<g>cc<g>c<g>dd<a>dded<b> ee<b>ee<b>e<b>dd<a>dd<a>d<a  :|3>
+C      cw8cw8cw#54   ;cut2
+ ;Section 10 (Intro reprise, half length)
+C   |:eedeed<b>d:|8
+ ;Section 11 (1 reprise + different end)
+C   |:eede\ed<b>d:|16
+C      w4   ;hang
+C   |:eede\ed<b>d:|16
+C      w4   ;hang
+
+ ;Intro
+D   o0 l16
+D   r#360  @v41EP41n2@v42EP42n2@v41EP41[n2]2
+D   |:@v42EP42n2@v41EP41[n2]2@v42EP42n2@v41EP41[n2]4:|6  @v43EP43n7,4n7,4|:n7:|8
+ ;Section 1
+D   |:@v42EP42n2@v41EP41[n2]2@v42EP42n2\@v40EP40n7,8@v41EP41[n2]2:|8  @v40EP40n7n7n7,8
+D   |:@v42EP42n2@v41EP41[n2]2\@v42EP42n2@v40EP40n7,8@v41EP41[n2]2:|8  @v42EP42n2,#30   ;hang
+D   |:@v42EP42n2@v41EP41[n2]2@v42EP42n2\@v40EP40n7,8@v41EP41[n2]2:|8  @v40EP40n7n7n7,8
+D   |:@v42EP42n2\@v41EP41[n2]2@v42EP42n2@v40EP40n7,8@v41EP41[n2]2:|8  @v40EP40n7,8n7,8n7n7,8
+D   |:@v42EP42n2@v41EP41[n2]2@v42EP42n2\@v40EP40n7,8@v41EP41[n2]2:|8  @v40EP40n7n7n7,8
+D   |:@v42EP42n2@v41EP41[n2]2@v42EP42n2@v40EP40n7,8@v41EP41[n2]2:|7  @v40EP40[n7]3n7,8n7,8@v41EP41n2
+D   |:@v42EP42n2@v41EP41n2,8@v42EP42n2,8.@v41EP41n2n2:|2
+D      @v42EP42n2@v41EP41[n2]2@v42EP42n2@v41EP41[n2]4@v45EP45n8n8,8n9,8n10@v40EP40[n7]2   ;next3
+ ;Section 2
+D  L@v44EP44n0,4@v43EP43n7,4|:r4n7,4:|12
+D      r8[n7n7,8]2 @v44EP44n0,#30@v41EP41[n2]3r@v43EP43n7n7,8n7n7,8.
+ ;Section 3
+D   |:@v42EP42n2@v41EP41[n2]2@v42EP42n2\@v40EP40n7,8@v41EP41[n2]2:|13
+D      @v43EP43n7,8[n7]4n7,4. |:@v42EP42n2@v41EP41n2\n2:|3@v43EP43n7n7,8n7,8@v44EP44n0,#30
+D   @v41EP41n2@v42EP42n2@v40EP40n7,8@v41EP41[n2]2|:@v42EP42n2@v41EP41[n2]2@v42EP42n2\@v40EP40n7,8@v41EP41[n2]2:|12
+D      @v43EP43n7,8[n7]4n7,4.   ;cut
+D   |:@v42EP42n2@v41EP41n2,8@v42EP42n2,8.@v41EP41n2n2:|2 @v42EP42n2@v41EP41[n2]2@v42EP42n2@v41EP41[n2]4@v40EP40n7n7,8n7,8[n7]3   ;next
+ ;Section 4 (2 reprise)
+D   @v44EP44n0,4@v43EP43n7,4|:r4n7,4:|12
+D      r8[n7n7,8]2 @v44EP44n0,#30@v41EP41[n2]3r@v43EP43n7n7,8n7n7,8.
+ ;Section 5 (3 reprise + different end)
+D   |:@v42EP42n2@v41EP41[n2]2@v42EP42n2\@v40EP40n7,8@v41EP41[n2]2:|13
+D      @v43EP43n7,8[n7]4n7,4. |:@v42EP42n2@v41EP41n2\n2:|3@v43EP43n7n7,8n7,8@v44EP44n0,#30
+D   @v41EP41n2@v42EP42n2@v40EP40n7,8@v41EP41[n2]2|:@v42EP42n2@v41EP41[n2]2@v42EP42n2@v40EP40n7,8@v41EP41[n2]2:|11
+D      @v43EP43[n7,8.]3[n7]3n7,4   ;cut2
+D   r#192  |:@v42EP42n2@v41EP41[n2]2@v42EP42n2@v41EP41[n2]4:|2
+D      @v40EP40[n7,8.]2n7,8n7n7@v45EP45n8@v40EP40n7@v45EP45n9@v40EP40[n7]3   ;next2
+ ;Section 6 (2 reprise + toms)
+D   @v44EP44n0,4@v43EP43n7,4|:r4n7,4:|12
+D      r8@v45EP45n8n9,8n10@v43EP43n7,8 @v44EP44n0,#30@v41EP41[n2]3r@v43EP43n7n7@v45EP45n9@v43EP43n7n7,8.
+ ;Section 7 (3 reprise)
+D   |:@v42EP42n2@v41EP41[n2]2@v42EP42n2\@v40EP40n7,8@v41EP41[n2]2:|13
+D      @v43EP43n7,8[n7]4n7,4. |:@v42EP42n2@v41EP41n2\n2:|3@v43EP43n7n7,8n7,8@v44EP44n0,#30
+D   @v41EP41n2@v42EP42n2@v40EP40n7,8@v41EP41[n2]2|:@v42EP42n2@v41EP41[n2]2@v42EP42n2\@v40EP40n7,8@v41EP41[n2]2:|12
+D      @v43EP43n7,8[n7]4n7,4.   ;cut
+D   |:@v42EP42n2@v41EP41n2,8@v42EP42n2,8.@v41EP41n2n2:|2 @v42EP42n2@v41EP41[n2]2@v42EP42n2@v41EP41[n2]4@v40EP40n7n7,8n7,8[n7]3   ;next
+ ;Section 8 (2 reprise)
+D   @v44EP44n0,4@v43EP43n7,4|:r4n7,4:|12
+D      r8[n7n7,8]2 @v44EP44n0,#30@v41EP41[n2]3r@v43EP43n7n7,8n7n7,8.
+ ;Section 9 (3 reprise + different end, shortened, toms)
+D   |:@v42EP42n2@v41EP41[n2]2@v42EP42n2\@v40EP40n7,8@v41EP41[n2]2:|13
+D      @v43EP43n7,8[n7]4n7,4. |:@v42EP42n2\@v41EP41n2n2:|3@v45EP45n8n9n10@v41EP41n2@v45EP45n9@v41EP41n2@v44EP44n0,#30
+D   @v41EP41n2@v42EP42n2@v40EP40n7,8@v41EP41[n2]2|:@v42EP42n2@v41EP41[n2]2@v42EP42n2@v40EP40n7,8@v41EP41[n2]2:|11
+D      @v43EP43[n7,8.]3[n7]3n7,4   ;cut2
+ ;Section 10 (Intro reprise, half length)
+D   r#168 @v41EP41n2@v42EP42n2@v41EP41[n2]2  |:@v42EP42n2@v41EP41[n2]2@v42EP42n2@v41EP41[n2]4:|2 @v43EP43n7,4n7,4|:n7:|8
+ ;Section 11 (1 reprise + different end, SSG HH+OH)
+D   @v44EP44n0,4@v43EP43n7,4|:r4\n7,4:|7  n7n7n7,4.   ;add r4
+D      |:n7,2:|7  r4   ;hang
+D   @v44EP44n0,4@v40EP40n7,8@v41EP41[n2]2
+D      |:@v42EP42n2@v41EP41[n2]2@v42EP42n2\@v40EP40n7,8@v41EP41[n2]2:|7  @v40EP40n7n7n7,8
+D   |:@v42EP42n2@v41EP41[n2]2\@v42EP42n2@v40EP40n7,8@v41EP41[n2]2:|8  @v42EP42n2,#30   ;hang
+
+ ;Intro
+E   o0 l16
+E   |:w#78n2n3,8 :|7
+E      n1,4n1,4|:n1:|8
+ ;Section 1
+E   |:n0,4n1,4n0,4\n1n2n3,8 :|4  n1n1n1,8
+E   |:n0,4n1,4n0,4\n1n2n3,8 :|4  w4   ;hang
+E   |:n0,4n1,4n0,4\n1n2n3,8 :|4  n1n1n1,8
+E   |:n0,4n1,4\n0,4n1n2n3,8 :|4  n0n1,8n1,8n1n1,8
+E   |:n0,4n1,4n0,4\n1n2n3,8 :|4  n1n1n1,8
+E   |:n0,4n1,4\n0,4n1n2n3,8 :|4  [n1]3n1,8n1,8.
+E   n0,8.n0,#30n0,8.n0,8n2n3,8 n0,8.n0,#30n4n4,8n5,8n6[n1]2   ;next3
+ ;Section 2
+E  L|:n0,4n1,4\n0,4n1n2n3,8 :|7
+E      n0,8[n1n1,8]2 n0,2n0n1n1n0n1n1,8.
+ ;Section 3
+E   |:n0,4\n1,4n0,4n1n2n3,8 :|7
+E      n1,8[n1]4n1,8.n2n3,8 n0,2n1n1,8n1,8n7,8.
+E   |:n0,4\n1,4n0,4n1n2n3,8 :|7
+E      n1,8[n1]4n1,8.n2n3,8   ;cut
+E   n0,8.n0,#30n0,8.n0,8n2n3,8 n0,8.n0,#30n1n1,8n1,8[n1]3   ;next
+ ;Section 4 (2 reprise)
+E   |:n0,4n1,4\n0,4n1n2n3,8 :|7
+E      n0,8[n1n1,8]2 n0,2n0n1n1n0n1n1,8.
+ ;Section 5 (3 reprise + different end)
+E   |:n0,4\n1,4n0,4n1n2n3,8 :|7
+E      n1,8[n1]4n1,8.n2n3,8 n0,2n1n1,8n1,8n1,8.
+E   |:n0,4n1,4n0,4n1n2n3,8 :|6
+E      [n1,8.]3[n1]3n1,4   ;cut2
+E   |:[n0,8.]4n0,4 :|3  [n1,8.]2n1,8n1n1n4n1n5[n1]3   ;next2
+ ;Section 6 (2 reprise + toms)
+E   |:n0,4n1,4\n0,4n1n2n3,8 :|7
+E      n0,8n4n5,8n6n1,8 n0,2n0n1n1n5n1n1,8.
+ ;Section 7 (3 reprise)
+E   |:n0,4\n1,4n0,4n1n2n3,8 :|7
+E      n1,8[n1]4n1,8.n2n3,8 n0,2n1n1,8n1,8n7,8.
+E   |:n0,4\n1,4n0,4n1n2n3,8 :|7
+E      n1,8[n1]4n1,8.n2n3,8   ;cut
+E   n0,8.n0,#30n0,8.n0,8n2n3,8 n0,8.n0,#30n1n1,8n1,8[n1]3   ;next
+ ;Section 8 (2 reprise)
+E   |:n0,4n1,4\n0,4n1n2n3,8 :|7
+E      n0,8[n1n1,8]2 n0,2n0n1n1n0n1n1,8.
+ ;Section 9 (3 reprise + different end, shortened, toms)
+E   |:n0,4\n1,4n0,4n1n2n3,8 :|7
+E      n1,8[n1]4n1,8.n2n3,8 n0,#42n4n5n6,8n5,8n1,8.
+E   |:n0,4n1,4n0,4n1n2n3,8 :|6
+E      [n1,8.]3[n1]3n1,4   ;cut2
+ ;Section 10 (Intro reprise, half length)
+E   |:w#78n2n3,8 :|3
+E      n1,4n1,4|:n1:|8
+ ;Section 11 (1 reprise + different end)
+E   |:n0,4n1,4n0,4\n1n2n3,8 :|4  n1n1n1,8
+E   |:n0,4n1,4n0,4\n1n2n3,8 :|4  w4   ;hang
+E   |:n0,4n1,4n0,4\n1n2n3,8 :|4  n1n1n1,8
+E   |:n0,4n1,4n0,4\n1n2n3,8 :|4  w4   ;hang

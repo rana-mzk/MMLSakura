@@ -1,0 +1,48 @@
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【曲　名】rtune5
+【作曲者】rana
+【作成日】2022/11/19 (for ピコサクラ)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ピコサクラでぼちぼちと作りました。
+腹痛だったので寝ながらiPhoneでぽちぽち作成。
+E-wind時代に投稿してたのを思いだします。
+連投は控えているので様子をみて投稿します。
+
+MMLについて
+rtune3はこちら
+https://tatsuyakitahara.com/archives/5202
+rtune4はこちら
+https://tatsuyakitahara.com/archives/5211
+
+普段はフリー音源サイトを運営しています。
+https://www.soundescape.info/
+毎日更新のブログはもうちょっと一年更新達成です。
+https://tatsuyakitahara.com/
+Spotifyのプロフィール
+https://open.spotify.com/artist/2q4GOk5mIsa3SyXvXN2J2m?si=50_Cz-JATb-uHZ7gvHSrFA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+//_00:初期設定
+TrackName     = {"rtune5"}
+Copyright     = {"rana"}
+Tempo         = 140;
+TimeSignature = 4,4;
+
+
+TR=1 TEMPO=140
+
+//A
+TR=7 CH=7 @10 [16 r1]
+TR=8 CH=8 @1 l4[2  [4 'cfa' 'dgb' 'eg>c<' 'dgb']
+             [4 '<b>dg' 'cfa' 'dgb' 'cfa']]
+TR=9 CH=9 @34 o2 l8 [2 [16 f>f<] [16 e>e<]]
+TR=10 CH=10 o3 l8 [8 [7 cg+dg+] cg+d+8d+16d+16]
+
+//B
+TR=7 o6 l1 gdad ecge d<a>fd ecd<e>
+TR=8 CH=8 @1 l4[2  [4 'cfa' 'dgb' 'eg>c<' 'dgb']
+             [4 '<b>dg' 'cfa' 'dgb' 'cfa']]
+TR=9 CH=9 @34 o2 l8 [2 [16 f>f<] [16 e>e<]]
+TR=10 CH=10 o3 l8 [8 [7 cg+dg+] cg+d+8d+16d+16]

@@ -1,0 +1,56 @@
+#title		"Title"
+#composer	"rana"
+#Copyright	"nsd.lib, Copyright (c) 2012 S.W. All rights reserved."
+
+#offsetPCM	$C000
+#Code		"nsd_vrc6.bin"
+#bgm		1
+
+
+E(4)= {		03 05 07 08 D2 07 D4						;StringsB
+		06 D8 06 D8 05 D8 05 D8 04 D8 04 D8 L	03}
+E(5) = {       	10 07
+		13 11 09 07 05 03 02
+		04 07 05 04 03 02 02 01
+		03 05 04 03 02 02 01 L 01 }
+E(461)={	10 07  L 00 }
+E(462)={	10 08 07 06 05 04 03 03 02 02 01 01 L 00 }
+E(463)={	13 12 10 09 09 08 08 08
+			07 07 07 07 06 D8 05 D8 04 D9 03 D10 02 D11 01 D12 L 00 }
+E(561)={	 -2 -2 -2 -2 -1 -1 -1 -1 0 0 0 0 L -2 -2 -2 -1 -1 -1 0 0 L 0 }
+
+E(464)= { 10 02 L 00}
+E(465)= { 07 D5 06 D6 05 D6 04 D7 03 D9 02 D11 01 D10 L 00 }
+E(466)={	11 06 09 05 07 04 05 03 04 02 03 01 02 00 01 L 00 }
+
+
+DPCM {
+
+	c4, "an_kick.dmc",15,0
+}
+
+
+BGM(0){
+
+;intro
+TR1 t140 o5 [[r-1]2]4
+TR2 [[r-1]2]4
+TR3 o3 l16 [fgfg r-8 fgfg r-8 fgfg  r-1]4
+TR4 Ev463En561e4 En* Ev466d8 Ev462g8 [Ev461a16a16 Ev462g8 Ev466d8 Ev462g8]15
+TR5 o4 [cccc]8
+TR6 @1 o4 Ev4 b1^1 a1^1  b1^1 a1^1
+TR7 @1 o4 Ev4 g1^1 f1^1  g1^1 f1^1
+TR8 o2 v5 l16 [[r-1]2]2 [fgfg r-8 fgfg r-8 fgfg  r-1]2
+
+;intro2
+TR1 t140 o5 [[r-1]2]4
+TR2 o5 v12 Ev5 EC2,3 l16 @2 [[bgb>c<]8 [afa>c<]8]2
+TR3 o3 l16 [fgfg r-8 fgfg r-8 fgfg  r-1]4
+TR4 Ev463En561e4 En* Ev466d8 Ev462g8 [Ev461a16a16 Ev462g8 Ev466d8 Ev462g8]15
+TR5 o4 [cccc]8
+TR6 @1 o4 Ev4 b1^1 a1^1  b1^1 a1^1
+TR7 @1 o4 Ev4 g1^1 f1^1  g1^1 f1^1
+TR8 o2 v5 l16 [fgfg r-8 fgfg r-8 fgfg  r-1]4
+
+
+}

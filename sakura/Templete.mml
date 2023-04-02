@@ -1,0 +1,57 @@
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】
+【Cpomposer】rana
+【Date】2023/4/1
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+In2hoursDTM in 20230401(AprilFool)
+Title:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+
+//_00:Setup
+TrackName     = {""}
+Copyright     = {"rana"}
+Tempo         = 120;
+TimeSignature = 4,4;
+
+/*
+//Ryhthm Macro Definition(Original Definition by "Playing with PicoSakura 1" by goh)
+$c{n36,}//bass drum
+$d{n38,}//snare
+$f+{n42,}//hi-hat
+$g+{44,}//hi-hat pedal
+$a+{n46,}//hi-hat open
+$c+{n49,}//Cymbal
+$g{n43,}//low-Tom
+$a{n45,}//Mid-Tom2
+$b{n47,}//Mid-Tom1
+$c{n48,}//Hgh-Tom2
+$d{n50,}//High-Toml1
+$y{n51,}//
+*/
+
+/*
+Drum Map
+P1 STANDARD
+P9 ROOM
+P17 POWER
+P25 ELECTRONIC
+P26 808
+P33 JAZZ
+P41 BRUSH
+P40 Orchestra
+P57 SFX
+*/
+
+
+TR=1 @11 o3 
+TR=2 @11 o5 l8
+TR=10 CH=10 
+
+/*
+
+
+*/
