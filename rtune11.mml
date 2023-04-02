@@ -1,0 +1,31 @@
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【曲　名】rtune11
+【作曲者】rana
+【作成日】2022/12/07
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+環境が整ってきたので書いてみました。
+MacBookAir 2012 midで制作。
+MacBookAir 2017 で調整。
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+//_00:初期設定
+TrackName     = {"rtune11"}
+Copyright     = {"rana"}
+Tempo         = 80;
+TimeSignature = 4,4;
+
+/*Tone Map
+GM maps
+*/
+
+
+//Loop
+TR=8 CH=8 @81 o4 [4 r1] [2 l8 ge<b>eg>c<ge   afcfa>caf<  ge<b>gb>dgd<  afafc<a>c<a>] [4 r1]
+TR=1 CH=1 @13 [4 [4 'egb'4] [4 'fa>c<'4] [4 'gb>d<'4] [4 'fa>c<'4]]
+TR=5 CH=5 @50 [4 l1 'egb' 'fa>c<'  'gb>d<' 'fa>c<']
+TR=9 CH=9 @34 o3 l1 q100 [3 efgf] [4 r1]
+TR=10 CH=10 @1 o3 l4 l1 rrr r2 r8 l8 g+a+4
+            o3 l4 l8 [3 [3 'cg+' g+g+'cg+' 'cg+'g+ 'dg+' g+ ]
+                        'cg+' g+g+'cg+' 'cg+'g+ 'dg+' g+16d16  ]

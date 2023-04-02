@@ -1,0 +1,74 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura Data(on macOS CUI v2.379)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】rtune25
+【Cpomposer】rana
+【Date】2023/4/2
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+With Music Box.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+
+//_00:Setup
+TrackName     = {"rtune25"}
+Copyright     = {"rana"}
+Tempo         = 60;
+TimeSignature = 4,4;
+
+/*
+//Ryhthm Macro Definition memo
+$c{n36,}//bass drum
+$d{n38,}//snare
+$f+{n42,}//hi-hat
+$g+{44,}//hi-hat pedal
+$a+{n46,}//hi-hat open
+$c+{n49,}//Cymbal
+$g{n43,}//low-Tom
+$a{n45,}//Mid-Tom2
+$b{n47,}//Mid-Tom1
+$c{n48,}//Hgh-Tom2
+$d{n50,}//High-Toml1
+$y{n51,}//
+*/
+
+/*
+Drum Map
+P1 STANDARD
+P9 ROOM
+P17 POWER
+P25 ELECTRONIC
+P26 808
+P33 JAZZ
+P41 BRUSH
+P40 Orchestra
+P57 SFX
+*/
+
+
+TR=2 @11 o5 l8 r8 'ceg' 'cfa' 'dgb' 'cfa'4. 'ceg'8 'cfa'2 'bgd'2
+                r8'eg>c<' 'dgb' 'eg>c<' 'dgb'8 'dfa'4 '<b>dg'8 'dfa'2 '<b>dg'2
+
+               r8 'ceg' 'cfa' 'dgb' 'eg>c<'8 'dgb'4 'eg>c<'8 'dg>d<'2 'eg>c<'2 
+                r8 '<b>df' 'g>ce<' '<b>df' '<g>ce'8 '<gb>d'4 '<g>ce'8 '<eg>c'1
+/*
+深夜の2時間DTMは
+お題が難しくて
+断念しました...。
+
+お題
+「希望をイメージした曲」
+はかなり
+難しいですね。
+
+Time(10:1:0)  
+コマンドを
+入れてみたけれど
+midiの空白が
+長くなるだけでした。
+なんだろう？
+*/

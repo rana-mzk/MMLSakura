@@ -1,0 +1,72 @@
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【曲　名】rtune6
+【作曲者】rana
+【作成日】2022/11/20 (for ピコサクラ)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ドラムの打ち込み頑張りました◎
+
+普段はフリー音源サイトを運営しています。
+https://www.soundescape.info/
+毎日更新のブログはもうちょっと一年更新達成です。
+https://tatsuyakitahara.com/
+Spotifyのプロフィール
+https://open.spotify.com/artist/2q4GOk5mIsa3SyXvXN2J2m?si=50_Cz-JATb-uHZ7gvHSrFA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+//_00:初期設定
+TrackName     = {"rtune6"}
+Copyright     = {"rana"}
+Tempo         = 130;
+TimeSignature = 4,4;
+
+
+
+//A  
+TR=8 CH=8 @2 Key(0) [2 l4 [3 r4 'fa>c<' r8 'fa>c<' r8]
+                   r4 'fa>c<' r8 'fa>c<' l8 'egb'
+             l4 [3 r4 'egb'   r8  'egb'  r8]
+                   r4 'egb'   r8  'egb'  l8 'fa>c<']
+                   
+TR=9 CH=9 @34 o3 l16 Key(0)    [2 [4 fefef8 fefef8 fefe]
+                         [4 edede8 edede8 eded]]
+TR=10 CH=10 o3 l4 [2 [2 [3 cccc] ccc c8c8]] 
+TR=11 CH=10 [16 r1] 
+
+
+
+//A'
+TR=8 @2 [2 l4 [3 r4 'fa>c<' r8 'fa>c<' r8]
+                 r4 'fa>c<' r8 'fa>c<' l8 'egb'
+             l4 [3 r4 'egb'   r8  'egb'  r8]
+                   r4 'egb'   r8  'egb'  l8 'fa>c<']
+                   
+TR=9 @34 o3 l16    [2 [4 fefef8 fefef8 fefe]
+                      [4 edede8 edede8 eded]]
+TR=10 o3 l8[2 [2 [3 cf+cf+cf+cf+] cf+cf+cf+ c8c8]] 
+TR=11 o5 l16 [64 v127av70av90av60a]
+
+//B
+TR=8 @2  Key(1)  [2 l4 [3 r4 'fa>c<' r8 'fa>c<' r8]
+                 r4 'fa>c<' r8 'fa>c<' l8 'egb'
+             l4 [3 r4 'egb'   r8  'egb'  r8]
+                   r4 'egb'   r8  'egb'  l8 'fa>c<']
+         Key(0)           
+TR=9 @34 o3 l16 Key(1)   [2 [4 fefef8 fefef8 fefe]
+                      [4 edede8 edede8 eded]]
+                Key(0)
+TR=10 o3 l8[2 [2 [3 cf+d+f+cf+d+f+] cf+d+f+cf+ d+8d+16d+16]] 
+TR=11 o5 l16 [64 v127av70av90av60a]
+
+//B’
+TR=8 @2  Key(2)  [2 l4 [3 r4 'fa>c<' r8 'fa>c<' r8]
+                 r4 'fa>c<' r8 'fa>c<' l8 'egb'
+             l4 [3 r4 'egb'   r8  'egb'  r8]
+                   r4 'egb'   r8  'egb'  l8 'fa>c<']
+         Key(0)           
+TR=9 @34 o3 l16 Key(2)   [2 [4 fefef8 fefef8 fefe]
+                      [4 edede8 edede8 eded]]
+                Key(0)
+TR=10 o3 l8[2 [2 [3 cf+16f+16d+f+16f+16cf+16f+16d+f+16f+16] cf+16f+16d+f+16f+16cf+16f+16 d+16d+16d+16d+16]] 
+TR=11 o5 l16 [64 v127av70av90av60a]

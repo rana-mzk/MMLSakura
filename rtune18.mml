@@ -1,0 +1,29 @@
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【曲　名】rtune18
+【作曲者】rana
+【作成日】2023/1/3
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+周りと比べずに
+自分を突き詰めような。
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+//_00:初期設定
+TrackName     = {"rtune18"}
+Copyright     = {"rana"}
+Tempo         = 80;
+TimeSignature = 4,4;
+
+
+TR=1 @11 o6        [4 r1]
+                l2 ge fb
+                >c2< l8 b>c<ba g2e2 
+
+                l2 fa>eg
+                l8 agfagfeg d2<g2>
+                
+TR=2 @11 o5  l4 [2 cegb>d<bge]
+                [2 cegb>d<bge]
+                [2 fa>cegec<a]
