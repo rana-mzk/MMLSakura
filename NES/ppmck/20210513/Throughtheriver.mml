@@ -1,0 +1,20 @@
+ ; MML Template
+ 
+#TITLE "Through the river"
+#COMPOSER "rana"
+#PROGRAMER "rana"
+
+; Tone Define
+@0 = { | 0 , 1 , 2 }
+
+; Volume Define
+@v0 = { 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, | 0 }
+
+; Track
+ABC t120 v15 o4 l4
+
+A @v0 @2 gcdededc<b>cg<b>cg<b>c
+A gcdefgfedegdegde
+A gcdededc<b>cg<b>cg<b>c
+A defgab>cdedbedbed
+C l1 feag feag feag defg

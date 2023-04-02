@@ -1,0 +1,587 @@
+#TITLE		8 Bit Steeeezin Part 2 (Rockman X)
+#COMPOSER	Unknown
+#PROGRAMER	rana
+
+#EX-VRC6
+
+#AUTO-BANKSWITCH 0
+
+@v0 = { 6 5 4 }
+@v1 = { 11 10 6 8 8 | 7 7 7 7 6 6 6 }
+@v2 = { 4 5 6 6 7 7 7 6 6 6 6 6 5 5 5 5 5 5 4 4 4 4 4 4 3 3 3 3 3 3 2 2 2 2 2 2 1 1 1 1 1 1 0 }
+@v3 = { 9 8 7 6 5 5 6 6 6 3 }
+@v4 = { 9 8 7 7 4 }
+@v5 = { 10 8 6 6 6 6 5 5 5 5 4 4 4 4 3 3 3 3 2 2 2 2 1 }
+@v6 = { 7 6 5 4 4 4 4 4 4 5 5 5 5 5 5 6 6 6 6 6 6 7 7 7 7 7 7 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 7 7 7 7 7 7 7 7 6 6 6 6 6 6 6 5 5 5 5 5 4 4 4 4 4 3 3 3 3 3 2 2 2 2 2 1 }
+@v7 = { 1 1 1 1 1 1 2 2 2 1 1 2 3 3 2 1 2 3 4 4 3 2 3 4 5 5 4 3 4 5 6 6 5 4 5 6 7 7 6 5 6 7 8 8 7 6 7 8 }
+@v8 = { 15 10 7 5 3 1 0 }
+@v9 = { 15 13 7 4 }
+@v10 = { 11 8 5 2 0 }
+
+@0 = { 1 1 0 }
+@1 = { 0 0 2 }
+@2 = { 2 2 0 0 1 }
+@3 = { 1 1 0 0 2 2 2 2 2 0 }
+@4 = { 0 0 1 1 0 }
+@5 = { 2 1 0 0 2 }
+@6 = { 1 0 2 }
+@7 = { 2 1 0 0 | 1 1 2 2 2 2 1 1 0 0 }
+
+@EP0 = { -12 3 3 3 3 0 }
+@EP1 = { -50 }
+@EP2 = { 50 }
+@EP3 = { -9 1 2 1 2 1 2 0 }
+@EP4 = { -5 1 1 0 1 1 0 1 0 0 }
+
+@EN0 = {| -4 4 }
+@EN1 = { 0 | 3 3 3 -9 }
+@EN2 = { 0 | 3 2 3 -8 }
+@EN3 = { 0 | 3 4 2 -9 }
+@EN4 = { 0 | 5 3 -8 }
+@EN5 = { 0 | 4 4 -8 }
+@EN6 = { 0 | 3 5 -8 }
+@EN7 = { 0 | 2 3 3 -8 }
+@EN8 = { 0 | 3 4 2 -9 }
+@EN9 = { 12 -12 12 }
+@EN10 = { | 12 -12 }
+
+@MP0 = { 12,3,255,0 }
+@MP1 = { 12,2,4,0 }
+@MP2 = { 12,2,2,0 }
+@MP3 = { 18,3,1,0 }
+@MP4 = { 2,2,1,0 }
+
+@DPCM00 = { "an_kick.dmc" 15 }
+@DPCM02 = { "snare_CH.dmc" 15 }
+
+;[tempo]
+
+ABCDEO	t152
+
+;[intro1]
+
+O v15 @vr8 o2
+
+A @v1 @1 o4 l64
+A [>c<c]4
+A [>>c<c<]8
+A [>b-<b-]2
+A [>g<g]2 
+A [>c<c]4
+A r4. q6 
+A [>c<c]6 
+A <[>b-<b-]6 
+A >[>c<c]4 r2
+
+B o5 @1 @v0 r1r1
+
+CO o3 l8 c>c4< l16 b-g c8
+CO r4. q6 l4 c8.<b-8.>c8 r2
+
+D [@v9 n8,8 @v8 n10,16 n10,16]2
+D @v8 n10,8. n10,8. n10,8
+D [@v8 {n10 n10 n10}4]2
+D [@v9 n8,8 @v8 n10,16 n10,16]2
+
+
+E r1r1
+
+
+;[intro2]
+
+
+A @v1 @1 o4
+A [>c<c]4
+A [>>c<c<]8
+A [>b-<b-]2
+A [>g<g]2 
+A [>c<c]4
+A [>>c<c<]8
+A [>b-<b-]2
+A [>g<g]2 
+A [>c<c]4
+A [>>c<c<]8
+A [>b-<b-]2
+A [>g<g]2 
+A [>c<c]4
+A [>>c<c<]8
+A [>b-<b-]2
+A [>g<g]2 
+
+B r1r2
+B v9EP1o8a4.EPOF
+
+CO [l8 q8 c>c4< l16 b-g]4
+
+D [@v10  n10,16 n10,16 n10,16 n10,16 @v9 n8,8 @v10 n10,16 n10,16]4
+
+E o0 l2 cccd
+
+
+
+;[A]
+
+
+ABCDE t152
+
+A o5 r8^16^32 d32 q8 e-8. q7 d16 < g8 b-4 >c4 r2^4^8
+A o5 r8^16^32 d32 q8 e-8. q7 c16 < g8 b-4 >c4 
+A l8 q7 ce-gfe-d<b->
+A r8 q8 g32 q7 a-8^16. g8 f8e-4d8 l4 q4 e- r8 q6 c l8 cde-
+A l4 f8 d e- d <b-8g2.r4
+
+B r1 @2 o6 v5 l8 r cde-dc4.
+B r1 r cde-dc4.
+B r1 r o5 ga-b-a-g4.
+B r1 r1
+
+CO q7 c1^1 c1^1 < q8 a-1^1 q7 g1^2^8  g8 b-4>
+
+D [@v10  n10,16 n10,16 n10,16 n10,16 @v9 n8,8 @v10 n10,16 n10,16]16
+
+E [c2d4.c4 l8cc r2 r8]4
+
+
+
+;[A']
+
+ABCDE t152
+
+A o5 r8^16^32 d32 q8 e-8. q7 d16 < g8 b-4 >c4 r2^4^8
+A o5 r8^16^32 d32 q8 e-8. q7 c16 < g8 b-4 >c4 
+A l8 q7 ce-gfe-d<b->
+A r8 q8 g32 q7 a-8^16. g8 f8e-4d8 l4 q4 e- r8 q6 c l8 cde-
+A l4 f8 d e- d <b-8g2. r4
+
+B r1 @2 o6 v5 l8 r cde-dc4.
+B r1 r cde-dc4.
+B r1 r o5 ga-b-a-g4.
+B r1 r2
+B v11EP2o3a2EPOF r8
+
+CO q7 c1^1 c1^1 < q8 a-1^1 q7 g1^2^8  g8 b-4 >
+
+D [@v10  n10,16 n10,16 n10,16 n10,16 @v9 n8,8 @v10 n10,16 n10,16]16
+
+E [c2d4.c4 l8cc r2 r8]4
+
+
+;[B]
+
+
+ABCDEO t152
+
+A l1 rrrr rrrr
+
+B @2 o3 q7 v7 c1^1 c1^1 < q8 a-1^1 q7 g1^2^8  g8 b-4
+
+CO v7 q7 c1^1 c1^1 < q8 a-1^1 q7 g1^2^8  g8 b-4>
+
+D [@v10  n10,16 n10,16 n10,16 n10,16 @v9 n8,8 @v10 n10,16 n10,16]16
+
+E [c2d4.c4 l8cc r2 r8]4
+
+
+;[B']
+
+
+ABCDE t152
+
+
+A o5 r8^16^32 d32 q8 e-8. q7 d16 < g8 b-4 >c4 r2^4^8
+A o5 r8^16^32 d32 q8 e-8. q7 c16 < g8 b-4 >c4 
+A l8 q7 ce-gfe-d<b->
+A r8 q8 g32 q7 a-8^16. g8 f8e-4d8 l4 q4 e- r8 q6 c l8 cde-
+A l4 f8 d e- d <b-8g2.r4
+
+B @2 o3 q7 c1^1 c1^1 < q8 a-1^1 q7 g1^2^8  g8 b-4
+
+CO q7 c1^1 c1^1 < q8 a-1^1 q7 g1^2^8  g8 b-4>
+
+D [@v10  n10,16 n10,16 n10,16 n10,16 @v9 n8,8 @v10 n10,16 n10,16]16
+
+E [c2d4.c4 l8cc r2 r8]4
+
+
+;[C]
+
+
+A o5 r8^16^32 d32 q8 e-8. q7 d16 < g8 b-4 >c4 r2^4^8
+A o5 r8^16^32 d32 q8 e-8. q7 c16 < g8 b-4 >c4 
+A l8 q7 ce-gfe-d<b->
+A r8 q8 g32 q7 a-8^16. g8 f8e-4d8 l4 q4 e- r8 q6 c l8 cde-
+A l4 f8 d e- d <b-8g2.r4
+
+B v8 @1 o3 l8 q6 cc>c< cc>c< cc>c< gb->c4 d<b-g
+B l8 q6 cc>c< cc>c< cc>c< gb->c4 d<b-g
+B l8 q6 o2 a-a->a-< a-a->a-< a-a->a-< a-a->a-< a-a->a-< a-
+B l8 q6 o2 b-b->b-< b-b->b-< b->b-< gg>g< gg>g<b-4
+
+CO r1^1 c1^1 < q8 a-1^1 q7 b-1^2^8  g8 b-4>
+
+D [@v10 n10,8 n10,16 n10,16  @v9 n8,8  @v10 n10,16 n10,16]16
+
+E r1r1r1r1
+E [c2d4.c4 l8cc r2 r8]2
+
+;[C']
+
+
+A o5 r8^16^32 d32 q8 e-8. q7 d16 < g8 b-4 >c4 r2^4^8
+A o5 r8^16^32 d32 q8 e-8. q7 c16 < g8 b-4 >c4 
+A l8 q7 ce-gfe-d<b->
+A r8 q8 g32 q7 a-8^16. g8 f8e-4d8 l4 q4 e- r8 q6 c l8 cde-
+A l4 f8 d e- d <b-8g2.r4
+
+B v8 @1 o3 l8 q6 cc>c< cc>c< cc>c< gb->c4 d<b-g
+B l8 q6 cc>c< cc>c< cc>c< gb->c4 d<b-g
+B l8 q6 o2 a-a->a-< a-a->a-< a-a->a-< a-a->a-< a-a->a-< a-
+B l8 q6 o2 b-b->b-< b-b->b-< b->b-< gg>g< gg>g<b-4
+
+CO c1^1 c1^1 < q8 a-1^1 q7 b-1^2^8  g8 b-4>
+
+D [@v10 n10,8 n10,16 n10,16  @v9 n8,8  @v10 n10,16 n10,16]4
+D r1r1
+D [@v10  n10,16 n10,16 n10,16 n10,16 @v9 n8,8 @v10 n10,16 n10,16]12
+
+E c2d4.c4 l8cc r2 r8
+E r1r1
+E [c2d4.c4 l8cc r2 r8]2
+
+
+
+;[D]
+
+A o5 r8^16^32 d32 q8 e-8. q7 d16 < g8 b-4 >c4 r2^4^8
+A o5 r8^16^32 d32 q8 e-8. q7 c16 < g8 b-4 >c4 
+A l8 q7 ce-gfe-d<b->
+A r8 q8 g32 q7 a-8^16. g8 f8e-4d8 l4 q4 e- r8 q6 c l8 cde-
+A l4 f8 d e- d <b-8g2.r4
+
+B v8 @1 o3 l8 q6 cc>c< cc>c< cc>c< gb->c4 d<b-g
+B l8 q6 cc>c< cc>c< cc>c< gb->c4 d<b-g
+B l8 q6 o2 a-a->a-< a-a->a-< a-a->a-< a-a->a-< a-a->a-< a-
+B l8 q6 o2 b-b->b-< b-b->b-< b->b-< gg>g< gg>g<b-4
+
+CO c1^1 c1^1 < q8 a-1^1 q7 b-1^2^8  g8 b-4>
+
+D [@v10  n10,16 n10,16 n10,16 n10,16 @v9 n8,8 @v10 n10,16 n10,16]16
+
+E [c2d4.c4 l8cc r2 r8]4
+
+
+;[D']
+
+
+A o5 r8^16^32 d32 q8 e-8. q7 d16 < g8 b-4 >c4 r2^4^8
+A o5 r8^16^32 d32 q8 e-8. q7 c16 < g8 b-4 >c4 
+A l8 q7 ce-gfe-d<b->
+A r8 q8 g32 q7 a-8^16. g8 f8e-4d8 l4 q4 e- r8 q6 c l8 cde-
+A l4 f8 d e- d <b-8g2.r4
+
+B v8 @1 o3 l8 q6 cc>c< cc>c< cc>c< gb->c4 d<b-g
+B l8 q6 cc>c< cc>c< cc>c< gb->c4 d<b-g
+B l8 q6 o2 a-a->a-< a-a->a-< a-a->a-< a-a->a-< a-a->a-< a-
+B l8 q6 o2 b-b->b-< b-b->b-< b->b-< gg>g< gg>g<b-4
+
+CO c1^1 c1^1 < q8 a-1^1 q7 b-1^2^8  g8 b-4>
+
+D [@v10  n10,16 n10,16 n10,16 n10,16 @v9 n8,8 @v10 n10,16 n10,16]12
+
+E [c2d4.c4 l8cc r2 r8]4
+
+
+
+;[E]
+
+
+A o5 r8^16^32 d32 q8 e-8. q7 d16 < g8 b-4 >c4 r2^4^8
+A o5 r8^16^32 d32 q8 e-8. q7 c16 < g8 b-4 >c4 
+A l8 q7 ce-gfe-d<b->
+A r8 q8 g32 q7 a-8^16. g8 f8e-4d8 l4 q4 e- r8 q6 c l8 cde-
+A l4 f8 d e- d <b-8g2.r4
+
+B v8 @1 o3 l8 q6 cc>c< cc>c< cc>c< gb->c4 d<b-g
+B l8 q6 cc>c< cc>c< cc>c< gb->c4 d<b-g
+B l8 q6 o2 a-a->a-< a-a->a-< a-a->a-< a-a->a-< a-a->a-< a-
+B l8 q6 o2 b-b->b-< b-b->b-< b->b-< gg>g< gg>g<b-4
+
+CO c1^1 c1^1 < q8 a-1^1 q7 b-1^2^8  g8 b-4>
+
+D l1 rrrr rrrr
+
+E [c2d4.c4 l8cc r2 r8]4
+
+
+
+;[E']
+
+
+A o5 r8^16^32 d32 q8 e-8. q7 d16 < g8 b-4 >c4 r2^4^8
+A o5 r8^16^32 d32 q8 e-8. q7 c16 < g8 b-4 >c4 
+A l8 q7 ce-gfe-d<b->
+A r8 q8 g32 q7 a-8^16. g8 f8e-4d8 l4 q4 e- r8 q6 c l8 cde-
+A l4 f8 d e- d <b-8g2.r4
+
+B v8 @1 o3 l8 q6 cc>c< cc>c< cc>c< gb->c4 d<b-g
+B l8 q6 cc>c< cc>c< cc>c< gb->c4 d<b-g
+B l8 q6 o2 a-a->a-< a-a->a-< a-a->a-< a-a->a-< a-a->a-< a-
+B l8 q6 o2 b-b->b-< b-b->b-< b->b-< gg>g< gg>g<b-4
+
+CO c1^1 c1^1 < q8 a-1^1 q7 b-1^2^8  g8 b-4>
+
+D [@v10  n10,16 n10,16 n10,16 n10,16 @v9 n8,8 @v10 n10,16 n10,16]16
+
+E [c2d4.c4 l8cc r2 r8]4
+
+
+
+;[E'']
+
+
+A o5 r8^16^32 d32 q8 e-8. q7 d16 < g8 b-4 >c4 r2^4^8
+A o5 r8^16^32 d32 q8 e-8. q7 c16 < g8 b-4 >c4 
+A l8 q7 ce-gfe-d<b->
+A r8 q8 g32 q7 a-8^16. g8 f8e-4d8 l4 q4 e- r8 q6 c l8 cde-
+A l4 f8 d e- d <b-8g2.r4
+
+B v8 @1 o3 l8 q6 cc>c< cc>c< cc>c< gb->c4 d<b-g
+B l8 q6 cc>c< cc>c< cc>c< gb->c4 d<b-g
+B l8 q6 o2 a-a->a-< a-a->a-< a-a->a-< a-a->a-< a-a->a-< a-
+B l8 q6 o2 b-b->b-< b-b->b-< b->b-< gg>g< gg>g<b-4
+
+CO c1^1 c1^1 < q8 a-1^1 q7 b-1^2^8  g8 b-4>
+
+D [@v10  n10,16 n10,16 n10,16 n10,16 @v9 n8,8 @v10 n10,16 n10,16]16
+
+E [c2d4.c4 l8cc r2 r8]4
+
+
+
+;[F]
+
+
+A o5 r8^16^32 d32 q8 e-8. q7 d16 < g8 b-4 >c4 r2^4^8
+A o5 r8^16^32 d32 q8 e-8. q7 c16 < g8 b-4 >c4 
+A l8 q7 ce-gfe-d<b->
+A r8 q8 g32 q7 a-8^16. g8 f8e-4d8 l4 q4 e- r8 q6 c l8 cde-
+A l4 f8 d e- d <b-8g2.r4
+
+B v8 @1 o3 l8 q6 cc>c< cc>c< cc>c< gb->c4 d<b-g
+B l8 q6 cc>c< cc>c< cc>c< gb->c4 d<b-g
+B l8 q6 o2 a-a->a-< a-a->a-< a-a->a-< a-a->a-< a-a->a-< a-
+B l8 q6 o2 b-b->b-< b-b->b-< b->b-< gg>g< gg>g<b-4
+
+CO c1^1 c1^1 < q8 a-1^1 q7 b-1^2^8  g8 b-4>
+
+D [@v10  n10,16 n10,16 n10,16 n10,16 @v9 n8,8 @v10 n10,16 n10,16]16
+
+E r1r1r1r1
+E [c2d4.c4 l8cc r2 r8]2
+
+
+
+
+;[F']
+
+
+A o5 r8^16^32 d32 q8 e-8. q7 d16 < g8 b-4 >c4 r2^4^8
+A o5 r8^16^32 d32 q8 e-8. q7 c16 < g8 b-4 >c4 
+A l8 q7 ce-gfe-d<b->
+A r8 q8 g32 q7 a-8^16. g8 f8e-4d8 l4 q4 e- r8 q6 c l8 cde-
+A l4 f8 d e- d <b-8g2.r4
+
+B v8 @1 o3 l8 q6 cc>c< cc>c< cc>c< gb->c4 d<b-g
+B l8 q6 cc>c< cc>c< cc>c< gb->c4 d<b-g
+B l8 q6 o2 a-a->a-< a-a->a-< a-a->a-< a-a->a-< a-a->a-< a-
+B l8 q6 o2 b-b->b-< b-b->b-< b->b-< gg>g< gg>g<b-4
+
+CO c1^1 c1^1 < q8 a-1^1 q7 b-1^2^8  g8 b-4>
+
+D [@v10  n10,16 n10,16 n10,16 n10,16 @v9 n8,8 @v10 n10,16 n10,16]16
+
+E [c2d4.c4 l8cc r2 r8]4
+
+
+
+;[F'']
+
+
+A o5 r8^16^32 d32 q8 e-8. q7 d16 < g8 b-4 >c4 r2^4^8
+A o5 r8^16^32 d32 q8 e-8. q7 c16 < g8 b-4 >c4 
+A l8 q7 ce-gfe-d<b->
+A r8 q8 g32 q7 a-8^16. g8 f8e-4d8 l4 q4 e- r8 q6 c l8 cde-
+A l4 f8 d e- d <b-8g2.r4
+
+B v8 @1 o3 l8 q6 cc>c< cc>c< cc>c< gb->c4 d<b-g
+B l8 q6 cc>c< cc>c< cc>c< gb->c4 d<b-g
+B l8 q6 o2 a-a->a-< a-a->a-< a-a->a-< a-a->a-< a-a->a-< a-
+B l8 q6 o2 b-b->b-< b-b->b-< b->b-< gg>g< gg>g<b-4
+
+CO c1^1 c1^1 < q8 a-1^1 q7 b-1^2^8  g8 b-4>
+
+D [@v10  n10,16 n10,16 n10,16 n10,16 @v9 n8,8 @v10 n10,16 n10,16]16
+
+E [c2d4.c4 l8cc r2 r8]4
+
+
+
+
+;[G]
+
+A l1 rrrr rrrr
+
+B @1 o5 v7 l4 r q7 ccc r ccc r ccc r ccc
+B < r a-a-a- r a-a-a- r ggg r g>e-d
+
+
+CO c1^1 c1^1 < q8 a-1^1 q7 b-1^2^8  g8 b-4>
+
+
+D [@v10  n10,16 n10,16 n10,16 n10,16 @v9 n8,8 @v10 n10,16 n10,16]16
+
+E l1 rrrr rrrr
+
+
+
+;[G']
+A l1 rrrr rrrr
+
+B @1 o5 v7 l4 r q7 ccc r ccc r ccc r ccc
+B < r a-a-a- r a-a-a- r ggg r g>e-d
+
+
+CO c1^1 c1^1 < q8 a-1^1 q7 b-1^2^8  g8 b-4>
+
+
+D [@v10  n10,16 n10,16 n10,16 n10,16 @v9 n8,8 @v10 n10,16 n10,16]16
+
+
+E [c2d4.c4 l8cc r2 r8]4
+
+
+
+;[H]
+A r1 @2 o6 v5 l8 q8 cde-dc4.
+A r1 r cde-dc4.
+A r1 r o5 ga-b-a-g4.
+A r1 r1
+
+B @1 o5 v7 l4 r q7 ccc r ccc r ccc r ccc
+B < r a-a-a- r a-a-a- r ggg r g>e-d
+
+
+CO c1^1 c1^1 < q8 a-1^1 q7 b-1^2^8  g8 b-4>
+
+
+D [@v10  n10,16 n10,16 n10,16 n10,16 @v9 n8,8 @v10 n10,16 n10,16]16
+
+
+E [c2d4.c4 l8cc r2 r8]4
+
+
+;[H']
+A r1 @2 o6 v5 l8 r cde-dc4.
+A r1 r cde-dc4.
+A r1 r o5 ga-b-a-g4.
+A r1r2
+A v9EP1o8a4.EPOF r4
+
+B @1 o5 v7 l4 r q7 ccc r ccc r ccc r ccc
+B < r a-a-a- r a-a-a- r ggg r g>e-d
+
+
+CO c1^1 c1^1 < q8 a-1^1 q7 b-1^2^8  g8 b-4>
+
+
+D [@v10  n10,16 n10,16 n10,16 n10,16 @v9 n8,8 @v10 n10,16 n10,16]16
+
+
+E [c2d4.c4 l8cc r2 r8]4
+
+
+;[last]
+
+
+A o5 r8^16^32 d32 q8 e-8. q7 d16 < g8 b-4 >c4 r2^4^8
+A o5 r8^16^32 d32 q8 e-8. q7 c16 < g8 b-4 >c4 
+A l8 q7 ce-gfe-d<b->
+A r8 q8 g32 q7 a-8^16. g8 f8e-4d8 l4 q4 e- r8 q6 c l8 cde-
+A l4 f8 d e- d <b-8g2.r4
+
+B v8 @1 o3 l8 q6 cc>c< cc>c< cc>c< gb->c4 d<b-g
+B l8 q6 cc>c< cc>c< cc>c< gb->c4 d<b-g
+B l8 q6 o2 a-a->a-< a-a->a-< a-a->a-< a-a->a-< a-a->a-< a-
+B l8 q6 o2 b-b->b-< b-b->b-< b->b-< gg>g< gg>g<b-4
+
+CO c1^1 c1^1 < q8 a-1^1 q7 b-1^2^8  g8 b-4>
+
+D [@v10  n10,16 n10,16 n10,16 n10,16 @v9 n8,8 @v10 n10,16 n10,16]16
+
+E [c2d4.c4 l8cc r2 r8]4
+
+
+;[last2]
+
+
+A o5 r8^16^32 d32 q8 e-8. q7 d16 < g8 b-4 >c4 r2^4^8
+A o5 r8^16^32 d32 q8 e-8. q7 c16 < g8 b-4 >c4 
+A l8 q7 ce-gfe-d<b->
+A r8 q8 g32 q7 a-8^16. g8 f8e-4d8 l4 q4 e- r8 q6 c l8 cde-
+A l4 f8 d e- d <b-8g2.r4
+
+B v8 @1 o3 l8 q6 cc>c< cc>c< cc>c< gb->c4 d<b-g
+B l8 q6 cc>c< cc>c< cc>c< gb->c4 d<b-g
+B l8 q6 o2 a-a->a-< a-a->a-< a-a->a-< a-a->a-< a-a->a-< a-
+B l8 q6 o2 b-b->b-< b-b->b-< b->b-< gg>g< gg>g<b-4
+
+CO c1^1 c1^1 < q8 a-1^1 q7 b-1^2^8  g8 b-4>
+
+D [@v10  n10,16 n10,16 n10,16 n10,16 @v9 n8,8 @v10 n10,16 n10,16]16
+
+E [c2d4.c4 l8cc r2 r8]4
+
+
+
+
+;[last2]
+
+A K1 o5 r8^16^32 d32 q8 e-8. q7 d16 < g8 b-4 >c4 r2^4^8
+A o5 r8^16^32 d32 q8 e-8. q7 c16 < g8 b-4 >c4 
+A l8 q7 ce-gfe-d<b->
+A r8 q8 g32 q7 a-8^16. g8 f8e-4d8 l4 q4 e- r8 q6 c l8 cde-
+A l4 f8 d e- d <b-8g2.r4
+
+B K1 v8 @1 o3 l8 q6 cc>c< cc>c< cc>c< gb->c4 d<b-g
+B l8 q6 cc>c< cc>c< cc>c< gb->c4 d<b-g
+B l8 q6 o2 a-a->a-< a-a->a-< a-a->a-< a-a->a-< a-a->a-< a-
+B l8 q6 o2 b-b->b-< b-b->b-< b->b-< gg>g< gg>g<b-4
+
+CO K1 c1^1 c1^1 < q8 a-1^1 q7 b-1^2^8  g8 b-4>
+
+D [@v10  n10,16 n10,16 n10,16 n10,16 @v9 n8,8 @v10 n10,16 n10,16]16
+
+E [c2d4.c4 l8cc r2 r8]4
+
+
+
+
+;[last2']
+
+A K1 o5 r8^16^32 d32 q8 e-8. q7 d16 < g8 b-4 >c4 r2^4^8
+A o5 r8^16^32 d32 q8 e-8. q7 c16 < g8 b-4 >c4 
+A l8 q7 ce-gfe-d<b->
+A r8 q8 g32 q7 a-8^16. g8 f8e-4d8 l4 q4 e- r8 q6 c l8 cde-
+A l4 f8 d e- d <b-8g2.r4
+
+B K1 v8 @1 o3 l8 q6 cc>c< cc>c< cc>c< gb->c4 d<b-g
+B l8 q6 cc>c< cc>c< cc>c< gb->c4 d<b-g
+B l8 q6 o2 a-a->a-< a-a->a-< a-a->a-< a-a->a-< a-a->a-< a-
+B l8 q6 o2 b-b->b-< b-b->b-< b->b-< gg>g< gg>g<b-4
+
+CO K1 c1^1 c1^1 < q8 a-1^1 q7 b-1^2^8  g8 b-4>
+
+D [@v10  n10,16 n10,16 n10,16 n10,16 @v9 n8,8 @v10 n10,16 n10,16]16
+
+E [c2d4.c4 l8cc r2 r8]4
+

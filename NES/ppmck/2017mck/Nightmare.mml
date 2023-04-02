@@ -1,0 +1,380 @@
+#TITLE		Nightmare
+#COMPOSER	Random Beats
+#PROGRAMER	Tatsuya K.
+#Maker		Random Beats
+
+
+/----------------------------------------------------------
+
+;Drum
+
+@v0 = { 15 8 3 2 0}				;BassDrum1 (c)
+@v1 = { 15 11 9 9 8 8 7 7 6 6 5 5 5 4 4 4 4 3 3 3 3 2 2 2 1}		;Snare (c+)
+@v2 = { 13 7 4 3 2 }				;hat (e.f.g.a)
+@v3 = { 8 6 5 4 4 3 3 3 2 2 1 }		;ghost
+
+
+;PSG
+
+@v4 = { 14 11 10 9 8 7 7 6 6 5 5 5 4 4 4 4 3 3 3 3 2 }
+@v5 = { 7 5 4 3 3 2 2 2 2 2 2 2 2 1}
+@v6 = { 15 14 13 13 12 12 12 11 10 9 8 6 5 4 3}
+@v7 = { 7 9 11 10 9 8 7 6 6 5 5 5 5 5 5 4 4 4 4 4 3 3 2 }
+@v8 = { 10 11 10 9 8 7 6 6 5 5 5 5 5 5 4 4 4 4 4 3 3 2 }
+@v9 = {  15 11 8 6 5 4 4 3 3 2 2 1 }
+@v10 = {14  9 8 7 5 4 3 2 1 }
+@v11 = {12 10 8 6 }
+
+@0={ 1 0 }
+@1={ 0 1 }
+@2={ 2 1 }
+@3={ 1 2 }
+@4={ 2 0 }
+@5={ 0 1 2 0 1 2 0 1 2 0 1 2 }
+
+
+;effect
+@MP0 = { 18 2 12 0 } 
+@MP1 = { 16 2 10 0 }
+@MP2 = { 16 1 6 0 }
+@MP3 = { 28 3 4 0 }
+@MP4 = { 24 3 6 0 }
+@MP5 = { 8 1 12 0 }
+
+@EP0 = { 0 -6 -12 -18 -24 -30 -36}Tom 
+@EP1 = { 3 0 } ;Bass Drum (c)
+@EP2 = { 1 0 } ;Snare Drum(a)
+@EP3 = { 0 } ;Hihat (e)
+@EP4 = {-2 -3} ;Glissand Down
+@EP5 = { 0 -6 -12 -18 -24 -30 -36} Tom2
+
+@EN4 = { 0 | -4 0 0 4 0 0 }
+@EN3 = { 0 | -3 0 0 3 0 0 }
+@EN2 = { 2 | 0 }
+
+
+/----------------------------------------------------------
+
+#AUTO-BANKSWITCH 0
+
+A	@1  @v11 o4 q8
+B	@2  @v3 o4 q8
+C	
+D	 @v0 EP1 o0 
+
+/---　イントロ
+
+ABCD t132
+
+A l8 r4e4.fgfe4.c4.e4f1 r1
+A l8 r4e4.fgfe4.c4.e4f1 r1
+
+
+B	l8 dfa>c2<r dfa>c2<r e-gb->d2<r e-gb->d2<r
+B	l8 dfa>c2<r dfa>c2<r e-gb->d2<r e-gb->d2<r
+
+
+C o4 [q7 d4d4r8 l8 q8 d<a>d4 q7 d4d4 dcd
+C	  q7 e-4e-4r8 l8 q8 e-<b->e-4 q7 e-4e-4 e-<b->e-]2
+
+D q6 [l4 @v0cb- @v1 l8 b-  @v0c @v1 l4 b-  l4 @v0cb-@v1 l8 b-  @v0c @v1 l4 b-8 @v3e16 @v5a16]3
+
+D q6 l4 @v0cb-@v1 l8 b-  @v0c @v1 l4 b-
+D q6  l4 @v0cb- @v1l8b- @v0c @v1l16b- r b-b-
+
+/---　イントロ2
+
+
+A l8 r4e4.fgfe4.c4.e4f1 r1
+A l8 r4e4.fgfe4.c4.e4f1 r1
+
+
+B	l8 dfa>c2<r dfa>c2<r e-gb->d2<r e-gb->d2<r
+B	l8 dfa>c2<r dfa>c2<r e-gb->d2<r e-gb->d2<r
+
+
+C o4 [q7 d4d4r8 l8 q8 d<a>d4 q7 d4d4 dcd
+C	  q7 e-4e-4r8 l8 q8 e-<b->e-4 q7 e-4e-4 e-<b->e-]2
+
+D q6 [l4 @v0cb- @v1 l8 b-  @v0c @v1 l4 b-  l4 @v0cb-@v1 l8 b-  @v0c @v1 l4 b-8 @v3e16 @v5a16]3
+
+D q6 l4 @v0cb-@v1 l8 b-  @v0c @v1 l4 b-
+D q6  l4 @v0c b-8b-8 @v1l8b- @v0c @v1l16b- r b-b-
+
+
+/---　A
+
+
+A l8 @2 r4e4.fgfe4.c4.e4f1 r1
+A l8 r4e4.fgfe4.c4.e4f1 r1
+
+
+B	l8 dfa>c2<r dfa>c2<r e-gb->d2<r e-gb->d2<r
+B	l8 dfa>c2<r dfa>c2<r e-gb->d2<r e-gb->d2<r
+
+
+C o4 [q7 d4d4r8 l8 q8 d<a>d4 q7 d4d4 dcd
+C	  q7 e-4e-4r8 l8 q8 e-<b->e-4 q7 e-4e-4 e-<b->e-]2
+
+D q6 [l8 @v0 cb- @v1 b-  @v0 b- ]7 l8 @v0 cb- @v1 b-  @v3e16 @v5a16
+D q6 [l8 @v0 cb- @v1 b-  @v0 b- ]7 l8 @v0 cb- @v1 b-  @v3e16 @v5a16
+
+/---　A'
+
+
+
+A l8 @1 r4e4.fgfe4.c4.e4f1 r1
+A l8 r4e4.fgfe4.c4.e4f1 r1
+
+
+B	l8 @2 dfa>c2<r dfa>c2<r e-gb->d2<r e-gb->d2<r
+B	l8 dfa>c2<r dfa>c2<r e-gb->d2<r e-gb->d2<r
+
+
+C o4 [q7 d4d4r8 l8 q8 d<a>d4 q7 d4d4 dcd
+C	  q7 e-4e-4r8 l8 q8 e-<b->e-4 q7 e-4e-4 e-<b->e-]2
+
+D q6 [l8 @v0 cb- @v1 b-  @v0 b- ]7 l8 @v0 cb- @v1 b-  @v3e16 @v5a16
+D q6 [l8 @v0 cb- @v1 b-  @v0 b- ]6 l4 @v0 r @v1 b- r b-
+
+/---　C
+
+
+
+A l8 a2^8 fga4>c4<a4 g4f 
+A	 g2^8 efg4 a4 g4 f4e
+A	 f2^8 defg4f e4 c4<a>d1^d2^4^8
+
+
+B	@v11 l1 d1^2^4^4 c1^2^4^4  <b-1> c4^8 <a4 e4. f2^4^4 w
+
+
+C o3 l8 [b-b-b-b-4b->f<b-]2 [aaaa4a>e<a]2 gggggefg aaaa4a>e<a > q6 d4 q8 d4 d<a>d q6 d4 dc d2^8 <
+
+D q6 [l8 @v0 cb- @v1 b-  @v0 b- ]7 l8 @v0 cb- @v1 b-  @v3e16 @v5a16
+D q6 [l8 @v0 cb- @v1 b-  @v0 b- ]7 l8 @v0 cb- @v1 l16 b-b-b-b-
+
+
+
+
+
+A	@1  @v11 o4 q8
+B	@2  @v3 o4 q8
+C	
+D	 @v0 EP1 o0 
+
+/---　イントロ
+
+ABCD t132
+
+A l8 r4e4.fgfe4.c4.e4f1 r1
+A l8 r4e4.fgfe4.c4.e4f1 r1
+
+
+B	l8 dfa>c2<r dfa>c2<r e-gb->d2<r e-gb->d2<r
+B	l8 dfa>c2<r dfa>c2<r e-gb->d2<r e-gb->d2<r
+
+
+C o4 [q7 d4d4r8 l8 q8 d<a>d4 q7 d4d4 dcd
+C	  q7 e-4e-4r8 l8 q8 e-<b->e-4 q7 e-4e-4 e-<b->e-]2
+
+
+D q6 [l8 @v0 cb- @v1 b-  @v0 b- ]7 l8 @v0 cb- @v1 b-  @v3e16 @v5a16
+D q6 [l8 @v0 cb- @v1 b-  @v0 b- ]7 l8 @v0 cb- @v1 b-  @v3e16 @v5a16
+
+/---　イントロ2
+
+
+A l8 r4e4.fgfe4.c4.e4f1 r1
+A l8 r4e4.fgfe4.c4.e4f1 r1
+
+
+B	l8 dfa>c2<r dfa>c2<r e-gb->d2<r e-gb->d2<r
+B	l8 dfa>c2<r dfa>c2<r e-gb->d2<r e-gb->d2<r
+
+
+C o4 [q7 d4d4r8 l8 q8 d<a>d4 q7 d4d4 dcd
+C	  q7 e-4e-4r8 l8 q8 e-<b->e-4 q7 e-4e-4 e-<b->e-]2
+
+
+D q6 [l8 @v0 cb- @v1 b-  @v0 b- ]7 l8 @v0 cb- @v1 b-  @v3e16 @v5a16
+D q6 [l8 @v0 cb- @v1 b-  @v0 b- ]7 l8 @v0 cb- @v1 b-  @v3e16 @v5a16
+
+
+
+/---　A
+
+
+A l8 @2 r4e4.fgfe4.c4.e4f1 r1
+A l8 r4e4.fgfe4.c4.e4f1 r1
+
+
+B	l8 @1 dfa>c2<r dfa>c2<r e-gb->d2<r e-gb->d2<r
+B	l8 dfa>c2<r dfa>c2<r e-gb->d2<r e-gb->d2<r
+
+
+C o4 [q7 d4d4r8 l8 q8 d<a>d4 q7 d4d4 dcd
+C	  q7 e-4e-4r8 l8 q8 e-<b->e-4 q7 e-4e-4 e-<b->e-]2
+
+D q6 [l8 @v0 cb- @v1 b-  @v0 b- ]7 l8 @v0 cb- @v1 b-  @v3e16 @v5a16
+D q6 [l8 @v0 cb- @v1 b-  @v0 b- ]7 l8 @v0 cb- @v1 b-  @v3e16 @v5a16
+
+/---　A'
+
+
+
+A l8 @1 r4e4.fgfe4.c4.e4f1 r1
+A l8 r4e4.fgfe4.c4.e4f1 r1
+
+
+
+B	l8 @2 dfa>c2<r dfa>c2<r e-gb->d2<r e-gb->d2<r
+B	l8 dfa>c2<r dfa>c2<r e-gb->d2<r e-gb->d2<r
+
+
+C o4 [q7 d4d4r8 l8 q8 d<a>d4 q7 d4d4 dcd
+C	  q7 e-4e-4r8 l8 q8 e-<b->e-4 q7 e-4e-4 e-<b->e-]2
+
+D q6 [l8 @v0 cb- @v1 b-  @v0 b- ]7 l8 @v0 cb- @v1 b-  @v3e16 @v5a16
+D q6 [l8 @v0 cb- @v1 b-  @v0 b- ]6 l4 @v0 r @v1 b- r b-
+
+
+
+
+/---　C
+
+
+
+A l8 a2^8 fga4>c4<a4 g4f 
+A	 g2^8 efg4 a4 g4 f4e
+A	 f2^8 defg4f e4 c4<a>d1^d2^4 w
+
+
+B	@v11 l1 d1^2^4^4 c1^2^4^4  <b-1> c4^8 <a4 e4. f1 w
+
+
+C o3 l8 [b-b-b-b-4b->f<b-]2 [aaaa4a>e<a]2 gggggefg aaaa4a>e<a > q6 d4 q8 d4 d<a>d q6 d4 dc d2 < w
+
+D q6 [l8 @v0 cb- @v1 b-  @v0 b- ]7 l8 @v0 cb- @v1 b-  @v3e16 @v5a16
+D q6 [l8 @v0 cb- @v1 b-  @v0 b- ]7 l8 @v0 cb- @v1 l16 b-b-b-b-
+
+
+/----　Last melody
+
+
+A	@1 q6 l2 <a>fed q8    c2^8 d4 e2^8 w
+A		q6 <b->gf q8 e4d4 e2^8 f4 g2^8 w
+
+
+B	@v3
+B	@1 l8 o5 dc<b-g fdc<b- afc<a fdc<b-> c  w >> @v11 g4. l8  ef l4 g>c<g2 r8 @v3
+B	@1 l8 o5 fed<b- gfdc <b-afd <b->dfa >  @v11 c+2^8 d4 e2^8 l8 c+def
+
+
+C o4 l8 q7 <b-b->g <b-b->f <b-b->e <b-b->f <b-b->e <b->
+C			<aa>f  <aa>e    <aa>d   <aa>e  <aa>d   <a>
+C			<gg>e  <gg>d    <gg>c   <gg>d  <gg>c  <g>
+C			<aaaa					agfa aaaa		 ab-4 >c
+
+
+
+D q6 [l8 @v0 cb- @v1 b-  @v0 b- ]7 l8 @v0 cb- @v1 b-  @v3e16 @v5a16
+D q6 [l8 @v0 cb- @v1 b-  @v0 b- ]7 l8 @v0 cb- @v1 l16 b-b-b-b-
+
+
+
+
+/----　Last melody 2
+
+
+A	@1 q8 l8 a2^8 fa b-4.a4 gf4 w
+A			 g2^8 eg a4.g4 fe4 w
+A	@1 q8 l8 a2^8 fa b-4.a4 gf4 w
+A			 {e>dc}2 {<age}2 d1
+
+B	@1 q8 l8 f2^8 df g4. f4 ed4 w
+B			 e2^8 ce f4. e4 dc+4 w
+B		@v3  fedc <b-agf efge fgaf>
+B		@v11 {cfe}2 {d<ca}2 g4f+2^4
+
+
+C o4 l8 q7 dddd ddd <g4 ggg gab-g>
+C		q7 cccc ccc <f4 fff ffga>
+C o4 l8 q7 dddd ddd <g4 ggg gab-g>
+C		q7 c1 d2d2
+
+
+
+D q6 [l8 @v0 cb- @v1 b-  @v0 b- ]7 l8 @v0 cb- @v1 b-  @v3e16 @v5a16
+D q6 [l8 @v0 cb- @v1 b-  @v0 b- ]7 l8 @v0 cb- @v1 l16 b-b-b-b-
+
+
+
+
+/---　アウトロ
+
+A	@1  @v11 o4 q8
+B	@2  @v3 o4 q8
+D	 @v0 EP1 o0 
+
+
+ABCD t132
+
+A l8 r4e4.fgfe4.c4.e4f1 r1
+A l8 r4e4.fgfe4.c4.e4f1 r1
+
+
+B	l8 dfa>c2<r dfa>c2<r e-gb->d2<r e-gb->d2<r
+B	l8 dfa>c2<r dfa>c2<r e-gb->d2<r e-gb->d2<r
+
+
+C o4 [q7 d4d4r8 l8 q8 d<a>d4 q7 d4d4 dcd
+C	  q7 e-4e-4r8 l8 q8 e-<b->e-4 q7 e-4e-4 e-<b->e-]2
+
+D q6 [l4 @v0cb- @v1 l8 b-  @v0c @v1 l4 b-  l4 @v0cb-@v1 l8 b-  @v0c @v1 l4 b-8 @v3e16 @v5a16]3
+
+D q6 l4 @v0cb-@v1 l8 b-  @v0c @v1 l4 b-
+D q6  l4 @v0cb- @v1l8b- @v0c @v1l16b- r b-b-
+
+
+ABCD t132
+
+A l8 r4e4.fgfe4.c4.e4f1 r1
+A l8 r4e4.fgfe4.c4.e4f1 r1
+
+
+B	l8 dfa>c2<r dfa>c2<r e-gb->d2<r e-gb->d2<r
+B	l8 dfa>c2<r dfa>c2<r e-gb->d2<r e-gb->d2<r
+
+
+C o4 [q7 d4d4r8 l8 q8 d<a>d4 q7 d4d4 dcd
+C	  q7 e-4e-4r8 l8 q8 e-<b->e-4 q7 e-4e-4 e-<b->e-]2
+
+D q6 [l4 @v0cb- @v1 l8 b-  @v0c @v1 l4 b-  l4 @v0cb-@v1 l8 b-  @v0c @v1 l4 b-8 @v3e16 @v5a16]3
+
+D q6 l4 @v0cb-@v1 l8 b-  @v0c @v1 l4 b-
+D q6  l4 @v0cb- @v1l8b- @v0c @v1l16b- r b-b-
+
+
+A l8 r4e4.fgfe4.c4.e4f1 r1
+A l8 r4e4.fgfe4.c4.e4f1 r1
+
+
+B	l8 dfa>c2<r dfa>c2<r e-gb->d2<r e-gb->d2<r
+B	l8 dfa>c2<r dfa>c2<r e-gb->d2<r e-gb->d2<r
+
+
+C o4 [q7 d4d4r8 l8 q8 d<a>d4 q7 d4d4 dcd
+C	  q7 e-4e-4r8 l8 q8 e-<b->e-4 q7 e-4e-4 e-<b->e-]2
+
+
+A l8 r4e4.fgfe4.c4.e4f1 r1
+A l8 r4e4.fgfe4.c4.e4f1 r1
+
+
+B	l8 dfa>c2<r dfa>c2<r e-gb->d2<r e-gb->d2<r
+B	l8 dfa>c2<r dfa>c2<r e-gb->d2<r e-gb->d2<r
+
+
+C o4 [q7 d4d4r8 l8 q8 d<a>d4 q7 d4d4 dcd
+C	  q7 e-4e-4r8 l8 q8 e-<b->e-4 q7 e-4e-4 e-<b->e-]2

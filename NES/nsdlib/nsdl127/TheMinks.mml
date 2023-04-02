@@ -1,0 +1,104 @@
+#title		"The Minks"
+#composer	"Manami Matsumae"
+#copyright	"nsd.lib, Copyright (c) 2012 S.W. All rights reserved."
+
+#OffsetPCM	$C000
+#Code		"nsd_vrc6.bin"
+
+
+
+E(0) = { 13 12 11 8 D1 7 D2 6 L 5 }
+E(1) = {12 L 0 }
+E(2) = { 12 12 12 12 12 L 0 }
+
+E(3) = {      	06 08 10 11 11 11 10 10 10 10			;StringsA
+		09 D8 09 D8 08 D8 08 D8 07 D8 07 D8 L	06 }
+E(4)= {		03 05 07 08 D2 07 D4						;StringsB
+		06 D8 06 D8 05 D8 05 D8 04 D8 04 D8 L	03}
+E(5) = {       	10 07 
+		13 11 09 07 05 03 02
+		04 07 05 04 03 02 02 01
+		03 05 04 03 02 02 01 L 01 }
+E(7) = {	12 10 9 7 L 5 }
+E(8) = {	13 10 9 7 D4 L 1 }
+E(9) = {	14 12 10 D4 8 D4 6 D4 5 D1 L 0 }
+
+E(461)={	10 07  L 00 }
+E(462)={	10 08 07 06 05 04 03 03 02 02 01 01 L 00 }
+E(463)={	11 10 10 09 09 08 08 08 
+			07 07 07 07 06 D8 05 D8 04 D9 03 D10 02 D11 01 D12 L 00 }
+E(561)={	 -2 -2 -2 -2 -1 -1 -1 -1 0 0 0 0 L -2 -2 -2 -1 -1 -1 0 0 L 0 }
+E(464)={	10 02 L 00}
+E(465)= {	07 D7 06 D7 05 D7 04 D8 03 D8 02 D9 01 D14 L 00 }
+E(466)={	11 06 09 05 07 04 05 03 04 02 03 01 02 00 01 L 00 }
+
+
+DPCM {
+
+		 c4, "an_kick.dmc",15,0
+       	 d4, "snare_CH.dmc",15,0
+}
+
+
+
+
+
+
+
+BGM(0){ TR1  t180
+
+//intro
+TR1 l8 Ev0 o4 @0	q7 [3r1] r2. r c
+TR2 l8 Ev8 o4 @2	q7 [2 ra-4ra-r4a- ra- r4 >d4d4<]
+TR3	l8 o3  			q7 [2 f4. ff4. f rf4.  <b-4>c4 ]
+TR6 l8 Ev8 o4 @2	q7 [2 e-f4ce-4fe-r fe-f b-4a-4 ]
+TR7 l8 Ev8 o5 @2	q7 [2 re-4re-r4e- re- r4  f4f4 ]
+TR8	l8 Ev9 o3 @2 	q7 [2 f4. ff4. f rf4.  <b-4>c4 ]
+TR4
+	v15 _5 o5
+	l16	Ev463 En561 e4  En* Ev466 d8 Ev461 a8  En* [Ev461a8 Ev462g8 Ev466d8 Ev462g8]5 Ev463 En561 l8 e4rd4rf8
+TR5 l16 o4 l8 [3 c4dcrcd4] dcrcrccd
+
+
+//A
+TR1 					a-2 r-8 g4.a-2r-8 ga-b->c4.cr-<b-4a- b-4.g4 r-4 c
+TR2
+TR3	l8 o3				f4.ffe-4d-4.d-4.d-e- a-4.a-4.a-g>c4.c4.c<
+TR8	l8 o3				f4.ffe-4d-4.d-4.d-e- a-4.a-4.a-g>c4.c4.c<
+
+
+TR4	l8 Ev463 En561 e4  En* Ev466 d8d8 Ev461 a8 En* [Ev461a8 Ev462g8 Ev466d8 Ev462g8]7
+TR5	l8 o4	[7 c4dcrcd4]
+
+//A'
+TR1 					a-2 r-8 g4.a-2r-8 ga-b->c4.cr-<b-4a- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
