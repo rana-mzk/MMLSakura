@@ -1,0 +1,76 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura Data(on macOS CUI v2.379)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】rtune26
+【Cpomposer】rana
+【Date】2023/4/3
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+With Music Box.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+
+//_00:Setup
+TrackName     = {"rtune26"}
+Copyright     = {"rana"}
+Tempo         = 140;
+TimeSignature = 4,4;
+
+/*
+//Ryhthm Macro Definition memo
+$c{n36,}//bass drum
+$d{n38,}//snare
+$f+{n42,}//hi-hat
+$g+{44,}//hi-hat pedal
+$a+{n46,}//hi-hat open
+$c+{n49,}//Cymbal
+$g{n43,}//low-Tom
+$a{n45,}//Mid-Tom2
+$b{n47,}//Mid-Tom1
+$c{n48,}//Hgh-Tom2
+$d{n50,}//High-Toml1
+$y{n51,}//
+*/
+
+/*
+Drum Map
+P1 STANDARD
+P9 ROOM
+P17 POWER
+P25 ELECTRONIC
+P26 808
+P33 JAZZ
+P41 BRUSH
+P40 Orchestra
+P57 SFX
+*/
+
+TR=1 @1  o5 l8 //ピアノ
+            [2 [4 'fa>ce<'4. 'fa>ce<'4. 'fa>ce<'4]
+            [4 'egb>d<'4. 'egb>d<'4. 'egb>d<'4]]
+
+TR=2 @95 o5 l1 q100//シンセパッド
+            [2 'fa>ce<'1^1^1^1 'egb>d<'1^1^1^1]
+TR=3 @36 o3 l8//なんとなく三角波のイメージでベースを設定
+            [2 [8 ffff] [8 eeee]]
+
+TR=10 CH=10 @25 o3 //ElecroniSetにドラムを設定
+            [16 cccc]
+TR=11 CH=10 @25 o3//HiHatを分けてチャンネル10に送信 
+            [8 r1] l16[2 [4 [4 f+f+f+f+]]]
+
+/*
+作曲メモ
+テンポはやめ
+イントロにピアノを使う。
+
+ピアノ+ダンス系の感じで。
+ベースはフレットレスで。
+
+
+
+*/
