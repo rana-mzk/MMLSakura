@@ -1,0 +1,7 @@
+//_00:Setup
+Tempo         = 120;
+TimeSignature = 4,4;
+
+//MML
+TR(1) v100 @1 l8 fefe4dcd4
+TR(2) l2 '<acf>' '<adf>' '<dfb->' '<ceg>'
