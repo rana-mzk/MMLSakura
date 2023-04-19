@@ -1,0 +1,44 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura Data(on macOS CUI v2.379)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】20230413
+【Cpomposer】rana
+【Date】2023/4/13
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+オルゴール音源です。
+今日はAIは使わずに作曲。
+「対話」のイメージで
+棒人間のイラストを
+描いてから
+そのイメージで
+書きました。
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+//_00:Setup
+TrackName     = {"20230413"}
+Copyright     = {"rana"}
+Tempo         = 60;
+TimeSignature = 4,4;
+ResetGS;ResetXG;ResetGM;
+TrackSync;
+
+//MML
+//Melody
+TR(1) l8  o6 @11 gab>c r <bag fefa r gfe
+                gab>c r <b>cd efed rc<b>c
+
+            o6    gab>c r <bag fefa r gfe
+                gfed r efg ab>cd r c<b>cr
+//Harmony
+TR(2) o4 l2 @11 q100  [3 'fa>ce<' 'egb>d<']
+                            'dfa>c<' 'gb>df<'
+
+                            [2 'fa>ce<' 'egb>d<']
+
+                             'dfa>c<' 'egb>d<'
+                                'fa>ce<'  'gb>df<'
+                      
+             
