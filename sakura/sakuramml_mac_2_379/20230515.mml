@@ -1,0 +1,63 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on macOS CUI v2.379)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】20230515
+【Composer】rana
+【Date】2023/05/15
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+スタバで書いたのをベースに家で修正。
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+//_00:Setup
+TrackName     = {"20230515"}
+Copyright     = {"rana"}
+Tempo         = 132;
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+//MML
+//Melody
+TR(1) v100 @19 l4 o6 q100 l2 ge l4 ab>cd edcd c<bgb
+                        ab>cd c<b>cd edef gfge<
+
+                    o6    l2 ga l4 b>cde fedf edc<b
+                        gagf edec defg ab>cd<
+//Harmony
+TR(2) v100 @3 l8. [2 'fa>ce<'  'fa>ce<' 'fa>ce<'16 r16] 
+                    [2 'fa>df<' 'fa>df<' 'fa>df<'16 r16]
+                    [2 'fgb>d<'  'fgb>d<' 'fgb>d<'16 r16] 
+                        'fa>ce<'  'fa>ce<' 'fa>ce<'16 r16
+                        'fa>ce<'  'fa>ce<' 'egb>d<'8
+                    [2 'dfa>c<' 'dfa>c<' 'dfa>c<'16 r16 ]
+                    [2 'dfa>d<' 'dfa>d<' 'dfa>d<'16 r16 ]
+                    [2 'dfab' 'dfab' 'dfab'16 r16]
+                         'dfa>c<' 'dfa>c<' 'dfa>c<'16 r16 
+                         'dfa>c<' 'dfa>c<' 'egb>d<'8
+                         
+                 [2 'fa>ce<'  'fa>ce<' 'fa>ce<'16 r16] 
+                    [2 'fa>df<' 'fa>df<' 'fa>df<'16 r16]
+                    [2 'fgb>d<'  'fgb>d<' 'fgb>d<'16 r16] 
+                        'fa>ce<'  'fa>ce<' 'fa>ce<'16 r16
+                        'fa>ce<'  'fa>ce<' 'egb>d<'8
+                    [2 'dfa>c<' 'dfa>c<' 'dfa>c<'16 r16 ]
+                    [2 'dfa>d<' 'dfa>d<' 'dfa>d<'16 r16 ]
+                    [2 'egb>d<'  'egb>d<'  'egb>d<'16 r16]
+                       'fb>df<' 'fb>df<' 'fb>df<'16 r16
+                       'fb>df<''fb>df<''gb>dg<'8
+//Bass
+TR(3) @36 o3 l8 [16 f>f<] [16 d>d<] [16 f>f< ] [8 d>d<] [4 e>e<] [4 f>f<]
+//Drum
+TR(10) CH(10) o3 l4 [16 cccc]
+TR(11) CH(10) o3 l8 [32 f+16f+16a+f+a+]
+TR(12) CH(10) o3 l4 [7  rdrd] rd rd8.d16 
+                        [7  rdrd] rd r l16 dddd
+TR(13) CH(10) o4 l1 [2  c+1 [7 r1] ]  
+
+//スタバで◎
