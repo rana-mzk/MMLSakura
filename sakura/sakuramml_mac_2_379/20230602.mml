@@ -1,0 +1,46 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on macOS CUI v2.379)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】雨宿り
+【Composer】rana
+【Date】2023/06/02
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+すんごい雨ー！！！
+肩が痛かったので音楽の鍵盤を弾かずに◎
+途中で和音の補助に
+ChatGPTを利用しました。
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+//_00:Setup
+TrackName     = {"雨宿り"}
+Copyright     = {"rana"}
+Tempo         = 60;
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+//Melody
+TR(1) v100 @11 o6 l8 gecde4.d cdege4dc
+                            gab`cbaga gfed edcd
+                     gecd e4ga b>c<b>c dedc 
+                               <bab>c <bage fgab> cded
+                     l4 gaga g4.e8 l8 dedc 
+                     l4 <b>cde d2g2
+//Harmony
+TR(2) v100 @11 l8 o5 [2 cgab`cbag]  
+                        [2 <fa>cdedc<a>]
+                        
+                        cgeb`cecd gb`db fabg 
+                        dfgd egbg fa`cb ab`cb
+
+                     l4  'ceg' 'dfa' 'ceg' 'dfa'
+                            'gb`d'2 > 'a<ce>'2 <
+                            'b>df<'1 'dfa'2  'gb>d<'2 
+
