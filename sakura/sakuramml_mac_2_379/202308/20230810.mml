@@ -1,0 +1,40 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on macOS CUI v2.379)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】陽だまりと猫
+【Composer】rana
+【Date】2023/08/10
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+寝てるのが暇なのでiPhoneで作成。
+続きを作りたかった気もしましたが
+体力との兼ね合いでこんな感じに。
+我が家の猫ちゃんは元気です笑
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+//_00:Setup
+TrackName     = {"陽だまりと猫"}
+Copyright     = {"rana"}
+Tempo         = 132;
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+//Melody
+TR(1) o5  @23 q100 ab>ce2 dcd l2 edc<b>
+              c2e2 l4 dc<ba gagf g2e2
+            fga>c2 < b>cd d4.e8e2 efga
+            e1 efga d1 < b2g2
+              a2b2 >c<b>cd d2e2f2e2
+//Harmony
+TR(2) o4  @25 fa>ce2 gab '>c<a'2'bg'2'af'2'ge'2
+       o4    dfafafaf egbgbgbg
+              dfafafaf cegegege
+            fa>cecece< egb>d<b>d<b>d<
+              dfafafaf gb>dfdfdf
