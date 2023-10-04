@@ -1,0 +1,41 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on macOS CUI v2.379)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】月を追って
+【Composer】rana
+【Date】2023/09/29
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+満月の日にピコサクラで作成。
+いい感じに使いやすくなってました。
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+//_00:Setup
+TrackName     = {"月を追って"}
+Copyright     = {"rana"}
+Tempo         = 120;
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+TR(1) l8 @8 gdecdged c4ded4<g4>  
+                d4efgaba gfefedcd
+            gdecdged c4ded4g4
+                a4b>cdedc <baga gfef
+
+TR(3) l8 v80 @34 o3 
+                [4 ffr>c<] [4 eerb]
+                [4 ffr>c<] 
+                [2 eerb] aar>e< ggr>d<
+
+TR(5) @52 v70 q100 l1
+             'fa>ce<'1^1 'ega>d<'1^1
+            'fa>ce<'1^1
+            'ega>d<' 'a>ceg<'2 'gb>df'2
+
+TR(10) CH=10 @1 l4 o3 [8 cr8c8cr]
+TR(11) CH=10 @1 l4 o3 [8 rdrd]
