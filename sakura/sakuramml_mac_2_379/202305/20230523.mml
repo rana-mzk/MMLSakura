@@ -1,0 +1,57 @@
+
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on macOS CUI v2.379)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】Funny Place
+【Composer】rana
+【Date】2023/05/23
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+タイムラプスを撮りながら作曲
+普段と違う書き方をしてちょっと失敗
+テンプレート大事ですね。
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+//_00:Setup
+TrackName     = {"Funny Place"}
+Copyright     = {"rana"}
+Tempo         = 132;
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+//Melody
+TR(1) o5  @23  [8 r1] l4 fedc gfed agfe4. l8 fed edcd
+                          fedg abag4. fededcd efga gfg e4.dd4 r4 
+//Harmony
+TR(2) o4  @2 [8 r1]   r4 'gb`df'4 r8 'gb`df'8 r4 
+                         r4 'fa`cf'4 r8 'fa`cf'8 r4
+                         r4 'gb`df'4 r8 'gb`df'8 r4 
+                         r4 'dfa`c'4 r8 'egb`d'8 r4
+
+                          r4 'gb`df'4 r8 'gb`df'8 r4 
+                         r4 'fa`cf'4 r8 'fa`cf'8 r4
+                         r4 'gb`df'4 r8 'gb`df'8 r4 
+                         r4 'dfa`c'4 r8 'egb`d'8 r4
+//Bass
+TR(3) o3  @36 l8 [8 r1] [4 g`g] [4 f`f] [4 g`g] [2 d`d] [2 e`e]
+                        [4 g`g] [4 f`f] [4 g`g] [2 d`d] [2 e`e]
+
+
+//Drums
+TR(10) CH=10 o3 l4 [4 r1] 
+                [2 [3 cccc] cccc8c8 ]
+                [3 cccc] l8 cccc l8.ccc8
+TR(11) CH=10 o3 l4  d+d+d+d+ d+d+d+ d+8d+8
+                d+d+d+d+ d+d+ d+8.d+8.d+8
+
+                [2 d+d+d+d+ d+d+d+ d+8d+8
+                d+d+d+d+ d+d+ d+8.d+8.d+8]
+
+                d+d+d+d+ d+d+d+ d+8d+8 
+                d+d+d+d+ d+d+ l8 d+d+ l16 d+d+d+d+

@@ -1,0 +1,91 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura Data(on macOS CUI v2.379)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】20230412
+【Cpomposer】rana
+【Date】2023/4/12
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+朝の散歩のようなイメージで◎
+今日はAIアシストは
+最後のメロディーの補助にだけ
+使いました。
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+//_00:Setup
+TrackName     = {"20230412"}
+Copyright     = {"rana"}
+Tempo         = 130;
+TimeSignature = 4,4;
+ResetGS;ResetXG;ResetGM;
+TrackSync;
+
+//MML
+//Melody
+TR(1) l4  o5 @108 gab>c<bagf efed efge  | defg ab>cd edc<b agfe
+                     gab>c<bagf efga bage > dc<ba gfed efgabab>c<
+                    //ChatGPTが考えてくれたメロディーを利用→ちょい手直し
+                     o5 fgab >cded c<bag fedg
+//Harmony
+TR(2) o4 l8 @91 q100 v90 [2 'fa>ce<'1^1^1^1 'egb>d<'1^1^1^1]
+                            'dfa>c<'1^1 'gb>df<'1^1
+                      
+//Bass
+TR(3) o3 l8 @35 [2 [4 [4 f>f<]]   [4 [4 e>e<]]]
+                         [2 [4 d>d<]]  [2 [4 g>g<]]
+
+//Drums
+//bassdrum
+TR(10) CH=10 o3 l4 v127  [3 cccc] ccc c8c8 
+                            [3 cccc] ccc c8c8 
+
+                            [3 cccc] ccc c8c8 
+                    
+
+                                [4 cccc]  [4 cccc]
+
+//hihat
+TR(11) CH=10 o3 l8 
+                    [2 [8 f+f+f+f+]]
+                       [2 [8 f+f+f+f+]]
+                          [8 f+f+f+f+]
+                       
+//snare
+TR(12) CH=10 o3 l4  [2 
+                     [2 [4 rdrd]]
+                           [2 [4 rdrd]] 
+                             [3 rdrd]
+                             rdr l16 dddd
+
+//CrashSymbal
+TR(13) CH=10 o4 [2 
+                  c+1 [7 r1]]
+                  [4 r1]
+
+/*
+サクラの夢 (Sakura's Dream)
+by ChatGPT
+
+桜舞い散る 朝の光に
+歩み進む 静かな道
+風に揺れる 花の香り
+囁くように 優しく歌う
+
+時を忘れ ただ彷徨う
+この瞬間を 感じていたい
+春の訪れ 連れてくるのは
+新たな希望 輝く未来
+
+心に映る サクラの夢
+季節の変わり目 色とりどり
+儚く消える 花びらのよう
+いつかまた 会える日まで
+
+続いていく この物語
+永遠に刻む 思い出たち
+サクラの夢 いつまでも
+心の中で 輝き続ける
+*/
+

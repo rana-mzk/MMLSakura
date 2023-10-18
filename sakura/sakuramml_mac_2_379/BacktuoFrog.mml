@@ -1,0 +1,44 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on macOS CUI v2.379)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】カエルに帰る
+【Composer】rana
+【Date】2023/05/19
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SBCで制作
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+//_00:Setup
+TrackName     = {"カエルに帰る"}
+Copyright     = {"rana"}
+Tempo         = 140;
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+//MML
+//Melody
+TR(1) v100 @19 l4 o6 q100 l1 efgc defg l2 aead l4 gfga bab>c 
+                            l4 defg ab>cd l8 edc<b agfe l16 fedcedc<b> dc<ba> c<bag>
+//Harmony
+TR(2) v86 @3 l4 [3 r 'dfa`c' r8 'dfa`c'8 r16 r8 r16]  r 'dfa`c' r8 'dfa`c'4  'dfa`c'8
+                 [3 r 'egb`d' r8 'egb`d'8 r16 r8 r16]  r 'egb`d' r8 'egb`d'4  'egb`d'8
+                 [3 r 'dfa`c' r8 'dfa`c'8 r16 r8 r16]  r 'dfa`c' r8 'dfa`c'4  'dfa`c'8
+                 [2 r 'gb`dg' r8 'gb`dg'8 r16 r8 r16]  
+                    r 'a`ceg' r8 'a`ceg'8 r16 r8 r16    r 'a`ceg' r8 'a`ceg'4  'gb`df'8
+
+//Bass
+TR(3) @36 o3 l8 [16 d>d<] [16 e>e<] [16 d>d<] [8 g>g<] [8 a>a<]
+//Drum
+TR(10) CH(10) o3 l4 [16 cccc]
+TR(11) CH(10) o3 l8 [32 f+16f+16a+f+a+]
+TR(12) CH(10) o3 l4 [7  rdrd] r d8.d16  r d16d16d16d16
+                        [7  rdrd] rd r l16 dddd
+TR(13) CH(10) o4 l1 [2  c+1 [7 r1] ]  
+

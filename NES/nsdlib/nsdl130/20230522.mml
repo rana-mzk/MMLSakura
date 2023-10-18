@@ -1,0 +1,147 @@
+//Based NES Sound Drver & Library(nsdlib) ver 1.30 compiled for macOS
+
+#title		"20230522"
+#composer	"rana"
+#Copyright	"nsd.lib, Copyright (c) 2012 S.W. All rights reserved."
+
+#offsetPCM	$C000
+#code		"nsd_vrc7.bin"
+#bgm		1
+
+/*
+オクターブの移行に><でなく`を使用
+*/
+
+E(0) = { 13 12 11 8 D1 7 D2 6 L 5 }
+E(1) = {12 L 0 }
+E(2) = { 12 12 12 12 12 L 0 }
+
+E(3) = {      	06 08 10 11 11 11 10 10 10 10			;StringsA
+		09 D8 09 D8 08 D8 08 D8 07 D8 07 D8 L	06 }
+E(4)= {		03 05 07 08 D2 07 D4						;StringsB
+		06 D8 06 D8 05 D8 05 D8 04 D8 04 D8 L	03}
+E(5) = {       	10 07
+		13 11 09 07 05 03 02
+		04 07 05 04 03 02 02 01
+		03 05 04 03 02 02 01 L 01 }
+E(7) = {	12 10 9 7 L 5 }
+E(8) = {	13 10 9 7 D4 L 1 }
+E(9) = {	14 12 10 D4 8 D4 6 D4 5 D1 L 0 }
+E(14) = { 02 03 04 05 D4 04 D4 03 D4 02 D4 L 01 }			;Strings C
+E(15) = {02 03 04 05 D4 04 D4 03 D4 02 D4 L 01 00 }
+E(30) = { (43,15,5) (15,0,50) L 0 R L 0 }
+E(50) = {15 D4 14 D3 12 D2 10 D2 8 D2 5 D2 3 D2 1 D2 L 0 } ;Trumpet
+E(60) = {15 D8 14 D8 13 D6 12 D6 11 D4 10 D2 8 D2 6 D2 4 D2 3 D2 2 D2 1 D2 L 0  } ;Flute
+
+//PatchSlideEnvelope THX to Mr.Mays.
+//#OffsetEv	0	;volume
+//#OffsetEm	100	;freq
+//#OffsetEn	200	;note_env(arpeggio)
+#OffsetE@	300	;voice_env(duty)
+E(301){4 L 12}	//duty
+
+E(461)={	10 07  L 00 } ;CloseHiHat
+E(462)={	10 08 07 06 05 04 03 03 02 02 01 01 L 00 } ;OpenHiHat
+E(463)={	13 12 10 09 09 08 08 08
+			07 07 07 07 06 D8 05 D8 04 D9 03 D10 02 D11 01 D12 L 00 } ;CrashSymbal
+E(561)={	 -2 -2 -2 -2 -1 -1 -1 -1 0 0 0 0 L -2 -2 -2 -1 -1 -1 0 0 L 0 }
+
+E(464)= { 10 02 L 00}
+E(465)= { 07 D5 06 D6 05 D6 04 D7 03 D9 02 D11 01 D10 L 00 }
+E(466)={	11 06 09 05 07 04 05 03 04 02 03 01 02 00 01 L 00 } ;Snare
+E(467)={	08 06 05 04 03 02 D1 L 00 }
+E(490)={  15 14 13 11 10 9  8 8 7 7 6 6 5 5 4 4 3 3 3 2 2 2 2 L 1 D5} ;モザイクロール
+
+E(700)={ 0 D10 2 D10 4 D10 5 D10 6 D10 4 D10 L 2 D10 3 D6 1 D6 }	;�g�̉���
+E(800)={6,12,11,10,9,8,12,7,5,4,3,2,1, L 0} // コナミスネア+クローズハット
+E(801) = {12,6, L 2} // クローズハット単体
+E(802) = {12,8,7,5,5,5,12,8,5,5,4,4,4,3,3,3,2,2, L 2} // オープンハット+クローズハット
+E(803) = {10,14,13,12,10,10,12,9,7,7,5,5,12,6,3,3,2,2,1,1, L 0} // シンバル+クローズハット
+E(804) = {10,-10, L 0}
+E(805) = { 11, 10, 9, 7, 5, 3, 1, L 0} ; Close HiHat
+E(806) = { 7, 7, 7, 7, 6, 4, 3, L 2} ;Open Hihat
+
+E(900) = { L 0 12}
+
+//DPCM an_kick to 808kick(THX to an_kick.dmc by narutp2413 on aibomb.nsf)
+DPCM {
+
+		 c4, "808kick.dmc",15,0
+       	 d4, "snare_CH.dmc",15,0
+			
+}
+
+
+VRC7(1){	//Piano
+	//	TL FB
+	@	18  4
+	//	AR DR SL RR KL MT AM VB EG KR DT
+		15  1  3  3  2  1  0  0  0  1  1
+		15  2  3  1  0  1  0  0  0  1  0
+}
+VRC7(2) ={@R $05,$01,$16,$00,$F9,$A2,$15,$F5};ギター(エレキ系)
+VRC7(3) ={@R $01,$41,$11,$00,$A0,$A0,$83,$95};ピアノ(アコースティック系)
+VRC7(4) ={@R $01,$41,$17,$00,$60,$F0,$83,$95};フルート
+VRC7(5) ={@R $24,$41,$1F,$00,$50,$B0,$94,$94};クラリネット
+VRC7(6) ={@R $05,$01,$0B,$04,$65,$A0,$54,$95};ベル系
+VRC7(7) ={@R $11,$41,$0E,$04,$70,$C7,$13,$10};トランペット
+VRC7(8) ={@R $02,$44,$16,$06,$E0,$E0,$31,$35};バイオリン
+VRC7(9) ={@R $48,$22,$22,$07,$50,$A1,$A5,$F4};ホルン
+VRC7(10)={@R $05,$A1,$18,$00,$A2,$A2,$F5,$F5};オルゴール
+VRC7(11)={@R $07,$81,$2B,$05,$A5,$A5,$03,$03};ビブラフォン
+VRC7(12)={@R $01,$41,$08,$08,$A0,$A0,$83,$95};鋸波
+VRC7(13)={@R $21,$61,$12,$00,$93,$92,$74,$75};アコースティックベース
+VRC7(14)={@R $21,$62,$21,$00,$84,$85,$34,$15};シンセベース１
+VRC7(15)={@R $21,$62,$0E,$00,$A1,$A0,$34,$15};シンセベース２
+
+
+
+
+bgm(0){
+
+//Defenition
+TR6 l4	o5	v12	Em*  En*	@0	@V4	t150 
+                                    
+TR7	l4	o6	v8	Rm2	@0	@V3       
+TR8	l4	o5	v12	Rm2	@0	@V3	         
+TR9	l4	o5	v12	Rm2	@0	@V3	         
+TR10l4	o5	v12	Rm2	@0	@V3	        
+TR11l4	o2	v10	Rm2	@0	@V13	    
+
+TR1,2,3,4,5,6,7,8,9,10,11   
+
+
+//A
+TR6  l4	o5	v13 Ev60 Rm0	E@1          l4 gab>c defg a4.b8 ag fefd cdeg agfe g4.a8gf edec 
+TR7	 l4	o6	v10	Rm2	@3               l8   [4  r e r e] [4 r g r g] [4 r a r a] [2 r g r g] r e r e r f r d 
+TR8	 l4	o5	v10	Rm2	@3	 	         l8   [4  r c r c] [4 r d r d] [4 r e r e] [2 r d r d] r c r c r d r<b> 
+TR9	 l4	o5	v10	Rm2	@3		         l8   [4  r a r a] [4 r b r b]>[4 r c r c]<[2 r b r b] r a r a r b r g 
+TR10 l4	o5	v10	Rm2	@3	             l8   [4  r f r f] [4 r g r g] [4 r a r a] [2 r e r e] r r r r r g r e
+TR11 l4	o2	v12	Rm2	@14     	     l8	   [8 f`f] [8 g`g] [8 f`f] [4 e`e] [2 a`a] g`g ec
+
+
+TR4 l8  Ev463En561e4 En* Ev466d8 Ev462g8 [Ev461a16a16 Ev462g8 Ev466d8 Ev462g8]15
+TR5  l4 o4 [3  cccc] ccc c8c8 [3  cccc] l8 cccc l16 cccc cccc 
+
+TR1 Ev5 EC2,3 v11 l16 r-1
+TR2 [r-1]8
+TR3 [r-1]8
+
+//A'
+TR6  l4	o5	v13 Ev60 Rm0	E@1          l4 gab>c defg a4.b8 >c<b ab>cd edc<b agfe d4.c8 de dc<ba>
+TR7	 l4	o6	v10	Rm2	@3               l8   [4  r e r e] [4 r g r g] [4 r f r f] [2 r a r a] rfrd rerd
+TR8	 l4	o5	v10	Rm2	@3	 	         l8   [4  r c r c] [4 r d r d] [4 r d r d] [2 r e r e] rdrd rdrd
+TR9	 l4	o5	v10	Rm2	@3		         l8   [4  r a r a] [4 r b r b] [4 r g r g]>[2 r c r c]<rbrb rbrb  
+TR10 l4	o5	v10	Rm2	@3	             l8   [4  r f r f] [4 r g r g] [4 r e r e] [2 r a r a] rgrg rgrg
+TR11 l4	o2	v12	Rm2	@14     	     l8	   [8 f`f] [8 g`g] [8 e`e] [4 a`a]  [2 g`g]  g`g ec
+
+
+TR4 l8  Ev463En561e4 En* Ev466d8 Ev462g8 [Ev461a16a16 Ev462g8 Ev466d8 Ev462g8]15
+TR5  l4 o4 [3  cccc] ccc c8c8 [2  cccc] l8 cccccccc  l16 cccc cccc cccc cccc
+
+TR1 Ev5 EC2,3 v11 l16 r-1
+TR2 [r-1]8
+TR3 [r-1]8
+
+
+}

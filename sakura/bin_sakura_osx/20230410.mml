@@ -1,0 +1,96 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura Data(on macOS CUI v2.379)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】20230410
+【Cpomposer】rana
+【Date】2023/4/10
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+「街と駅構内と古本」
+という着想で
+作ってみました。
+コードとメロディーの補助に
+AIを使っています。
+今日は下新文庫の日
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+//_00:Setup
+TrackName     = {"20230410"}
+Copyright     = {"rana"}
+Tempo         = 130;
+TimeSignature = 4,4;
+ResetGS;ResetXG;ResetGM;
+TrackSync;
+
+//MML
+//Melody
+TR(1) l4  o6 @10  //Gloclは1オクターブ上に
+                  [2 [ [8 r1]]
+                    [4 egaegaeg]]
+//Harmony
+TR(2) o4 l8 @97
+               [2 [4   'fa>ce<'2 r8  'fa>ce<'4 'fa>ce<'8 
+                'egb>d<'2 r8  'egb>d<'4  'egb>d<'8]
+                [4   'fa>ce<'2 r8  'fa>ce<'4 'fa>ce<'8 
+                'egb>d<'2 r8  'egb>d<'4  'egb>d<'8]
+
+                 [4   'fa>ce<'2 r8  'fa>ce<'4 'fa>ce<'8 
+                'egb>d<'2 r8  'egb>d<'4  'egb>d<'8]]
+
+                  [2   'fa>ce<'2 r8  'fa>ce<'4 'fa>ce<'8 
+                'egb>d<'2 r8  'egb>d<'4  'egb>d<'8]
+                //IV - III - VI - VII
+                    'fa>ce<'2 r8  'fa>ce<'4 'fa>ce<'8 
+                'eg+b>d<'2 r8  'eg+b>d<'4  'eg+b>d<'8
+                    'c+eg+b'2 r8 'c+eg+b'4 'c+eg+b'8
+                       'df+a>c+<'2 r8 'df+a>c+<'4'df+a>c+<'8
+//Bass
+TR(3) o3 l8 @35  [2 [8r1]]
+                    [4 [2 ffff] [2 eeee]]
+                      [4 [2 ffff] [2 eeee]]
+
+                         [4 [2 ffff] [2 eeee]]
+                      [4 [2 ffff] [2 eeee]]
+
+                       [2 [2 ffff] [2 eeee]]
+                          [2 ffff][2 eeee] [2 c+c+c+c+] [2 dddd]
+//Drums
+//bassdrum
+TR(10) CH=10 o3 l4 v127  [4 r1] [3 cccc] ccc c8c8 
+                    [2[2 [4 cccc]]]
+                         [4 cccc]  [3 cccc] ccc c8c8 
+                            [2 [4 cccc]] [2 [4 cccc]]
+
+                                [4 cccc]  [4 cccc]
+
+//hihat
+TR(11) CH=10 o3 l8  [8 r1]
+                    [2 [8 f+f+f+f+]]
+                       [2 [8 f+f+f+f+]]
+
+                            [2 [8 f+f+f+f+]]
+
+                              [4 r1]
+                    [2 [8 f+f+f+f+]]
+                       [2 [8 f+f+f+f+]]
+                            [8 f+f+f+f+]
+
+                       
+//snare
+TR(12) CH=10 o3 l4  [2 [8 r1]
+                     [2 [4 rdrd]]
+                           [2 [4 rdrd]] 
+
+                            [2 [4 rdrd]] 
+
+                              [8 r1]
+                     [2 [4 rdrd]]
+                           [2 [4 rdrd]] 
+//CrashSymbal
+TR(13) CH=10 o4 [2 [8 r1]
+                  c+1 [7 r1]]
+
+                  [16 r1]
+                    c+1 [7 r1]

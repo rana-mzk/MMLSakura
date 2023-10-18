@@ -1,0 +1,38 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on macOS CUI v2.379)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】Ninja Style
+【Composer】rana
+【Date】2023/10/02
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ピコサクラで作成。
+読んでたラノベの忍者風です。
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+//_00:Setup
+TrackName     = {"Ninja Style"}
+Copyright     = {"rana"}
+Tempo         = 132;
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+//Ninja Style
+TR(1) l8 @66 TEMPO(132)
+        fga-b-4a-gf fga-b-4>cde-<
+        fga-b-4a-gf fga-b-4>cde-
+        fe-fe-4dcd4c<b->c4<b-a-b-
+        fga-b->cde-dc<b-a-b-ga-b-a-
+
+TR(3) l8 v80 @34 [4 o3 e->e-ff [3 r>c<ff]]
+
+TR(5) @52 v70 [4 r8 'fa->ce-<'1^2^4^8]
+
+TR(10) CH=10 @1 l4 o3 [8 cr8c8cr]
+TR(11) CH=10 @1 l4 o3 [8 rdrd]
+TR(12) CH=10 @1 l8 o3 [8 rf+rf+rf+rf+]

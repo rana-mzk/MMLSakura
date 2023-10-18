@@ -1,0 +1,192 @@
+#title		"Theme of tina"
+#Copyright	"nsd.lib, Copyright (c) 2012 S.W. All rights reserved"
+#Composer	"Nobuo Uematsu"
+
+#OffsetPCM	$C000
+
+
+#Code		"nsd.bin"
+
+#bgm	1
+
+
+// ----------------------------------------------------------------------------------------
+//
+// 音色等のエンベロープ設定
+//
+// ----------------------------------------------------------------------------------------
+
+
+Envelop(00)  = {	(0,63,10) (63,0,50)	L	0		}
+Envelop(01) = { 15 12 11 10 9 8 7 6 L 5 R L 2 }
+Envelop(02) = { 11 9 L 6 4 R L 1 0 }
+
+Envelop(03) = { 0 L -2 0 0  2 0 0 }
+Envelop(04) = { 0 L  4 0 0 -4 0 0 }
+Envelop(05) = { 12 11 10 9 8 7 6 5 4 3 2 L 1 }
+Envelop(10) = { 8 4 2 1 L 0 }
+Envelop(15) = { 63 L -32 }
+Envelop(16) = { 63 L -64 }
+Envelop(26) = { 15 12 9 L 5 5 4 4 3 3 2 3 4 R 4 L 2 }
+Envelop(34) = { 8 6 5 4 3 L 2 }
+
+Envelop(1000) = {	0	D23	1	D7	L	2	}
+Envelop(1001){ L 15 12 7 3 1 0 }
+
+
+
+
+E(461)={	10 07 00 }
+E(462)={	10 08 07 06 05 04 03 03 02 02 01 01 00 }
+E(463)={	11 10 10 09 09 08 08 08 
+			07 07 07 07 
+			06 06 06 06
+			03 03 03 03 03 03 
+			02 02 02 02 02 02 02 02 02 02 
+			01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
+			00 }
+E(561)={	 -2 -2 -2 -2 -1 -1 -1 -1 0 0 0 0 L -2 -2 -2 -1 -1 -1 0 0 0 }
+E(464)={	10 02 00}
+E(465)= {	07 07 07 07 07 07
+			06 06 06 06 06 06 06 06 
+			05 05 05 05 05 05 05 05 
+			04 04 04 04 04 04 04 04 04 04
+			03 03 03 03 03 03 03 03 03 03 03 03
+			02 02 02 02 02 02 02 02 02 02 02 02 02 02
+			01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
+			00 }
+E(466)={	11 06 09 05 07 04 05 03 04 02 03 01 02 00 01 00 }
+
+
+@N(0) { 7,9,11,13,15,13,11,9, 8,6,4,2,0,2,4,6 }
+
+@N(1) { 15,15,14,14,13,13,12,12,0,0,1,1,2,2,3,3}
+
+
+DPCM{
+//	音階, "ファイル名", 周波数, モード(0:shot / 1:loop)
+
+	c4,	"dpcm\an_kick.dmc",15,0
+	d4,	"dpcm\snare_CH.dmc",15,0
+
+}
+
+
+// ----------------------------------------------------------------------------------------
+//
+//
+//
+// ----------------------------------------------------------------------------------------
+
+bgm(0) { t144
+
+	TR1      l16 o4 @1 Ev1    
+	TR2      l16 o4 @2 Ev2 
+	TR3      l8  o3 
+	TR4      l8 v15 o3         
+	TR5      l8 v15 o4          
+		 
+		 
+		 
+TR1			b>d- df+d2. 
+			d-<b>d-4<f+2 r8
+			l16 b>d- df+d2.
+			d-<b>d-4f+2 r8
+			l16 def+af+2.
+			ede4<a2 r8
+			>dd-<b2. r8
+			>dd-<b2. r8
+			
+			b>d- df+d2. 
+			d-<b>d-4<f+2 r8
+			l16 b>d- df+d2.
+			d-<b>d-4f+2 r8
+			l16 def+af+2.
+			ede4<a2 r8
+			>dd-<b2. r8
+			>dd-<b2. r8
+	
+	
+TR2 r8
+
+	EC2,6 
+	<b>b>df+bf+d<b <b>b>df+bf+d<b <f+>f+a>c+f+c+<af+ <f+>f+a>c+f+c+<af+
+	<b>b>df+bf+d<b <b>b>df+bf+d<b <f+>f+a>c+f+c+<af+ <f+>f+a>c+f+c+<af+
+	d>df+a>d<af+d< d>df+a>d<af+d< <a>a>c+eaec+<a <a>a>c+eaec+<a
+	<g>gb>dgd<bg <e>egb>e<bge
+	<b>b>df+bf+d<b <b>b>df+bf+d<b
+	
+	<b>b>df+bf+d<b <b>b>df+bf+d<b <f+>f+a>c+f+c+<af+ <f+>f+a>c+f+c+<af+
+	<b>b>df+bf+d<b <b>b>df+bf+d<b <f+>f+a>c+f+c+<af+ <f+>f+a>c+f+c+<af+
+	d>df+a>d<af+d< d>df+a>d<af+d< <a>a>c+eaec+<a <a>a>c+eaec+<a
+	<g>gb>dgd<bg <e>egb>e<bge
+	<b>b>df+bf+d<b <b>b>df+bf+d<b
+	
+	
+TR3 r8 q2 
+	l8 bbb l24 bbb l8 b l24 bbb l8 b l16 bb
+	l8 f+f+f+ l24 f+f+f+ l8 f+ l24 f+f+f+ l8 f+ r
+	
+	l8 bbb l24 bbb l8 b l24 bbb l8 b l16 bb
+	l8 f+f+f+ l24 f+f+f+ l8 f+ l24 f+f+f+ l8 f+ r
+
+	l8 > ddd l24 ddd l8 d l24 ddd l8 d l16 dd <
+	l8 aaa l24 aaa l8 a l24 aaa l8 a r
+
+	l8 ggg l24 ggg l8 e l24 eee l8 e l16 ee
+	l8 bbb l24 bbb l8 b l24 bbb l8 b r
+	
+	
+	l8 bbb l24 bbb l8 b l24 bbb l8 b l16 bb
+	l8 f+f+f+ l24 f+f+f+ l8 f+ l24 f+f+f+ l8 f+ r
+	
+	l8 bbb l24 bbb l8 b l24 bbb l8 b l16 bb
+	l8 f+f+f+ l24 f+f+f+ l8 f+ l24 f+f+f+ l8 f+ r
+
+	l8 > ddd l24 ddd l8 d l24 ddd l8 d l16 dd <
+	l8 aaa l24 aaa l8 a l24 aaa l8 a r
+
+	l8 ggg l24 ggg l8 e l24 eee l8 e l16 ee
+	l8 bbb l24 bbb l8 b l24 bbb l8 b r
+	
+	
+	
+	q255
+	
+	o5 l4 d2 f+d<b1> e2gec+1 f+2af+d2.
+	l8 ef+ l4 e<b2> c+ l1 d q0 c+
+	
+	
+	
+TR5 r8 
+	[8 l4 cccc]
+	
+	[8 l4 cccc]
+	
+	[8 l4 cdc8.c16d]
+
+
+TR04 r8 
+	v15 _5 o5
+	l16	Ev463En561e4 En* Ev466d8 Ev462g8 En*[Ev461a8 Ev462g8 Ev466d8 Ev462g8]11
+	l16	[Ev461aaEv462g8 Ev466d8Ev462g8]3 Ev461aaEv462gEv466d Ev461a8 Ev466d8
+
+
+
+	v15 _5 o5
+	l16	Ev463En561e4 En* Ev466d8 Ev462g8 En*[Ev461a8 Ev462g8 Ev466d8 Ev462g8]11
+	l16	[Ev461aaEv462g8 Ev466d8Ev462g8]3 Ev461aaEv462gEv466d Ev461a8 Ev466d8
+	
+	
+	
+	v15 _5 o5
+	l16	Ev463En561e4 En* Ev466d8 Ev462g8 En*[Ev461a8 Ev462g8 Ev466d8 Ev462g8]11
+	l16	[Ev461aaEv462g8 Ev466d8Ev462g8]3 Ev461aaEv462gEv466d Ev461a8 Ev466d8
+	
+	
+	v15 _5 o5
+	l16	Ev463En561e1
+
+
+
+}

@@ -1,0 +1,48 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on macOS CUI v2.379)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】小道を通って
+【Composer】rana
+【Date】2023/10/04
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+モンハンNowをしながら
+自転車でそこらじゅう巡っていると
+知らない小道でわくわくしますよね。
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+//_00:Setup
+TrackName     = {"小道を通って　"}
+Copyright     = {"rana"}
+Tempo         = 140;
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+//小道を通って
+TR(1) l8 @54 
+        dede4fga b-ab-a4gfg
+            fgfgab-ab-> c<b->cd4c<b-a
+            [4 gfga r4] gfgagfga
+
+            [8 r1]
+TR(2) @19 l2 [8 r1] o5 q100
+        [2 'e-g' 'df' 'ce-' '<b->d']
+           '<a->c' '<b->d' 'ce-' 'df'
+           'e-g' 'fa-' 'gb-' 'a->c'
+
+TR(3) l8 v80 @34 o3 [4 <b->f r2 r<b-b->f r2 rr]
+                    [4 <a->e- r2 r<a-a->e- r2 rr]
+TR(5) @4 v50 l4 [16 r '<b->dfa']
+                [16 r '<a->ce-g']
+
+TR(10) CH=10 @1 l4 o3 [16 cr8c8cr]
+TR(11) CH=10 @1 l4 o3 [7 rdrd] rdrd8.d16
+                      [7 rdrd] rd8.d16rd16d16d16d16
+TR(12) CH=10 @1 l16 o3 [2 [8 [4 v108f+v70f+v82f+v69f+]]]
+TR(13) CH=10 @1 l1 o4 [2 c+ rrr [4 r]]

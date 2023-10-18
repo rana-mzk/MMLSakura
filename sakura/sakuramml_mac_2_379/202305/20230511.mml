@@ -1,0 +1,30 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on macOS CUI v2.379)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】20230511
+【Composer】rana
+【Date】2023/05/11
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+もくりをしながら作りました◎
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+//_00:Setup
+TrackName     = {"20230511"}
+Copyright     = {"rana"}
+Tempo         = 60;
+TimeSignature = 4,4;
+ResetGS;ResetXG;ResetGM;
+TrackSync;
+
+//MML
+//Melody
+TR(1) v100 @11 o6 l4 fefg edef dcde fefg
+                        gfga bab>c< >c<b>cd edef
+//Harmony
+TR(2) v100 @11 l8 o5 dfafdfaf cege cege <b>dfd <b>dfd <a>cec <a>cec
+                        dfaf dfaf egbgegbg fa>c<a fa>c<a gb>d<b gb>d<b>
+                     

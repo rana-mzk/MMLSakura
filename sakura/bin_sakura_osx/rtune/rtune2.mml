@@ -1,0 +1,13 @@
+/*
+	習作として作ってみました。
+*/
+TrackName = {"rtune2 sideM"}
+MetaText  = {"習作"}
+
+TEMPO=120	//テンポの設定（数値には、漢数字も使えます。）
+拍子４，４		//４分の４拍子に設定
+
+音源初期化
+TR=1  l8 o5 cded cdec defedefd gfef edce dc<b>c  d4g4
+
+TR=3 o4 l2 c<g>d<a>e<b>d<g

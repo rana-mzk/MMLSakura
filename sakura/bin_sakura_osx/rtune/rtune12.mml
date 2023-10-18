@@ -1,0 +1,36 @@
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【曲　名】rtune12
+【作曲者】rana
+【作成日】2022/12/07
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+AIの強さみたいなものを感じる。
+ということで画像生成はAIさんにお願いしました。
+Macのスペックの問題で時間がかかったです。
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+//_00:初期設定
+TrackName     = {"rtune12"}
+Copyright     = {"rana"}
+Tempo         = 128;
+TimeSignature = 4,4;
+
+/*Tone Map
+GM maps
+*/
+
+
+//Loop
+TR=8 CH=8 @16  v100  o5 g2d4b4 g2e2  l4 fa>cf ec<ae
+                        g2d4b4 g2e2  l16 fa>c f <a>cfa cfa>c  fcfa< e2d2
+                     o5 g2d4b4 g2e2  l4 fa>cf ec<ae
+                        g2d4b4 g2e2  l16 fa>c f <a>cfa  l32 cfa>c  fcfa< c<a>cf afa>c< l2 ed 
+TR=1 CH=1 @4 v80[4  r8 'a>ce<'8 r16 'a>ce<'8 r16 'a>ce<'8. 'a>ce<'8. 'a>ce<'16 r16
+                 r8 'gb>d<'8 r16 'gb>d<'8 r16 'gb>d<'8. 'gb>d<'8. 'gb>d<'16 r16
+                 r8 'fa>c<'8 r16 'fa>c<'8 r16 'fa>c<'8. 'fa>c<'8. 'fa>c<'16 r16
+                 r8 'gb>d<'8 r16 'gb>d<'8 r16 'gb>d<'8. 'gb>d<'8. 'gb>d<'16 r16]
+TR=5 CH=5 @50 
+TR=9 CH=9 @36 o3 q100 [4 [4 a8>a16a16<] [4 g8>g16g16<] [4 f8>f16f16<] [4 g8>g16g16<]]
+TR=10 CH=10 @1 o3 l8 [32 'cf+' a+ 'cdg+' a+] 

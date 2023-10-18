@@ -1,0 +1,61 @@
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【曲　名】rtune6
+【作曲者】rana
+【作成日】2022/11/20 (for ピコサクラ)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ドラムの打ち込み頑張りました◎
+
+普段はフリー音源サイトを運営しています。
+https://www.soundescape.info/
+毎日更新のブログはもうちょっと一年更新達成です。
+https://tatsuyakitahara.com/
+Spotifyのプロフィール
+https://open.spotify.com/artist/2q4GOk5mIsa3SyXvXN2J2m?si=50_Cz-JATb-uHZ7gvHSrFA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+//_00:初期設定
+TrackName     = {"rtune7"}
+Copyright     = {"rana"}
+Tempo         = 80;
+TimeSignature = 4,4;
+
+/*Tone Map
+ff8demo.sf2
+
++1で指定
+@4
+@12
+@14
+@29
+@32
+@33
+@38
+@44
+@46
+@47
+@48
+@49
+@52
+@54
+@55
+@56
+@58
+@60
+@70
+@73
+@77
+@116
+@117
+@119
+*/
+
+//A  
+TR=8 CH=8 @5 
+                   
+TR=1 CH=1 @13 cdef
+
+TR=10 CH=10 o3 l4 
+TR=11 CH=10 [16 r1] 
+

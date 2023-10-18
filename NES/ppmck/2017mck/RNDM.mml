@@ -1,0 +1,194 @@
+#TITLE		RNDM Introduction
+#COMPOSER	Random Beats
+#PROGRAMER	rana
+#MAKER		Random Beats
+
+#AUTO-BANKSWITCH 0
+
+@v0 = { 6 5 4 }
+@v1 = { 11 10 6 8 8 7 7 7 7 6 6 6 4  4 2 2 1  }
+@v2 = { 4 5 6 6 7 7 7 6 6 6 6 6 5 5 5 5 5 5 4 4 4 4 4 4 3 3 3 3 3 3 2 2 2 2 2 2 1 1 1 1 1 1 0 }
+@v3 = { 9 8 7 6 5 5 6 6 6 3 }
+@v4 = { 9 8 7 7 4 }
+@v5 = { 10 8 6 6 6 6 5 5 5 5 4 4 4 4 3 3 3 3 2 2 2 2 1 }
+@v6 = { 7 6 5 4 4 4 4 4 4 5 5 5 5 5 5 6 6 6 6 6 6 7 7 7 7 7 7 | 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 7 7 7 7 7 7 7 7 6 6 6 6 6 6 6 5 5 5 5 5 4 4 4 4 4 }
+@v7 = { 7 9 11 10 9 8 7 6 6 5 5 5 5 5 5 4 4 4 4 4 3 3 2 }
+@v9 = { 15 13 7 4 2 0 }
+@v10 = { 11 8 5 2 0 }
+@v12 = { 7 8 9 10 11 11 12 12 13 13 13 13 13 14 14 14 14 13 13 13 13 13 12 12 12 12 12 12 12 12 11 11 11 11 11 10 10 10 10 10 10 9 9 9 9 8 8 8 8 7 7 7 7 7 6 6 6 6 5 5 5 4 4 4 4 3 3 3 3 2 2 2 2 }
+
+@0 = { 1 1 0 }
+@1 = { 0 0 2 }
+@2 = { 2 2 0 0 1 }
+@3 = { 1 1 0 0 2 2 2 2 2 0 }
+@4 = { 0 0 1 1 0 }
+@5 = { 2 1 0 0 2 }
+@6 = { 1 0 2 }
+@7 = { 2 1 0 0 | 1 1 2 2 2 2 1 1 0 0 }
+
+@EP0 = { -12 3 3 3 3 0 }
+@EP1 = { -50 }
+@EP2 = { 50 }
+@EP3 = { -9 1 2 1 2 1 2 0 }
+@EP4 = { -5 1 1 0 1 1 0 1 0 0 }
+@EP5 = { -20 }
+
+@EN0 = {| -4 4 }
+@EN1 = { 0 | 3 3 3 -9 }
+@EN2 = { 0 | 3 2 3 -8 }
+@EN3 = { 0 | 3 4 2 -9 }
+@EN4 = { 0 | 5 3 -8 }
+@EN5 = { 0 | 4 4 -8 }
+@EN6 = { 0 | 3 5 -8 }
+@EN7 = { 0 | 2 3 3 -8 }
+@EN8 = { 0 | 3 4 2 -9 }
+@EN9 = { 12 -12 12 }
+@EN10 = { | 12 -12 }
+
+@MP0 = { 12,3,255,0 }
+@MP1 = { 12,2,4,0 }
+@MP2 = { 12,2,2,0 }
+@MP3 = { 18,3,1,0 }
+@MP4 = { 2,2,1,0 }
+
+;[tempo]
+
+
+ABC	t86
+
+
+;[intro1]
+
+A @2 @v1 o5
+B @2 @v1 o6
+C 
+
+ABC
+
+/---　intro
+A l16 grdrercrdr<ar>cr<gr> e2c2
+B l16 rgrdrercrd<ra>rc<rg> <a2g+2
+C o4 q8 r1 f2f2
+
+
+/---　A
+A [l16 grerdrgrerdrgrrr]3
+B [l16 rdrgrerdrgrererr]3
+C o4 >c1<a1f1
+
+
+A l16 [g8rd8rrr]2 g1
+B l16 [rrcrrgrr]2 e1
+C o4 a-2b-2>c1<
+
+
+/---　B
+A e4.c4<a4. > d4.<b4 g4.> c4.<a4 f4.> <b4. g4^4.>
+B <a4.a4 f4.   b4. g4 e4.  a4. f4 d4.   g4. e4^4.
+C [o3 g2 r8 q7 >g4g8<]4
+
+
+/---　B'
+A e4.c4<a4. > d4.<b4 g4.> c4.c8 d4.d8 e4.e8 f+4.f+8
+B a4.a4 f4.   b4. g4 e4. f4.f8 g4.g8 a4.a8 b4.b8
+C [o3 g2 r8 q7 >g4g8<]2  b-4.b-8> c4.c8 d4.d8 e4.e8
+
+
+/---　C
+A o5 l16 grer drgr erdr grer
+B o5 l16 rdrg rerd rgre rdrg
+
+A l16 gr  cr  <b>rg  rc r<b>rg  r cr
+B l16 r<b>rg  r  cr<b>r grcr   <b>rg
+
+A l16 grdr crgr drcr grdr
+B l16 rcrg rdrc rgrd rcrg
+
+A l16 [g8rd8rrr]2
+B l16 [rrcrrgrr]2
+
+C o4 >c1<a1>d1< a-2b-2 
+
+
+/---　C'
+
+
+A l16 [gr  cr  <b>rg  rc r<b>rg  r cr]2
+B l16 [r<b>rg  r  cr<b>r grcr   <b>rg]2
+
+
+A l16 [g8rd8rrr]2 g2 >g2<
+B l16 [rrcrrgrr]2 e1
+
+C o4 >c1< a1 a-2b-2 >c1<
+
+
+/---　D
+
+A l8. bge4 c4.   bge4 b>d<
+B l8. gec4 <g4.> gec4 g b
+
+A l8. aec<a4 a> c2e2
+B l8. ec<ge4 e> a2g+2
+
+C o4 l1 >c<a >d<f2e-2
+
+
+/---　E
+
+A l8. [bge4 b>d<]2
+B l8. [gec4 g b]2
+
+A l8. ec<a el16 rgr>d<
+B l8. c<ae cl16 rrbr
+
+
+A l16 o5 [g8rd8rrr]2
+B l16 o5 [rrcrrgrr]2
+
+C o4 l1 >c<a>d< a-2b-2
+
+
+
+/---　F
+
+A l16 [gr  cr   <b>rgr  cr<b>r g r c r]2
+B l16 [r<b>rg   r cr<b> rgr  c r<b>r g]2
+
+
+A l16 gr  cr   <a>rgr  cr<a>r g r c r
+B l16 r<a>rg   r cr<a> rgr  c r<a>r g
+
+
+A l16 o5 [g8rd8rrr]2
+B l16 o5 [rrcrrgrr]2
+
+
+C o4 >c<ead
+
+
+A l16 [gr  cr   <b>rgr  cr<b>r g r c r]2
+B l16 [r<b>rg   r cr<b> rgr  c r<b>r g]2
+
+
+A l16 gr  cr   <a>rgr  cr<a>r g r c r
+B l16 r<a>rg   r cr<a> rgr  c r<a>r g
+
+A l16 o5 [g8rd8rrr]2 e1
+B l16 o5 [rrcrrgrr]2 c1
+
+C o4 >c<e>d< a2a-2 g1
+
+
+
+/---　outro
+
+A l16 o6 [g8rd8rrr]2 e1
+B l16 o6 [rrcrrgrr]2 c1
+
+C o4 a-2b-2c1
+
+
+A l1 o5 g2g2g1
+B l1 o4 c2<b2>e1
+C l1 o3 g2g2>c1<

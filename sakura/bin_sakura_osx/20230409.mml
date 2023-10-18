@@ -1,0 +1,77 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura Data(on macOS CUI v2.379)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】20230409
+【Cpomposer】rana
+【Date】2023/4/9
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+「選曲を明るく楽しくする曲」
+というお題で
+chatGPT(GPT-4)と
+作ってみました。
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+//_00:Setup
+TrackName     = {"20230409"}
+Copyright     = {"rana"}
+Tempo         = 120;
+TimeSignature = 4,4;
+ResetGS;ResetXG;ResetGM;
+TrackSync;
+
+//MML
+//Melody
+TR(1) l8  o5 @81
+    cdef|gab>c<ba2r8r4
+    cdef|ga2rr4|r2
+    gfe>dc<bag|f2r2
+    cdef|ga2rr4|r2
+
+    gfe>dc<bag|f2r2
+    cdef|gab>c<ba2r8r4
+    cdef|ga2rr4|r2
+    gfe>dc<bagf2r2
+
+    cdefgfed c1
+    
+//Harmony
+TR(2) o4 l8 @97
+    [2 cegecege]
+    [2 ceaeceae]
+    [2 b>dgd<b>dgd<]
+    [2 ceaeceae]
+
+    [2 b>dgd<b>dgd<]
+    [2 cegecege]
+    [2 ceaeceae]
+    [2 b>dgd<b>dgd<]
+
+    [2 cegecege] c1
+//Bass
+TR(3) o3 l8 @35
+    [2 c4cgcgcg]
+    [2 c4cgcacg]
+    [2 g4gdgdgd]
+    [2 c4cgcacg]
+
+    [2 g4gdgdgd]
+    [2 c4cgcgcg]
+    [2 c4cgcacg]
+    [2 g4gdgdgd]
+    [2 c4cgcgcg]
+    c1
+
+//Drums
+TR(10) CH=10 o3 l8 [2 [4 c4rcc4r4]]
+                    [2 [4 c4rcc4r4]]
+                      [2 c4rcc4r4] c1
+TR(11) CH=10 o3 l8 [2 [8 f+f+f+f+]]
+                    [2 [8 f+f+f+f+]]
+                        [4 f+f+f+f+]
+TR(12) CH=10 o3 l4 [2 [4 rdrd]]
+                    [2 [4 rdrd]]
+                        [2 rdrd]
+TR(13) CH=10 o4 c+1 [7 r1] [10 r1] c+1
