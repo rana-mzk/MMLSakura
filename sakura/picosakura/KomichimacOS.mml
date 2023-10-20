@@ -1,16 +1,17 @@
 //------------------------------------------------------------------------------
-// テキスト音楽「サクラ」 Text Music Sakura(on macOS CUI v2.379)
+// テキスト音楽「サクラ」 Checked in Text Music Sakura(on macOS CUI v2.379)
 //------------------------------------------------------------------------------
 /*
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 【Title】小道を通って Full Version
 【Composer】rana
-【Date】2023/10/14-20
+【Date】2023/10/14-21
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 モンハンNowをしながら
 自転車でそこらじゅう巡っていると
 知らない小道でわくわくしますよね。
 
+ピコサクラで下地を作り
 Long Version作成にあたり
 打ち込みを見直しました。
 
@@ -26,7 +27,8 @@ ResetGS;
 ResetXG;
 ResetGM;
 TrackSync;
-PlayFrom(65:1:0)
+
+
 //小道を通って
 TR(1) l8 @54 
            [2  dede4fga b-ab-a4gfg
@@ -45,18 +47,22 @@ TR(1) l8 @54
                 'df' 'e-g' 'fa-' 'gb-'4 'a->c<'  'b->d<' > 'ce-'
                 'df' 'ce-' 'df' 'e-g' 'df' 'ce-' <  'b->d<'  'a->c<' 
 
+        l2 '<a->c' '<b->d' 'ce-' 'df'
+           'e-g' 'fa-' 'gb-' 'a->c<'
+
 
 TR(2) @19 l2[2  [2 [8 r1] o5 q100 v100
         [2 'e-g' 'df' 'ce-' '<b->d']
            '<a->c' '<b->d' 'ce-' 'df'
            'e-g' 'fa-' 'gb-' 'a->c<']]
 
-           l1 v60 'e-g'1^1^1^1
+           l1 v60 'e-g'1^1^1^1 'fa-'1^1^1^1 
 
 TR(3) l8 v80 @34 o3 [2 [2 [4 <b->f r2 r<b-b->f r2 rr]
                     [4 <a->e- r2 r<a-a->e- r2 rr]]]
 
-                     [4 <b->f r2 r<b-b->f r2 rr]
+                     [2 <b->f r2 r<b-b->f r2 rr]
+                     [2 <a->e- r2 r<a-a->e- r2 rr]
 
 TR(5) @4 v50 l4[2  [2 [16 r '<b->dfa']
                 [16 r '<a->ce-g'] ]]
@@ -68,8 +74,8 @@ TR(10) CH=10 @1 l4 o3 [2 [2 [16 cr8c8cr]]]
 TR(11) CH=10 @1 l4 o3 [2 [2 [7 rdrd] rdrd8.d16
                       [7 rdrd] rd8.d16rd16d16d16d16]]
 
-                      [8 rrdr]
+                      [7 rrdr] rd8f8d8f8d16d16d16d16
 TR(12) CH=10 @1 l16 o3[2 [2  [2 [8 [4 v108f+v70f+v82f+v69f+]]]]]
                         l8 [2 [7 f+f+f+f+] f+a+g+a+]
 TR(13) CH=10 @1 l1 o4 [2 [2 [2 c+ rrr [4 r]]]]
-                                c+rrr
+                                c+rrr [3 rrrr]
