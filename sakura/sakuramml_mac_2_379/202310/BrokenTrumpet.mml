@@ -1,0 +1,72 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on macOS CUI v2.379)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】Broken Trumpet
+【Composer】rana
+【Date】2023/10/27
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Misskeyのフォロワーさんから
+
+「壊れたトランペットならぬキーボードってことで　
+ranaさん一曲作ってください」
+
+というリクエストをいただいたので
+作ってみました笑
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+//_00:Setup
+TrackName     = {"Broken Trumpet"}
+Copyright     = {"rana"}
+Tempo         = 108;
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+//ADV風
+
+TR(1) l8 
+       @57 g4ab->e-dc<b-> c<b->cd <a4f4
+           g4ab->c<a> cf e-dce- d2
+           d4e-f e-dc<a b-4 >cd c4<f4>
+        <b-4>cd c<b-af g8^2
+
+
+TR(2) @1 o4 l8 'gb-`d' 'gb-`d'4 'gb-`d'
+            'fa`c'  'fa`c'4  'fa`c'
+            'e-gb-' 'e-gb-'4 'e-gb-'
+            'dfa' 'dfa'4 'dfa'
+
+            'gb-`d' 'gb-`d'4 'gb-`d'
+            'fa`c'  'fa`c'4  'fa`c'
+            'b->df<' 'b->df<'4 'b->df<'
+            'a>ce-<' 'a>ce-<'4 'a>ce-<'
+
+            'gb-`d' 'gb-`d'4 'gb-`d'
+            'fa`c'  'fa`c'4  'fa`c'
+            'e-gb-' 'e-gb-'4 'e-gb-'
+            'fa`c'  'fa`c'4  'fa`c'
+
+            'e-gb-' 'e-gb-'4 'e-gb-'
+              'fa`c'  'fa`c'4  'fa`c'
+               'gb-`d' 'gb-`d'4 'gb-`d'
+                'gb-`d' 'gb-`d'4 'gb-`d'
+              
+
+TR(3) l8 v80 @34 o3 gggg ffff e-e-e-e- dddd
+                    gggg ffff b-b-b-b- aaaa 
+
+                    gggg ffff e-e-e-e- ffff
+                    e-e-e-e- ffff gggg gggg
+TR(5) @30 o4 l8 
+
+TR(10) CH=10 @1 l1 o4 c+
+TR(11) CH=10 @1 l8 o3 [8 rf+rf+rf+rf+]
+TR(12) CH=10 @1 l4 o3 [3 rdrd] rdrd8.d16
+                      [3 rdrd] rd8.d16rd16d16d16d16
+TR(13) CH=10 @1 l4 o3 [8 cccc]

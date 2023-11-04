@@ -1,0 +1,33 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on macOS CUI v2.379)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】The Land Unknown
+【Composer】Nobuo Uematsu
+【Date】2023/10/29
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+黒猫SPCを
+みながら
+FF5の曲を
+コピーしてみました。
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+//_00:Setup
+TrackName     = {"The Land Unknown"}
+Copyright     = {"Nobuo Uematsu"}
+Tempo         = 82;
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+//ADV風
+
+TR(1) l8
+TR(2) l8 v80 @34 o3 cc r4r4r4 cc r4r4r4
+TR(7) l8 @106 o4 [2  ce-4e-4e-4e-8]
+TR(8) CH=10 @1 l4 o3 [2 rdrd]

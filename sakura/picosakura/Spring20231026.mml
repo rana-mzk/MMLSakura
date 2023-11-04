@@ -1,0 +1,45 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on macOS CUI v2.379)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】春っぽいの
+【Composer】rana
+【Date】2023/10/26
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+「空も飛べるはず」
+のコード感を
+真似してみたら
+かなり難しかったです笑
+という曲。
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+//_00:Setup
+TrackName     = {"春っぽいの"}
+Copyright     = {"rana"}
+Tempo         = 130;
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+//ADV風
+
+TR(1) l8 
+       @74  o6 edc<b4 aga gab>c4ded
+            fefg4 fed edcd4 c<b>c
+TR(2) @1 l2 
+            'ceg' 'cfa' 'dgb' 'egb'
+            'fa>c<' 'egb' 'fa>c<' 'gb>d<'
+
+TR(3) l8 v80 @34 o3 cccc ffff gggg eeee
+                    ffff eeee ffff gggg
+
+
+TR(10) CH=10 @1 l1 o4 c+
+TR(11) CH=10 @1 l8 o3 [4 rf+rf+rf+rf+]
+TR(12) CH=10 @1 l4 o3 [4 rdrd]
+TR(13) CH=10 @1 l4 o3 [4 cccc]
