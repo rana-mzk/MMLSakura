@@ -15,7 +15,7 @@ For Baby Sleeoing Music Box
 */
 
 //_00:Setup
-TrackName     = {"Fall in"}
+TrackName     = {"Sunset"}
 Copyright     = {"rana"}
 Tempo         = 60;
 TimeSignature = 4,4;
@@ -30,14 +30,21 @@ TR(1) v100 @11 o6 l4 bagf l8efgab>cd<b
                     l4 >c<a>ce dc<ba
                         gagf gabg
                        >c<a>ce dc<ba
+                       gab>c defd<
+                       >edc<b agfd
+                       c1
                         
 
 
 
 //Harmony
-TR(2) v100 @11 l8 o5 cegecege cegb>c<bge
+TR(2) v100 @11 l8 o4 cegecege cegb>c<bge
                     [2 fa>cec<afa]
                     [2 egb>d<bgeg]
                      [2 fa>cec<afa]
-                     [2 gb>dfd<bgb]
+                      [2 egb>d<bgeg]
+                      dfa>c<afdf
+                      gb>dgd<bgb
 
+                      cegb>cegb c32e32g32b32>c8^4^2
+                    
