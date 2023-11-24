@@ -1,0 +1,41 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on macOS CUI v2.379)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】20231124
+【Composer】rana
+【Date】2023/011/24
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+赤ちゃんの寝かしつけのための音楽
+For Baby Sleeoing Music Box 
+"Story" vol.2
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+//_00:Setup
+TrackName     = {"Sunset"}
+Copyright     = {"rana"}
+Tempo         = 60;
+TimeSignature = 3,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+//MML
+//Melody
+TR(1) v100 @11 o6 [4 r4.]  
+            l8   b16a16bg a16g16a>c<
+                b16a16b>e d16c16<ba
+                g16a16ga g16f16ed
+                e16f16ga g16f16ed
+
+
+
+//Harmony
+TR(2) v100 @11 l8 o5 [4 ceg]
+                    [4 ceg]
+                    [4 <b>dg]
+                    [4 ceg]
