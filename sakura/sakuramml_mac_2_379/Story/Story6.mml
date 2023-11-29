@@ -32,10 +32,19 @@ TR(1) v100 @11 o6 [4 r4.]
                 g16a16ga g16f16ed
                 e16f16ga g16f16ed
 
+                 b16a16bg a16g16a>c<
+                b16a16b>e f16e16dc
+                b16a16gf e16d16c<b>
+               <a16b16>c<g> d16c16<ba> 
 
+        o5 g16f16ed c16<b16>cd
 
 //Harmony
 TR(2) v100 @11 l8 o5 [4 ceg]
                     [4 ceg]
                     [4 <b>dg]
                     [4 ceg]
+                    [4 <b>dg]
+
+                o4  [4 fa>c<]
+                    [4 egb]
