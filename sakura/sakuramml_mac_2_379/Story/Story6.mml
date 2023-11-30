@@ -15,9 +15,9 @@ For Baby Sleeoing Music Box
 */
 
 //_00:Setup
-TrackName     = {"Sunset"}
+TrackName     = {"夜のおさんぽ"}
 Copyright     = {"rana"}
-Tempo         = 60;
+Tempo         = 40;
 TimeSignature = 3,4;
 ResetGS;
 ResetXG;
@@ -37,7 +37,18 @@ TR(1) v100 @11 o6 [4 r4.]
                 b16a16gf e16d16c<b>
                <a16b16>c<g> d16c16<ba> 
 
-        o5 g16f16ed c16<b16>cd
+        o6 g16f16ed c16<b16>cd
+            e16d16ef a16g16ab
+            >c16<b16>cd e16f16ed
+            c16<b16ag f16e16dc
+        o6 g16f16ed c16<b16>cd
+            e16d16ef a16g16ab
+            >c16<b16>cd e16f16ed
+            b16a16gf e16d16c<b>
+
+        o6    g16a16b>c d16e16fg
+              a16g16fe d16c16<b>d
+              c4. [3 r4.]
 
 //Harmony
 TR(2) v100 @11 l8 o5 [4 ceg]
@@ -48,3 +59,7 @@ TR(2) v100 @11 l8 o5 [4 ceg]
 
                 o4  [4 fa>c<]
                     [4 egb]
+                     [4 fa>c<]
+                    [4 egb]
+                    [2 dfa] [2 gb>d<]
+                    [2 ceg] c32e32g32b32>c4 r4.
