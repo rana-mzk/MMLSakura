@@ -18,7 +18,7 @@ For Baby Sleeoing Music Box
 TrackName     = {"おつかい"}
 Copyright     = {"rana"}
 Tempo         = 40;
-TimeSignature = 3,4;
+TimeSignature = 2,4;
 ResetGS;
 ResetXG;
 ResetGM;
@@ -26,7 +26,14 @@ TrackSync;
 
 //MML
 //Melody
-TR(1) v100 @11 o6
-
+TR(1) v100 @11 o6 [4 r2] 
+                l8  gge4 gece
+                dgd<g> defe
+                fedf edce
+                dc<b>c d4<g4>
 //Harmony
 TR(2) v100 @11 l8 o5 [4 cege]
+                      [2  cege]
+                      [2 <b>dgd]
+                      [2 <a>cec]
+                      [2 <gb>d<b>]
