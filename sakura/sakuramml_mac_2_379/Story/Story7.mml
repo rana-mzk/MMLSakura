@@ -30,10 +30,36 @@ TR(1) v100 @11 o6 [4 r2]
                 l8  gge4 gece
                 dgd<g> defe
                 fedf edce
-                dc<b>c d4<g4>
+                dc<b>c d4g4
+
+                 l8  gge4 gece
+                d<g>dg defe
+                fga>c cdec<
+                >dc<ba g4e4
+
+                [3 dc<b>c] dc<bg>
+                [3 c<bab>] cded
+                [3 'd<b>' 'c<a>' '<bg>' 'c<a>']  'd<b>' 'c<a>' '<bg>' '<ge>'
+                [3 'c<a>' '<bg>' '<af>' '<bg>'] 'c<a>' 'd<b>' 'ec' 'd<b>' 
+
+                fgab>cdef gfeg fed<b>
+                c2 r2
 //Harmony
 TR(2) v100 @11 l8 o5 [4 cege]
                       [2  cege]
                       [2 <b>dgd]
                       [2 <a>cec]
                       [2 <gb>d<b>]
+
+                       [2  cege]
+                      [2 <b>dgd]
+                      [2 <a>cec]
+                      [2 <gb>d<b>]
+
+                o4    [4 fa>c<a]
+                      [4 egbg]
+                      [4 fa>c<a]
+                      [4 egbg]
+                      [2 dfaf]
+                      [2 gb>d<b]
+                       cege cegb c64e64g64b64>c16^8^4 r2
