@@ -1,0 +1,45 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on macOS CUI v2.379)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】20231124
+【Composer】rana
+【Date】2023/011/24
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+赤ちゃんの寝かしつけのための音楽
+For Baby Sleeoing Music Box 
+"Story" vol.2
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+//_00:Setup
+TrackName     = {"一緒に"}
+Copyright     = {"rana"}
+Tempo         = 40;
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+//MML
+//Melody
+TR(1) v100 @11 o6  [2 r1] 
+                    efg r ab>c< r
+                    gfe r fed r
+
+                    efg r ab>cd
+
+
+//Harmony
+TR(2) v100 @11 l8 o5 [4  c 'eg'4 'eg' ]
+                   
+                    [2  c 'eg'4 'eg' ]
+                    [2 <b> 'dg'4 'dg']
+                    [2 <a> 'ce'4 'ce' ] 
+                    [2 <g> '<b>d'4 '<b>d'] 
+                    
+                    [2  c 'eg'4 'eg' ]
+                    [2 <b> 'dg'4 'dg']
