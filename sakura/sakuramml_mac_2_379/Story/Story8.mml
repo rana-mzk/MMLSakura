@@ -3,13 +3,13 @@
 //------------------------------------------------------------------------------
 /*
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-【Title】20231124
+【Title】一緒に(Together)
 【Composer】rana
-【Date】2023/011/24
+【Date】2023/012/20
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 赤ちゃんの寝かしつけのための音楽
 For Baby Sleeoing Music Box 
-"Story" vol.2
+"Story" vol.2 より
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 */
@@ -26,7 +26,7 @@ TrackSync;
 
 //MML
 //Melody
-TR(1) v100 @11 o6  [2 r1] 
+TR(1) v100 @11 o6  [2 r1]  P(50)
                     efg r ab>c< r
                     gfe r fed r
 
@@ -34,11 +34,15 @@ TR(1) v100 @11 o6  [2 r1]
                     c<bab agfe
 
                     def r gab r
-                    >c<b>c< r bag e
+                    >c<b>cd< bag e
+
+                    fga >c< b>cd<b
+                    >c1  r1 
 
 
 //Harmony
-TR(2) v100 @11 l8 o5 [4  c 'eg'4 'eg' ]
+TR(2) v100 @11 l8 o5 P(72) 
+                    [4  c 'eg'4 'eg' ]
                    
                     [2  c 'eg'4 'eg' ]
                     [2 <b> 'dg'4 'dg']
@@ -53,4 +57,12 @@ TR(2) v100 @11 l8 o5 [4  c 'eg'4 'eg' ]
             o4      [2 f 'a>c<'4 'a>c<']
                     [2 g 'b>d<'4 'b>d<']
                     [2 e 'gb'4 'gb']
-                    [2 <a> 'ce'4 'ce' ] 
+                    [2 a> 'ce'4 'ce' <] 
+
+                    [2 f 'a>c<'4 'a>c<']
+                       d 'fa'4 'af'
+                       g 'b>d<'4 'b>d<'
+
+                >    [2  c 'eg'4 'eg']
+                    c1
+                
