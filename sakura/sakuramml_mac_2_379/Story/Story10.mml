@@ -1,0 +1,63 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on macOS CUI v2.379)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】おひさま(Tea Sun)
+【Composer】rana
+【Date】2024/01/5
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+赤ちゃんの寝かしつけのための音楽
+For Baby Sleeping Music Box 
+"Story" vol.2 より
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+//_00:Setup
+TrackName     = {"おひさま"}
+Copyright     = {"rana"}
+Tempo         = 120;
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+//MML
+//Melody
+TR(1) v100 @11 o6 P(50) [8 r1]
+                         l2 ge c d4e4 cd4e4 dc
+                            ge c4d4e4>c4< ba gf
+
+                            gb >c4d4e4c4< l4 bab>c<bage 
+                            fgab>cdc<b agfagfed
+
+
+//Harmony
+TR(2) v100 @11 l8 o5 P(72) 'cegb'4 'cegb'4  r8 'cegb'4 r8
+                            'cegb'4.  'cegb'4.  'cegb'4
+                                  'dfa>c<'4  'dfa>c<'4  r8 'dfa>c<'4 r8
+                             'dfa>c<'4. 'dfa>c<'4. 'dfa>c<'4
+                                    'cegb'4 'cegb'4  r8 'cegb'4 r8
+                            'cegb'4.  'cegb'4.  'cegb'4
+                                     'dfa>c<'4  'dfa>c<'4  r8 'dfa>c<'4 r8
+                             'dfa>c<'4. 'dfa>c<'4. 'dfa>c<'4
+
+                    v88     'cegb'4 'cegb'4  r8 'cegb'4 r8
+                            'cegb'4.  'cegb'4.  'cegb'4
+                                  'dfa>c<'4  'dfa>c<'4  r8 'dfa>c<'4 r8
+                             'dfa>c<'4. 'dfa>c<'4. 'dfa>c<'4
+                               'cegb'4 'cegb'4  r8 'cegb'4 r8
+                            'cegb'4.  'cegb'4.  'cegb'4
+                                  'dfa>c<'4  'dfa>c<'4  r8 'dfa>c<'4 r8
+                             'dfa>c<'4. 'dfa>c<'4. 'dfa>c<'4
+
+                             'cegb'4 'cegb'4  r8 'cegb'4 r8
+                            'cegb'4.  'cegb'4.  'cegb'4
+                                  'dfa>c<'4  'dfa>c<'4  r8 'dfa>c<'4 r8
+                             'dfa>c<'4. 'dfa>c<'4. 'dfa>c<'4
+                                'egb>d<'4 'egb>d<'4 r8 'egb>d<'4 r8
+                            'egb>d<'4. 'egb>d<'4. 'egb>d<'4
+                                'fa>ce<'4  'fa>ce<'4 r8  'fa>ce<'4 r8
+                                 'fa>ce<'4. 'fa>ce<'4. 'fa>ce<'4
