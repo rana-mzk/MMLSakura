@@ -1,0 +1,40 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on macOS CUI v2.379)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】おやつの時間(Tea Time)
+【Composer】rana
+【Date】2024/01/5
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+赤ちゃんの寝かしつけのための音楽
+For Baby Sleeping Music Box 
+"Story" vol.2 より
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+//_00:Setup
+TrackName     = {"おやつの時間"}
+Copyright     = {"rana"}
+Tempo         = 80;
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+//MML
+//Melody
+TR(1) v100 @11 o6 P(50) l8
+                    c4egegeg>c4<bge4 r4
+                    defg fede d4c<b g4> r4
+
+                    c4egegb>c e4 dc<b4g4
+                    a4b>cdc<bg >c4 r4
+
+//Harmony
+TR(2) v100 @11 l8 o5 P(72) [4 cege]
+                            [4 <b>dgd] 
+                            [2 cege] [2 fa>c<a]
+                            [2 gb>d<b] [2 cege]
