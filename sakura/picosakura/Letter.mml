@@ -1,0 +1,27 @@
+//_00:Setup
+TrackName     = {"手紙"}
+Copyright     = {"rana"}
+Tempo         = 60;
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+TR(1) l8 @11 [3 r1] o6 fedec4<bg
+           o6   gagda4gf edcdg4e4
+                cdf>c<bage fedec4 dc
+
+           o6 gag>c4de f ededc4<bg
+              ab>cgf4de c1
+
+TR(2) @11 o5 l8 cegb>d4.< r cfa>ce4.< r
+              cgb>dg4fe< cda>c< a4ge 
+
+             cegb>d4.< r cfa>ce4.< r
+              cgb>dg4fe< cda>c< a4ge   
+
+              cegb>d4.< r cfa>ce4.< r
+              cgb>dg4fe< cda>c< a4ge 
