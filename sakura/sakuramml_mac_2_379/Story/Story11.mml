@@ -1,0 +1,51 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on macOS CUI v2.379)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】またね(Good-Bye)
+【Composer】rana
+【Date】2024/01/10
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+赤ちゃんの寝かしつけのための音楽
+For Baby Sleeping Music Box 
+"Story" vol.3 より
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+//_00:Setup
+TrackName     = {"またね"}
+Copyright     = {"rana"}
+Tempo         = 72;
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+//Melody
+TR(1) v100 @11 CH=1 o6 P(50) l4  [2 ec<a>e d<bg>d cdefgec<g>
+                            ec<a>c 'g>g<'4 'a>a<'8 'b>b<'8 
+                            >'>c<'4< 'b>b<'8 'g>g<'8 
+                             'a>a<' 'g>g<' 'f>f<'8 'e>e<'8 'd>d<'8 < 'b>b<'8 > 'c>c<'1 ]
+
+
+//Harmony
+TR(2) v80 @11 l1 CH=2 o5 P(72)   'fa>c<' 'egb'2  'a>ce<'2
+                            'dfa'2 'gb>d<'2 'ceg'
+
+                            'fa>c<' 'egb'2  'a>ce<'2
+                            'dfa'2 'gb>d<'2 l8 cg>cdedc<g
+
+                    o4  l8    [2 fa>c<a] egbg a>cec<
+                                dfaf gb>d<b [2 cege]
+
+                                [2 fa>c<a] egbg a>cec<
+                                dfaf gb>d<b cegecegb c32e32g32b32>c8^4^2
+
+                                
+
+
