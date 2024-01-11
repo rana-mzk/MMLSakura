@@ -1,0 +1,44 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on PicoSakura)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】ぬくもり(Warmth)
+【Composer】rana
+【Date】2024/01/11
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Androidと
+ピコサクラの環境で
+作成をはじめ
+
+Macに
+移して
+続きを
+作りました◎
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+//_00:Setup
+TrackName     = {"ぬくもり"}
+Copyright     = {"rana"}
+Tempo         = 60;
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+TR(1) l4 @11 o6 [2 r1] 
+　　　　　　　　　ge l8 cded gabag4e4
+ 　　　　　　　　　fgab>c<ba>c< b2g4e4
+                fga4r4 gf efg4r4fe
+                defgab>cd e4.dd4c4
+TR(2) @11 o5 l8 cegecegb cegecded
+                cegecege fa>c<afaba
+                gb>d<bgb>c<b egbgegag
+                dfgfdefe cegecded
+               <b>dfd<b>dgd ab>cdefge
