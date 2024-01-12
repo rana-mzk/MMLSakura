@@ -3,25 +3,24 @@
 //------------------------------------------------------------------------------
 /*
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-【Title】ぬくもり(Warmth)
+【Title】にぎやかなマナル)(Fine Manal)
 【Composer】rana
-【Date】2024/01/11
+【Date】2024/01/12
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Androidと
-ピコサクラの環境で
-作成をはじめ
+お昼時に
+マクドナルドで
+作りました。
 
-Macに
-移して
-続きを
-作りました◎
+高校生くらいの
+学生さんたちが
+にぎやかだったなぁ。
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 */
 
 
 //_00:Setup
-TrackName     = {"ぬくもり"}
+TrackName     = {"にぎやかなマナル"}
 Copyright     = {"rana"}
 Tempo         = 60;
 TimeSignature = 4,4;
@@ -32,13 +31,16 @@ TrackSync;
 
 
 //MML
-TR(1) l4 @11 o6 [2 r1] 
-                ge l8 cded gabag4e4
-                fgab>c<ba>c< b2g4e4
-                fga4r4 gf efg4r4fe
-                defgab>cd e4.dd4c4
-TR(2) @11 o5 l8 cegecegb cegecded
-                cegecege fa>c<afaba
-                gb>d<bgb>c<b egbgegag
-                dfgfdefe cegecded
-               <b>dfd<b>dgd cegecegb
+TR(1) l8 @11 o6 [2 r1] 
+                g4f4edce fedfe4d4
+                cdegf4ed edcfe4d4
+
+                g4f4edce fga>cc4<b4
+                ab>cgfed<b> c1
+TR(2) @11 o5 l8 ecegecegfdfag4f4
+
+                ecegecegfdfafdfa
+                gdgbgdgbecegeceg
+              
+                ecegecea gdgbgdgb
+                d<a>dfd<a>df ecegeceg
