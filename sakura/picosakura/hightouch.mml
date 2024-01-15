@@ -1,0 +1,42 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on PicoSakura)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】ハイタッチ(High Touch)
+【Composer】rana
+【Date】2024/01/15
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+寝ながら
+MMLを打つのが
+意外と
+よかったりしますね笑
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+//_00:Setup
+TrackName     = {"ハイタッチ"}
+Copyright     = {"rana"}
+Tempo         = 60;
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+TR(1) l8 @11 o6 gab>c4<bag
+                fedfe4d4
+                cdea4gfa
+                g2f4e4
+                gab>c4def
+                edced4c4
+               <bab>d4c<bg
+                >c<
+TR(2) @11 o5 l8 cegecege dfafdfaf
+                 egbgegbg dfafdfaf
+                cegecege dfafdfaf
+                gb>d<bgb>d<b cegecege
