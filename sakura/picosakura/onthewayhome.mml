@@ -3,21 +3,20 @@
 //------------------------------------------------------------------------------
 /*
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-【Title】ハイタッチ(High Touch)
+【Title】帰り道(On the way Home)
 【Composer】rana
-【Date】2024/01/15
+【Date】2024/01/16
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-寝ながら
-MMLを打つのが
-意外と
-よかったりしますね笑
+寒くて
+いろいろと
+はかどりませんね笑
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 */
 
 
 //_00:Setup
-TrackName     = {"ハイタッチ"}
+TrackName     = {"帰り道"}
 Copyright     = {"rana"}
 Tempo         = 60;
 TimeSignature = 4,4;
@@ -28,15 +27,20 @@ TrackSync;
 
 
 //MML
-TR(1) l8 @11 o6 gab>c4<bag
-                fedfe4d4
-                cdea4gfa
-                g2f4e4
-                gab>c4def
-                edced4c4
-               <bab>d4c<bg
-                >c1<
-TR(2) @11 o5 l8 cegecege dfafdfaf
-                 egbgegbg dfafdfaf
-                cegecege dfafdfaf
-                gb>d<bgb>d<b cegecege
+TR(1) l8 @11 o6 efge4rr4 
+                defed4<g4>
+                <bab>d4c<ba
+                g2e4d4
+
+             o6 efga4b>cd
+                edced4<g4
+                bab>c4d<bg>
+                c1
+TR(2) @11 o4 l8 cegecege
+                fa>c<afa>c<a
+                gb>d<bgb>d<b
+                cegecege
+                cegecege
+                dfafdfaf
+                gb>d<bgb>d<b
+                cegecege
