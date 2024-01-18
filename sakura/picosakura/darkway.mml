@@ -1,0 +1,41 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on PicoSakura)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】暗がり(Dark Way)
+【Composer】rana
+【Date】2024/01/17
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+長野県寒すぎ案件...!!!
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+//_00:Setup
+TrackName     = {"暗がり"}
+Copyright     = {"rana"}
+Tempo         = 60;
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+TR(1) l8 @11 o6 [4 r1]
+                fefe4dcd edcd4c<bg>
+                fefe4fga gfef4edc
+                fefe4dcd efga4gfe
+                cdef4gab >c<b>c<b4age
+
+TR(2) @11 o5 l8 dfafdfaf cegecege
+                dfafdfaf cegbcege
+
+                dfafdfaf cegecege
+                dfafdfaf egbgegbg
+                dfafdfaf cegecege
+                fa>c<afa>c<a gb>d<bgb>d<b  

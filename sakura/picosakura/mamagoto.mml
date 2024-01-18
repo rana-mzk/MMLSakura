@@ -1,0 +1,44 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on PicoSakura)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】おままごと(Mamagoto)
+【Composer】rana
+【Date】2024/01/18
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+お休み期間でも
+曲は書いていきます。
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+//_00:Setup
+TrackName     = {"おままごと"}
+Copyright     = {"rana"}
+Tempo         = 60;
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+TR(1) l8 @11 o6 gfgfe4r4
+                fefed4c4
+                ededcdef
+                gfgfe4d4
+                gfgfe4r4
+                fefgagfe
+                defgfed<b>
+                c1
+TR(2) @11 o5 l8 cegecege 
+                dfafdfaf
+                egbgegbg
+                dfafdfaf
+                cegecege
+                dfafdfaf
+                gb>d<bgb>d<b
+                cegecege
