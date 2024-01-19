@@ -1,0 +1,45 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on PicoSakura)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】まどろみ(Dozing off))
+【Composer】rana
+【Date】2024/01/19
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+オルゴール音源を
+出す以外の時間は
+やすむ期間に
+してみました笑
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+//_00:Setup
+TrackName     = {"まどろみ"}
+Copyright     = {"rana"}
+Tempo         = 60;
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+TR(1) l8 @11 o6 >c4<bga4gefed16e8.c4r4
+                <a4b>cdefgfed16e8.g4e4
+              >c4<b>cd4c<bagf16g8.e4d4
+                  fededc<b8.g16a8.b16>c8.d16e4d4
+               e8.d16e8.f16g8.f16e8.d16
+               e8.d16c8.d16e4d4
+               e8.d16e8.f16g8.a16g8.f16
+               e8.d16e8.f16g4e4
+               gfefedce dcdefecd
+               gdgb>dcde c1
+TR(2) @11 o4 l8 [4 egb>d<] [4 fa>ce<]
+                [4 egb>d<] [4 dfa>c<]
+             o5 [2 cegb] [2 dfa>c<]
+                [2 egb>d<] [2 fa>ce<]
+                [2 cege] [2 dfa>c<]
+                [2 gdbd] [2 cege]
