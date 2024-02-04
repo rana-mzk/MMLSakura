@@ -1,0 +1,53 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on PicoSakura)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】朝の光(Morning Light)
+【Composer】rana
+【Date】2024/02/04
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ちょっと間が
+あいてしまいましたが
+土日メインで
+更新していきます。
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+//_00:Setup
+TrackName     = {"朝の光"}
+Copyright     = {"rana"}
+Tempo         = 60;
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+TR(1) l8 @11 o6 gegb>d<bge
+                defge8.d16d4
+                fgab>c<bag
+                fefge8.d16d4
+                cder fgar
+                b>cdc<b2
+                g4d4g4b4
+                a2g2
+                fgar b>cd<r
+                >edc<bagfd
+                e1
+                
+TR(2) @11 o5 l8 cegecege
+                fa>c<afa>c<a
+                gb>d<bgb>d<b
+                egbgegbg
+                fa>c<afa>c<a
+                gb>d<bgb>d<b
+                egbgegbg
+                a>cec<a>cec<
+                dfafdfaf
+                gb>d<bgb>d<b
+                cegecegecegecege
