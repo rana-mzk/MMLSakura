@@ -1,0 +1,37 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on PicoSakura)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】次に向かう電車(Train for the Next)
+【Composer】rana
+【Date】2024/02/04
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+準備している人だけが
+電車に乗れる
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+//_00:Setup
+TrackName     = {"次に向かう電車"}
+Copyright     = {"rana"}
+Tempo         = 60;
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+TR(1) l8 @11 o6 [4 r1]
+								g4gag4e4 fedfe4d4 efg>c<b4g4 feded4c4
+								g4gab4>c4 edce d4<g4> c<ba>c <b>cd<b agfgfedc
+						o5		b>cdc<b2 agfag4e4 b>cde f4g4 feded4c4 <
+               						 b>cdc<b4>f4 edced4c4
+TR(2) @11 o5 l8 [3 cgeg cgeg cafa cafa cbgb cbgb cafacafa]
+									o4 [2  gb>d<b gb>d<b fa>c<a fa>c<a ]
+												gb>d<b gb>d<b fa>c<a fa>c<a 
+												egbgegbg bd>g<dbd>g<d
