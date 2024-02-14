@@ -1,0 +1,58 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on PicoSakura)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】スキマ(SKIMA)
+【Composer】rana
+【Date】2024/02/14
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+オルゴールシリーズを
+作っています。
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+//_00:Setup
+TrackName     = {"スキマ"}
+Copyright     = {"rana"}
+Tempo         = 60;
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+TR(1) l8 @11 o6  g4a8.b16>e8.d16d4
+                c8.<b16>c8.d16c8.<b16a4
+                gab>edc<ba
+                 g8.a16g8.a16g8.f16e8.d16
+                 g4a8.b16>e8.f16d4
+                g4f8.e16d4c4
+                <b>cdefged
+                dcde4ddc
+                <b8.>c16d8.e16f8.g16e4
+					d8.c16d8.e16 d8.c16c4
+				<b>cdefgfe
+				dcdef8.e16ed
+				<b>cdefgef
+				gagfe4d8.d16
+				cdefgab>c<
+				bab>c  d8.c16c<b>
+				
+TR(2) @11 o5 l8 [2 gb>d<bgb>d<b
+                fa>c<afa>c<a
+                egbgegbg
+                dfafdfaf]
+                cegecege
+                dfafdfaf
+                <b>dfd<b>dfd
+                egbgegbg
+                cegecege
+                dfafdfaf
+				egbg egbg
+			  fa>c<a b>dfd<
