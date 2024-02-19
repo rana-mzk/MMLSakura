@@ -1,0 +1,48 @@
+
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on PicoSakura)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】】王様(King)
+【Composer】rana
+【Date】2024/02/19
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+王様のイメージで
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+//_00:Setup
+TrackName     = {"王様"}
+Copyright     = {"rana"}
+Tempo         = 60;
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+TR(1)   l8 @11 o6  r1 r2 r8 gab
+							>c4<ba g4f4 efedc4<b4>
+							cdegfedf edced4<g4>
+							>c4<b>cd4<b4> c<baga4f4
+							gfegfedf edced4<g4>
+							
+							gagag4e4 fgfgf4d4
+							gagabagf efefg4e4
+							gagag4e4 fedfe4d4
+							cdefgab>cdc<bag4d4
+TR(2)  @11 o5 l8 [2  cegec4<g4> cegec4r4]
+								<	fa>c<a f4 r4 gb>d<b g4r4 >
+									[2 cegec4r4 ]
+								<	fa>c<a f4 r4 gb>d<b g4r4 >
+
+									[2 f>crc<] [2 ebrb]
+									[2 f>crc<] [2 g>drd<]
+									[2 f>crc<] [2 ebrb]
+									[2 dara] [2 g>drd<]
