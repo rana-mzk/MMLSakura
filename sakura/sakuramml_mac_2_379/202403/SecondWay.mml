@@ -1,0 +1,42 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on PicoSakura's Soundfont)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】次の日(The Next Day)
+【Composer】rana
+【Date】2024/03/2
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+次の日に向けて。
+
+セカンダリードミナントの
+循環的なコードを
+使ってみました。
+
+新しく楽器を買ってみたので
+そっちの練習も
+やっていきます◎
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+//_00:Setup
+TrackName     = {"次の日"}
+Copyright     = {"rana"}
+Tempo         = 60;
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+TR(1)   l8 @11 o6 [4 r1]
+	       	  agfe4 fed cdec<b-4g4 
+		  ab>cd4edc
+							
+TR(2)  @11 o4 l8  fa>ce< eg+b>d< a>ceg< cegb-
+       	      	   fa>ce< eg+b>d< a>cea< l64 gb>dg64^8.< gb->df64^8.<
+	l8	    fa>ce< eg+b>d< a>ceg< cegb-
+		     fa>ce< eg+b>d< a>cea<  gb>dg<
