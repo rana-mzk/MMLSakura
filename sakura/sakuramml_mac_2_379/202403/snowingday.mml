@@ -31,18 +31,18 @@ TrackSync;
 
 
 //MML
-TR(1)   l8 @11 o6   [4 [4 r2]]
+TR(1)   [3 l8 @11 o6   [4 [4 r2]]
                     gabge4 r4 defag4e4
                     fga>cc<bab agfag4e4
                     defga4r4 agfed4r4
                     cde>c<b4 ag feded4c4
-                    c1
+                    c1 r1]
 							
-TR(2)  @11 o5 l8  [4 cegb] [4dfa`c]
+TR(2)  [3 @11 o5 l8  [4 cegb] [4dfa`c]
                  [3 cegb] ceg>c ecd<b>c<abg agfagfed
 
                   [4 cegb] [4dfa`c] 
                  < [2 gb>df<] egb`d  eg+b`d
                  [2 cegb] <b>dfd fa>ce< 
-                 [2 cegb] cgeb cegb
+                 [2 cegb] cgeb cegb ]
  
