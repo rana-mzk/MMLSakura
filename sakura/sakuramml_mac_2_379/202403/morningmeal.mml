@@ -1,0 +1,53 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on PicoSakura's Soundfont)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】朝ごはん(Morning Meal)
+【Composer】rana
+【Date】2024/03/4
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+次の日に向けて。
+
+セカンダリードミナントの
+循環的なコードを
+使ってみました。
+
+新しく楽器を買ってみたので
+そっちの練習も
+やっていきます◎
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+//_00:Setup
+TrackName     = {"朝ごはん"}
+Copyright     = {"rana"}
+Tempo         = 60;
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+TR(1)  l8 @11 o6 [4 r2]
+                    edefe4r4
+					cdec<g4r4
+                    ab>cd4c<b>cd4cdedc<b>
+                    g4fed4g4<b>cdg4e4d	
+TR(2) @11 o5 l8 [4 cg`cg ]
+       	      	 cg`cg 
+                o4 b>g>d<g<
+                   a>eae<
+                   g>dgd<
+                   fa>c<a
+                   egbg
+                   fa>c<a
+                   gb>d<b
+
+                o5 cg`cg 
+                o4 b>g>d<g<
+                   a>eae<
+                   g>dgd<
