@@ -1,0 +1,36 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on macOS CUI v2.379)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】Four Valiant Hearts
+【Composer】Nobuo Uematsu
+【Date】2024/03/07
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FF5の曲を
+コピーしてみました。
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+//_00:Setup
+TrackName     = {"Four Valiant Hearts"}
+Copyright     = {"Nobuo Uematsu"}
+Tempo         = 120;
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+//intro
+
+TR(1) l8
+TR(2) l8 v80 @34
+TR(7) l8 @106 o4
+TR(8) CH=10 @1 l4 o3 d4 l14 ddd d8.d16 l32 ddddddd r
+
+//A
+
+TR(8) o3 l4 d l14 ddd l4dr8d16d16 d4 r8 d16d16
