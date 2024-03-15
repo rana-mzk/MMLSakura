@@ -1,0 +1,36 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on PicoSakura's Soundfont)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】お庭(Garden)
+【Composer】rana
+【Date】2024/03/15
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+お庭で日向ぼっこ◎
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+//_00:Setup
+TrackName     = {"お庭"}
+Copyright     = {"rana"}
+Tempo         = 60;
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+TR(1) [3  l8 @11 o6 [4 r2]
+                 efefg4e4 cdcde4d4
+                <ab>c<b ab>cd ededc4<b4>
+                fga4gab4ab>c<ba4g4
+                agfgfede dc<b>c <babg> ]
+TR(2) [3 @11 o5 l8 cegecegecegec4<g4>
+                [4 cege]
+               < [4 a>cec<]  
+                  [4 fa>c<a]
+                   [4 gb>d<b] ]
