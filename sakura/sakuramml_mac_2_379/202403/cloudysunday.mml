@@ -1,0 +1,39 @@
+
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on PicoSakura's Soundfont)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】曇りの日曜日(Cloudy Sunday)
+【Composer】rana
+【Date】2024/03/15
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+からっとは晴れなかった日曜日
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+//_00:Setup
+TrackName     = {"曇りの日曜日"}
+Copyright     = {"rana"}
+Tempo         = 68;
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+TR(1)  [3 l8 @11 o6 [4 r2]
+                a4gfe4f4 g4abg4d4
+               fgab>c<bag fefge4d4
+               a4b>cd4e4 c4<bag4e4
+               fefgagfdc1 ]
+TR(2) [3 @11 o5 l8 fa>c<a egb>d c4<b4a4g4
+               [2 fa>c<a] [2 egbg]
+                [2 dfaf] [2 cege]
+               fa>c<a eg+b>d<
+               a>cec< gb>dg<
+               dfaf gb>d<b
+               [2 cege]]
