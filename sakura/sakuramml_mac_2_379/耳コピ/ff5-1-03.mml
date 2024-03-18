@@ -11,6 +11,23 @@
 FF5の曲を
 コピーしてみました。
 
+
+27 banjo
+31 guitar
+34 epiano1
+35 epiano2
+37 toky piano
+47 Harp 
+48 Timp
+49 Strings
+50 Strings Slow
+53 Aaa chrous
+57 Trumpet
+61 Horn
+69 oboe
+74 flute
+86 synth
+87 synth
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 */
 
@@ -27,10 +44,11 @@ TrackSync;
 //intro
 
 TR(1) l8
-TR(2) l8 v80 @34
-TR(7) l8 @106 o4
-TR(8) CH=10 @1 l4 o3 d4 l14 ddd d8.d16 l32 ddddddd r
+TR(2) l8 v100 @26 o5
+TR(7) CH=10 @1 l4 o3 c4 l14 ccc c8.c16 l32 cccc ccc r
+TR(8) CH=10 @1 l4 o3 d4 l14 ddd d8.d16 l32 dddd ddd r
 
 //A
 
+TR(2) >c2<e4f4 g2 >d4c2^4 <g
 TR(8) o3 l4 d l14 ddd l4dr8d16d16 d4 r8 d16d16
