@@ -1,0 +1,32 @@
+
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on PicoSakura's Soundfont)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】階段式(Stair Style)
+【Composer】rana
+【Date】2024/03/19
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+同じフレーズの繰り返し
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+//_00:Setup
+TrackName     = {"階段式"}
+Copyright     = {"rana"}
+Tempo         = 68;
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+TR(1)  [3 l8 @11 o6 agaga4g4 fefef4g4
+                  dedef4g4 ab>cdc4<b4
+                  agaga4b4 >cdedc4<b4
+           >      g4fededc <babgagfe ]
+TR(2)  [3 @11 o5 l8 [4 dfafegbgfa>c<agb>d<b] ]
