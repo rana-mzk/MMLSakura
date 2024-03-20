@@ -1,0 +1,38 @@
+
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on PicoSakura's Soundfont)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】おもちゃ(Toys)
+【Composer】rana
+【Date】2024/03/20
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+本当はもっと展開とかいれたいのです。
+体調の関係で短くまとめてます。
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+//_00:Setup
+TrackName     = {"おもちゃ"}
+Copyright     = {"rana"}
+Tempo         = 68;
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+TR(1)  [3 l8 @11 o6 [2 r1]
+                 ededc4d4 efgag4e4
+                 fededc<b>c <bab>cd4<b4>
+                 c4deg4>c4 dedc<b4g4
+                 agfgfedc dedcd4<b4> ]
+TR(2) [3 @11 o5 l8 cegegege cegeg4e4
+                [2 cegegege]
+                [2 <b>dgdgdgd]
+                [2 cegegege]
+                [2 <b>dgdgdgd] ]
