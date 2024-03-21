@@ -1,0 +1,37 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on PicoSakura's Soundfont)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】春の予定(Spring Schedule)
+【Composer】rana
+【Date】2024/03/21
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+春本番の強い風の日に
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+//_00:Setup
+TrackName     = {"春の予定"}
+Copyright     = {"rana"}
+Tempo         = 72;
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+TR(1)  [3  l8 @11 o6 g4fed4c4 dedcd4c4
+								defgfedc <b>cdc<b4>f4
+								e4fga4b4>c4<bag4e4
+								dedcdefe agfgab>c<b
+							>c4<bag4f4 efede4d4
+								cdegfedc <b>cdef4e4
+							>c4<bag4a4 gabge4g4
+							fedf gf<b>gc1 ]
+TR(2)  [3 @11 o5 l8 [2 cegecege cfafcfaf cgbgcgbg cfafcfaf]
+									[2 fa>c<a] [2 egbg] [2 dfaf] [2 cege]
+									[2 fa>c<a]  egbg a>cec< dfaf gb>d<b [2 cege]]
