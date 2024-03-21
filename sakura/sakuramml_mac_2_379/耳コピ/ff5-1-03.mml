@@ -12,9 +12,18 @@ FF5の曲を
 コピーしてみました。
 
 
+5 piano
+11 Music Box
+12 Glocken
+13 Marimba?
+14 Xylophone
+16 Sitar
+18 Organ
+19 Organ
+25 EPiano
 27 banjo
 31 guitar
-34 epiano1
+34 bass
 35 epiano2
 37 toky piano
 47 Harp 
@@ -44,11 +53,13 @@ TrackSync;
 //intro
 
 TR(1) l8
-TR(2) l8 v100 @26 o5
+TR(2) l8 v100 @61 o5 r2 r4 r8 r16  r32
+TR(5) v90  r2 r4 r8 r16  r32
 TR(7) CH=10 @1 l4 o3 c4 l14 ccc c8.c16 l32 cccc ccc r
 TR(8) CH=10 @1 l4 o3 d4 l14 ddd d8.d16 l32 dddd ddd r
 
 //A
 
-TR(2) >c2<e4f4 g2 >d4c2^4 <g
+TR(2) >c2<e4f4 g2^4 >d4c1 <a-1
+TR(5) @34 o3 l4 q50 ee
 TR(8) o3 l4 d l14 ddd l4dr8d16d16 d4 r8 d16d16
