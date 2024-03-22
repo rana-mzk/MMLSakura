@@ -1,0 +1,50 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on PicoSakura's Soundfont)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】パターン(Pattern)
+【Composer】rana
+【Date】2024/03/22
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+普段とパターンを変えて
+D durで書いてみました。
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+//_00:Setup
+TrackName     = {"パターン"}
+Copyright     = {"rana"}
+Tempo         = 72;
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+TR(1)   [3  l8 @11 o6 [4 r1]
+
+								f+edec+<b4>c+ dc+def+4e4
+								agf+gf+edc+ def+ag4e4
+								def+ed4r4 def+ag4e4
+								<b>c+def+gab>c+<bagf+edc+
+
+								f+edec+d4c+ dc+def+4e4
+								ab>c+<bagf+g f+eded4e4
+                                def+ef+ef+gagf+gf+4e4
+                                def+gab>c+ed1 r1 ]
+
+
+TR(2) [3   @11 o5 l8               df+a>c+ec+<af+ dgb>dgd<bg
+								gb>d<b f+a>c+<a egb>d g4f+4<
+
+								[2 df+af+af+af+] [2 c+eaeaeae]
+								[2 <b>df+df+df+d] [2 <a>c+ec+ec+ec+]
+
+								[2 df+af+af+af+] [2 c+eaeaeae]
+								 <b>df+df+df+d  <a>c+ec+ec+ec+
+								<gb>d<b> <a>c+ec+
+								[2 df+af+af+af+] ]
