@@ -1,0 +1,39 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on PicoSakura's Soundfont)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】ちょっとしたスパイス(Tiny Spice)
+【Composer】rana
+【Date】2024/03/23
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ちょっとしたスパイスにセカンダリードミナントを利用◎
+Gm7-C7-FM7の流れは覚えます。
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+//_00:Setup
+TrackName     = {"ちょっとしたスパイス"}
+Copyright     = {"rana"}
+Tempo         = 72;
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+TR(1)   [3  l8 @11 o6 [4 r1]
+									e8.d16e8.d16 cded f8.g16a8.g16fedc
+									f8.e16f8.g16ab>c<b agfg f4e4
+									defed4c4  fgag f4e4 abag a4b4>c1
+								 ]
+
+TR(2)  [3  @11 o5 l8 cege fa>c<a gb>df< cegb- fa>cec<afa gb>dgd<bgb
+								cege fa>c<a gb>df< cegb-
+								fa>ce< egb>d< a>c+eg< dfa>c<
+								 gb>d<b cege fa>c<a gb>d<b
+								cege da gb cegec4 <g4> ]
+							
