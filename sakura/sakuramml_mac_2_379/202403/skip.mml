@@ -1,0 +1,40 @@
+
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on PicoSakura's Soundfont)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】スキップ(Skip)
+【Composer】rana
+【Date】2024/03/24
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+日曜日なのでパッと。
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+//_00:Setup
+TrackName     = {"スキップ"}
+Copyright     = {"rana"}
+Tempo         = 68;
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+TR(1)  [3 l8 @11 o6 r1
+                gagag4>c4< 
+                >dfec<b4g4 
+                fgab>c<bag
+                fefge4d4
+                gagag4>c<
+                >defge4d4c
+                cdc<b>cdc<b>c1 ]
+TR(2) [3 @11 o5 l8 [2 cegb cegb-
+                fa>c<a gb>dg<
+                egbg a>cec<
+                dfaf gb>d<b]
+                cegecege ]
