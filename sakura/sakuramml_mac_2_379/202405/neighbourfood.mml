@@ -1,0 +1,36 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on PicoSakura)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】ご近所さん(Neighborhood)
+【Composer】rana
+【Date】2024/04/17-05/08
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+スタバで作曲◎
+電車の中で書いたりしてみました。
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+//_00:Setup
+TrackName     = {"ご近所さん"}
+Copyright     = {"rana"}
+Tempo         = 60;
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+TR(1) l8 @11 o6 [4 r2] b4b>c d4 c<b ab>c<ab4g4 
+													 agf+g f+edc  def+g f+4e4
+													 b4b>c dedc <bab>c d4c4 <
+													 babgagf+e dc<b>c d4e4
+   f+4def+4e4 f+4f+ef+4r4 edcd cdec f+ede f+gf+e
+   gabg agf+g f+edef+gf+e gab>cdef+gagf+edc<ba										 
+TR(2) @11 o5 l8 [4 gbdb] [4 gbdb] [4 f+ada] [4 gbdb] [4 egcg] [4 da<f+>a] [4 cg<b>g] [4 bd<g>d]
+                   aece bgdg >c<aea >d<gf+g 
