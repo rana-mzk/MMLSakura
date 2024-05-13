@@ -26,7 +26,7 @@ TrackSync;
 
 //MML
 //Melody
-TR(1) v100 @11 o6 [4 r4.]  
+TR(1) v100 @11 [3 o6 [4 r4.]  
             l8   b16a16bg a16g16a>c<
                 b16a16b>e d16c16<ba
                 g16a16ga g16f16ed
@@ -48,10 +48,10 @@ TR(1) v100 @11 o6 [4 r4.]
 
         o6    g16a16b>c d16e16fg
               a16g16fe d16c16<b>d
-              c4. [3 r4.]
+              c4. [3 r4.] ]
 
 //Harmony
-TR(2) v100 @11 l8 o5 [4 ceg]
+TR(2) v100 @11 l8 [3 o5 [4 ceg]
                     [4 ceg]
                     [4 <b>dg]
                     [4 ceg]
@@ -62,4 +62,4 @@ TR(2) v100 @11 l8 o5 [4 ceg]
                      [4 fa>c<]
                     [4 egb]
                     [2 dfa] [2 gb>d<]
-                    [2 ceg] c32e32g32b32>c4 r4.
+                    [2 ceg] c32e32g32b32>c4 r4.]
