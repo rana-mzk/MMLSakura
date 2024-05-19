@@ -1,0 +1,35 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on PicoSakura)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】ACE
+【Composer】rana
+【Date】2024/05/20
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+転調の感覚を
+掴むために
+おもむろに
+臨時記号を
+いれてみる作戦
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+//_00:Setup
+TrackName     = {"ACE"}
+Copyright     = {"rana"}
+Tempo         = 60;
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+TR(1) l8 @11 o6  c4.<b4>c8 c+gc+<b4>c+8	  d4.faf af+a>c+<af+
+                d4.c4.<b4.a4. gab>c<ba gf>dc<ba
+TR(2) @11  o5 l8 <a>ceger <a>c+eger <a>dfafr <a>df+af+
+                dfafaf cegege <b>dfdfd <a>cecec
