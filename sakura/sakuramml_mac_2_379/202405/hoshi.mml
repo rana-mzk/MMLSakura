@@ -1,0 +1,34 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on PicoSakura)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】星のダンス(Dance of the Stars)
+【Composer】rana
+【Date】2024/05/21
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+3拍子系で
+星が踊るように。
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+//_00:Setup
+TrackName     = {"星のダンス"}
+Copyright     = {"rana"}
+Tempo         = 52;
+TimeSignature = 3,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+TR(1) l8 @11 o6  efegfe dedfed cdef4g fededc
+                <b4>cd4e fededc defga>c<bagfed
+                efegfe dedfed ceg>c4egfefed
+                <b>cdc4<b> <ab>cdef gb>dgfe dc<bagf>
+TR(2) @11  o5 l8 [2 cg>cec<g <b>gb>d<bg <a>ea>c<ae <g>dgbgd
+                <f>cfafc <e b>ege<b> <f>cfafc <g>dgbgd]
