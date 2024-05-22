@@ -1,0 +1,86 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on PicoSakura)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】日常(Daily Life)
+【Composer】rana
+【Date】2024/05/22
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+デザインをきっかけに
+YouTubeで配信しながら
+モチーフを作成しました。
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+//_00:Setup
+TrackName     = {"日常"}
+Copyright     = {"rana"}
+Tempo         = 120;
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+//Intro
+TR(1) @1 v100 o5 @21 l8 c<bge4 deg ab>c<b4 aga >
+						edcd4efe gfef4edc
+TR(2) @4 v80 o4 l4 [2 r 'fa>c<' r 'egb'  r 'dfa' r 'egb']
+TR(3) @34 v100 o3 l8 q60 [2 f4>c<f e4be d4ad e4be]
+
+TR(9)  CH=10 @1 o4 l8 c+1 [3 r1]
+TR(10) CH=10 @1 o3 l8 [2 [4 f+f+f+f+]]
+TR(11) CH=10 @1 o3 l4 [2 rdrd rdrd]
+TR(12) CH=10 @1 o3 l4 [2 ccc8c8c  c8c4ccc8]
+
+
+
+//A-1
+TR(1) @1 v100 o4 @21 l8 cdeg4 r4 r8 ab>cd4 < r4 r8 gabg4  fed edec4 r4 r8
+
+TR(2) @4 v80 o4 l4 r 'ceg'r8 'ceg'8 r r 'fa>c<'r8 'fa>c<'8  r
+						r 'gb>d<'r8 'fa>c<'8  r r 'ebg'r8 'ebg'8 r 
+TR(3) @34 v100 o3 l8 q60  cccc r2 ffff r2 gggg ffff eeee r2
+
+
+TR(9)  CH=10 @1 o4 l8 c+1 r1
+TR(10) CH=10 @1 o3 l8 [2 [4 f+f+f+f+]]
+TR(11) CH=10 @1 o3 l4 [2 rdrd rdrd]
+TR(12) CH=10 @1 o3 l4 [2 ccc8c8c  c8c4ccc8]
+
+
+
+//A-2
+
+TR(1) @1 v100 o4 @21 l8 defe4 r4 r8  gabg4  r4 r8
+							b-agf4 edc  dege4fed
+TR(2) @4 v80 o4 l4 r 'dfa'r8 'dfa'8 r     r 'fgbd'r8 'fgbd'8  r
+		        	r 'cegb-'r8 'cegb-'8  r     r 'fa>c<'r8 'fa>c<'8 r 
+
+TR(3) @34 v100 o3 l8 q60  dddd r2 gggg r2 cccc cccc ffff ffff
+
+
+TR(9)  CH=10 @1 o4 l8 r1 r1
+TR(10) CH=10 @1 o3 l8 [2 [4 f+f+f+f+]]
+TR(11) CH=10 @1 o3 l4 [2 rdrd rdrd]
+TR(12) CH=10 @1 o3 l4 [2 ccc8c8c  c8c4ccc8]
+
+//B-1
+
+TR(1) @1 v100 o4 @21 l8
+TR(2) @4 v80 o4 l4 r 'fa>ce<' 'fa>ce<'8 r 
+
+TR(3) @34 v100 o3 l8 q60  [4 ffff eeee] 
+
+
+TR(9)  CH=10 @1 o4 l8 r1 r1
+TR(10) CH=10 @1 o3 l8 [2 [4 f+f+f+f+]]
+TR(11) CH=10 @1 o3 l4 [2 rdrd rdrd]
+TR(12) CH=10 @1 o3 l4 [2 ccc8c8c  c8c4ccc8]
+
+
