@@ -35,15 +35,15 @@ TrackSync;
 
 
 //MML
-TR(1) l8 @11 o6 [8 r2]
+TR(1) l8 @11 [3 o6 [8 r2]
                 e4.e efge fefe d4c4
                 g4.g fede c4de d4c4
                 a8.g16a8.b16>c<bag fedg e4d4
-                a8.g16a8.b16>c<b>cd edc<b a4>d4<
-TR(2) @11  o5 l8 cege fa>c<a gb>d<b cege
+                a8.g16a8.b16>c<b>cd edc<b a4>d4<]
+TR(2) @11  [3 o5 l8 cege fa>c<a gb>d<b cege
                  fa>c<a gb>d<b cege cege
 
                   cege fa>c<a gb>d<b cege
                      fa>c<a gb>d<b cege cege
                   fa>c<a egbg dfaf cege
-                   fa>c<a egbg dfaf gb>d<b
+                   fa>c<a egbg dfaf gb>d<b]
