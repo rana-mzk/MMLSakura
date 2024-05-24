@@ -1,0 +1,49 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on PicoSakura)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】乗り越えて(Overcome)
+【Composer】rana
+【Date】2024/05/24
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+わくわくするような
+フレーズが作れないかなと
+思って
+着手。
+
+遊園地とか
+何か
+棒遊びのような
+イメージが
+頭に浮かんで
+いました。
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+//_00:Setup
+TrackName     = {"乗り越えて"}
+Copyright     = {"rana"}
+Tempo         = 52;
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+TR(1) l8 @11 o6 [8 r2]
+                e4.e efge fefe d4c4
+                g4.g fede c4de d4c4
+                a8.g16a8.b16>c<bag fedg e4d4
+                a8.g16a8.b16>c<b>cd edc<b a4>d4<
+TR(2) @11  o5 l8 cege fa>c<a gb>d<b cege
+                 fa>c<a gb>d<b cege cege
+
+                  cege fa>c<a gb>d<b cege
+                     fa>c<a gb>d<b cege cege
+                  fa>c<a egbg dfaf cege
+                   fa>c<a egbg dfaf gb>d<b
