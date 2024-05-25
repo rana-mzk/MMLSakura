@@ -37,13 +37,63 @@ FF5の曲を
 74 flute
 86 synth
 87 synth
+
+#000 Piano               c-3 piano        [FF5] Bass Piano
+#010 Music Box           musicbox         [FF5] Music Box
+#011 Vibraphone          vibraphone       [FF5] Vibes
+#012 Marimba             marimba          [FF5] Marimba
+#013 Xylophone           xylophone        [FF5] Marimba
+#015 Dulcimer            dulcimer         [FF5] Dulcimer
+#017 Jazz Organ          jazzorg          [FF5] Percussive Organ
+#018 Rock Organ          rockorg          [FF5] Percussive Organ
+#024 NylonString Guitar  nylonst          [FF5] Jazz Guitar
+#026 Jazz Guitar         jazzgtr          [FF5] Guitar
+#030 Distortion Guitar   distgtr          [FF5] Distortion Guitar
+#033 Finger Bass         fbass            [FF5] Finger Bass
+#034 Pick Bass           pbass            [FF5] Pick Bass
+#036 Slap Bass           slapbass1        [FF5] Pick Bass
+#046 Harp                pickharp         [FF5] Harp
+#047 Timpani             timpani          [FF5] Timpani
+#048 Strings             string           [FF5] Strings
+#049 Slow Strings        string           [FF5] Strings
+#052 Choir Ahh           femalev          [FF5] Choir Ooh
+#056 Trumpet             trumpet          [FF5] Trumpet
+#060 French Horn         fhorn1           [FF5] French Horn
+#068 Oboe                oboe             [FF5] Oboe
+#073 Flute               flute            [FF5] Flute
+#085 Solo Vox            angchoir/svox    [FF5] &lt; C-5 Dawn Chord
+                                                C-5 &gt; Bass Chord
+#114 Steel Drums         stldrums         [FF5] Steel Drums
+#117 Toms                syntom           [FF5] Toms
+
+
+-- Drums (Channel 10)
+
+C#2                                       [FF5] Low Huh!
+D-2                                       [FF5] Huh!
+B-2  Heavy Bass Drum     bdrum            [FF5] Bass Drum
+C-3  Bass Drum           bdrum            [FF5] Bass Drum
+D-3  Snare               snare            [FF5] Snare
+D#3  Claps               applause         [FF5] Claps
+E-3  Heavy Snare         snare            [FF5] Heavy Snare
+F-3  Low Low Tom         floortom         [FF5] Toms
+F#3  Hihat Closed        hihatop          [FF5] Hihat Closed
+G-3  Low Medium Tom      floortom         [FF5] Toms
+A-3  Low High Tom        floortom         [FF5] Toms
+A#3  Hihat Opened        hihatop          [FF5] Hihat Opened
+B-3  Medium Low Tom      floortom         [FF5] Toms
+C-4  Medium Medium Tom   floortom         [FF5] Toms
+C#4  Crash Cymbal        crash            [FF5] Crash Cymbal
+D-4  Medium High Tom     floortom         [FF5] Toms
+D-6  Full Guiro          guiro            [FF5] Guiro
+
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 */
 
 //_00:Setup
 TrackName     = {"Four Valiant Hearts"}
 Copyright     = {"Nobuo Uematsu"}
-Tempo         = 120;
+Tempo         = 126;
 TimeSignature = 4,4;
 ResetGS;
 ResetXG;
@@ -54,6 +104,8 @@ TrackSync;
 
 TR(1) l8
 TR(2) l8 v100 @61 o5 r2 r4 r8 r16  r32
+TR(3) v90  r2 r4 r8 r16  r32
+TR(4) v90  r2 r4 r8 r16  r32
 TR(5) v90  r2 r4 r8 r16  r32
 TR(7) CH=10 @1 l4 o3 c4 l14 ccc c8.c16 l32 cccc ccc r
 TR(8) CH=10 @1 l4 o3 d4 l14 ddd d8.d16 l32 dddd ddd r
@@ -61,5 +113,9 @@ TR(8) CH=10 @1 l4 o3 d4 l14 ddd d8.d16 l32 dddd ddd r
 //A
 
 TR(2) >c2<e4f4 g2^4 >d4c1 <a-1
-TR(5) @34 o3 l4 q50 ee
+TR(3) @49 q60 a4 a8a8 a4
+TR(4) @49 q60 f4 f8f8 f4
+TR(5) @34 o3 l4 q50 ff
 TR(8) o3 l4 d l14 ddd l4dr8d16d16 d4 r8 d16d16
+
+//ToDO Stringsのアタックを早くする
