@@ -1,0 +1,38 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on PicoSakura)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】外で遊ぶ子供(Playing Child)
+【Composer】rana
+【Date】2024/05/27
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+家の外から
+元気な子供の声が
+聞こえてくるようです。
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+//_00:Setup
+TrackName     = {"外で遊ぶ子供"}
+Copyright     = {"rana"}
+Tempo         = 52;
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+TR(1) l8 @11 o6 		[8 r2]
+    		      a8.g16a8b-8>c<b-ag afga gab-g
+                  a8.b-16a8.b-16>cded efgb- agfe<
+                  a8.g16a8b-8>c<b-ag afga gab-g
+                  ab->cd e8.d16c8.<b-16 agfef2
+TR(2) @11 o5 l8 [2 fa>c<a] b->dfd< >cege<
+                    fa>c<a b->dfd< >cege< fa>c<a
+
+                 [3 [2 fa>c<a] b->dfd< >cege<]
+                       fa>c<a b->dfd< >cege< fa>c<a
