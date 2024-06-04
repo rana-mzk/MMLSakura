@@ -1,0 +1,37 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on PicoSakura)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】なわとび(Skipping Rope)
+【Composer】rana
+【Date】2024/06/04
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+とんではねて
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+//_00:Setup
+TrackName     = {"なわとび"}
+Copyright     = {"rana"}
+Tempo         = 60;
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+TR(1) l8 @11 o6 [4 r2] e4e8.f16 eded
+                 efgf e4d4
+                       c4c8.d16 cded
+                 edef e4d4
+                       cded c8.<b16ge>
+                       cded c8.e16g>c<
+                 baga gfef edcd edc<b>
+TR(2) @11 o5 l8 [2 [2 cegegec<g>]]
+                    [2 <a>cecec<ae>]
+                    [2 <fa>c<a>c<afc>]
+                    [2 <gb>d<b>d<bgd>]
