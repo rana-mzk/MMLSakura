@@ -1,0 +1,33 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on PicoSakura)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】竹馬(Stilts)
+【Composer】rana
+【Date】2024/06/05-12
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+足にまめができるやつ。
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+//_00:Setup
+TrackName     = {"竹馬"}
+Copyright     = {"rana"}
+Tempo         = 60;
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+TR(1) l8 @11 o6 [2 r1] gabag4 >c4< efgf e4a4
+                       cdedcdef gfgfe4d4
+
+                       gabag4 >cd efgfe4<a4
+                       fedf edc<g> c1r1
+TR(2) @11 o5 l8 [2 [2 cgrge4d4]] <a>erec4<b4> <g>drd<b4 a4>
+                    [2 cgrge4d4] f>crc< g>drd< [2 cgrgrgrg]
