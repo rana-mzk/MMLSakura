@@ -1,0 +1,34 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on PicoSakura)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】作曲楽しいタイム(Have a music making break)
+【Composer】rana
+【Date】2024/07/03
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+朝の作曲楽しいタイム
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+//_00:Setup
+TrackName     = {"作曲楽しいタイム"}
+Copyright     = {"rana"}
+Tempo         = 60;
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+TR(1) l16 @11 o6 [4 r2] efgrefgf efgfe8d8
+                        cdercded cdegfefd
+                        <ab>cder <ab>cgf8edec
+                        <gab>cdefg agfedc<ba>
+TR(2) @11 o5 l16 [4 c8cgrcgr] 
+                [2 c8cgrcgr] [2<a8a>er<a>er]
+                [2 <f8f>cr<f>cr] [2 <g8g>dr<g>dr]
