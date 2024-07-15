@@ -1,0 +1,56 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on PicoSakura)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】転調テスト(Transpose test)
+【Composer】rana
+【Date】2024/07/10
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+転調の勉強用
+
+プロ直伝！転調のやり方より
+講師：田村信二
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+//_00:Setup
+TrackName     = {"転調テスト"}
+Copyright     = {"rana"}
+Tempo         = 120;
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+/*
+【Bメロ】 
+FM7-Em7-Dm7・G7-C・C7
+FM7-Em7・Am7-Dm7
+
+Esus4・E7
+
+【サビ】
+A-D-E-A
+G♭m-B-D-E7
+A-D-E・Fdim7-G♭m
+D・E-D♭m・G♭m-Bm-Esus4・E7
+A
+Gsus4・G7
+
+【Aメロ】
+C-
+*/
+TR(1) l8 @11 
+TR(2) @1 o5 l1 'fa>ce<' 'egb>d<' 'dfa>c<'2 'gb>df<'2 'cegb'2 'cegb-'2 
+                'fa>ce<' 'egb>d<'2 'ac>eg<'2 'dfa>c<'
+
+                'eab'2 'eg+b>d<'2 
+
+                'a>ce<' 'dfa' 'eg+b' 'a>ce<'
+                'gb->d<' 'b>df<' 'df+a' 'eg+b>d<'
