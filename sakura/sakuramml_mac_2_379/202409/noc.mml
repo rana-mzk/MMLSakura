@@ -1,0 +1,34 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on PicoSakura)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】NoC
+【Composer】rana
+【Date】2024/09/15
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+ハ長調禁止令を発す.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+//_00:Setup
+TrackName     = {"NoC"}
+Copyright     = {"rana"}
+Tempo         = 80;
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+TR(1) l8 o6 @11 [2 r1]
+                b>cdr<b>cdr<b>cdgf+edc<
+                ab>cr<ab>cr<ab>cf+edec<
+TR(2) @11 o5 l8 [2 gb>dg4d<bg] 
+                [2 gb>dg4d<bg] [2 f+a>df+4d<af+]
+                [2 egb>e4<bge] [2 f+a>df+4d<af+]
