@@ -3,19 +3,23 @@
 //------------------------------------------------------------------------------
 /*
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-【Title】NoC
+【Title】ノック(NoC)
 【Composer】rana
-【Date】2024/09/15
+【Date】2024/09/15-21
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 ハ長調禁止令を発す.
+
+*9月21日
+夏休みを終えて作曲再開
+セミナーを受講した.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 */
 
 
 //_00:Setup
-TrackName     = {"NoC"}
+TrackName     = {"ノック"}
 Copyright     = {"rana"}
 Tempo         = 80;
 TimeSignature = 4,4;
@@ -29,6 +33,15 @@ TrackSync;
 TR(1) l8 o6 @11 [2 r1]
                 b>cdr<b>cdr<b>cdgf+edc<
                 ab>cr<ab>cr<ab>cf+edec<
+		gabagd4<b> gabab>c4d
+		f+ede dc<bg abag ab>cd<
+		b4>cd g4f+e d4c<b abag
+		ab>cd ef+ed baga gf+ed
+		c4cdc4<b4>c2<b4a4 g1r1
+		
 TR(2) @11 o5 l8 [2 gb>dg4d<bg] 
                 [2 gb>dg4d<bg] [2 f+a>df+4d<af+]
                 [2 egb>e4<bge] [2 f+a>df+4d<af+]
+		 [2 gb>dg4d<bg] a>ceg< b>df+a ceg>c< df+a>d<
+	o5	  a>cea4e<ca   df+a>d4<af+d
+		  [2 gb>dg4d<bg] 
