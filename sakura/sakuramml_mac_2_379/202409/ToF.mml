@@ -1,0 +1,34 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on PicoSakura)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】豆腐(ToF)
+【Composer】rana
+【Date】2024/09/22
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FdurからAdurに移調してみる
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+//_00:Setup
+TrackName     = {"豆腐"}
+Copyright     = {"rana"}
+Tempo         = 80;
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+TR(1) l8 o6 @11 afa>c4<b-ag fgagf4e4 dede defg ab->cdc4<b-4
+      	    	ab-agab->cd eg+f+ed4c+4< b>c+def+edc+ c+4<baf+4g+a
+
+               
+TR(2) @11 o5 l8 fa>c<af4r4 gb->d<b-g4r4 a>cec<a4r4 b->dfd<b-4c4
+      	     	 fa>c<af4r4 g+b>e<bg+4r4 a>c+ec+< eabg+  eg+b>df+d<bg+
