@@ -1,0 +1,34 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on PicoSakura)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】仮定(Assumption)
+【Composer】rana
+【Date】2024/09/23
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Adur to E dur?
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+//_00:Setup
+TrackName     = {"Assumption"}
+Copyright     = {"rana"}
+Tempo         = 60;
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+TR(1) l8 o5 @11 a>c+eg+eg+ab ag+f+e f+edc+
+      	    <	b>c+de f+g+f+e ab>c+dedc+<b
+	    >	c+4<ba g+ag+f+ ef+ed ef+g+e
+               def+g+ ab>c+d edc+<b ag+f+e
+TR(2) @11 o4 l4  f+c+f+c+  f+c+f+c+8c8  <b>f+ <b>f+  <b>f+ <b>f8f+8
+      	        f+c+f+c+  f+c+f+c+8c8  <b>f+ c+g+ d+a eb
