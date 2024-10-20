@@ -16,6 +16,10 @@
 しばらく時間をかけて
 コピーしてみます.
 
+元カバー
+https://open.spotify.com/intl-ja/track/4nM4fJ8FccNnx2TjFZfCoD?si=1ad35d41024c4083
+
+
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 */
 
@@ -32,7 +36,7 @@ TrackSync;
 
 
 //MML
-TR(1) l8 o6 @11 l64 v60 efg l8 v100 a4.>c16<g4.>c16<f2 l24 fga l8 b-agf
+TR(1) l8 o6 @11 l64 v60 ef+ l8 v100 g+4.b16f+4.b16e2 l24 ef+g+ l8 ag+f+e
 
                
-TR(2) @11 o5 l8 l64 rrr l8 a>cec<
+TR(2) @11 o5 l8 l64 rr l8 e<bg+b>
