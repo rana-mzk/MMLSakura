@@ -1,0 +1,35 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on PicoSakura)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】自然が教えてくれたこと(Nature Taught Me)
+【Composer】rana
+【Date】2024/10/24
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+穏やかな感じで
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+//_00:Setup
+TrackName     = {"自然が教えてくれたこと"}
+Copyright     = {"rana"}
+Tempo         = 60;
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+TR(1) l8 o6 @11 [4 r1 ] g+eg+a b8.a16 g+a > c+8.<b16  ab ag+f+e
+      	    	      	g+eg+a b8.>c+16 dc+ f+ede dc+<ba
+			g+eg+a b8.a16 g+a > c+8.<b16  ab ag+f+g+
+			g+ab>c+ d8.e16f+e dc+de dc+<ba
+
+TR(2) @11 o5 l8  [2  aec+e bec+e >c+<ec+e bec+e ]
+      	     	 [2  [2  aec+e bec+e >c+<ec+e bec+e ]]
