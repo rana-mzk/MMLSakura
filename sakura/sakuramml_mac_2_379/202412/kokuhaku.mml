@@ -1,0 +1,53 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on PicoSakura)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】告白
+【Composer】rana
+【Date】2024/12/3
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+みすでざアドベントカレンダーの三部作
+2曲目はオルゴールです.
+
+告白というタイトルをつけています.
+元ネタわかる方いるんだろうか？
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+//_00:Setup
+TrackName     = {"告白"}
+Copyright     = {"rana"}
+Tempo         = 60
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+TR(1) l8 o6 @11 c+8c+16c+8.c+16c+8.de8d
+                c+<ba>c+16 >c+8.<bg+e
+                f+16g+16a g+16a16b8 l16 ab>c+<b ag+f+e 
+                l8 eded dc+dc+
+                c+8c+16c+8.c+16c16>c+8c+16c+8.c+16<c16
+            l16 bab>c+<bagf+ef+ededc+<b>
+
+                ab>c+d< ab>c+d edc+<b> edc+<b> 
+                c+4<b8.a16 g+4a4 e4d8.c+16<a4 b4a4
+
+               
+TR(2) @11 o4 l8 df+a>c+ < eg+b >d < c+eg+b f+32a32>c+32f+32^8^4 <
+                <b>df+d eg+bg+ a8.a16a8.a16 l16 ag+ab ag+f+e
+              l8  [2 ac+<a>c+] g>dgd< >c+ege
+                    df+af+ eg+bg+ c+ege f+a>c+<a
+                    <b>df+d eg+bg+ a>c+ec+< a>c+ec+< a64>c+64e64>a64^16^8^4
+                    
+
+TR(3) @11 o5 l8  [4 r2] v60 d+16e16f+ e16f+16g+ l16 f+g+f+e dedc+
+                l8 c+<b>c+<b> <ag+ag+>
