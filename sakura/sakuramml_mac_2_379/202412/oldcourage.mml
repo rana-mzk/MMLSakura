@@ -5,7 +5,7 @@
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 【Title】古い勇気
 【Composer】rana
-【Date】2024/12/21
+【Date】2024/12/21-22
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Motu M2の導入で
@@ -32,11 +32,15 @@ TrackSync;
 //MML
 TR(1) l8 o6 @11 [4 r1]
 
-                e4eed
+                e4ee dedc <b>cde fedf
+                e4ee dedc <babg> c2
+                e4ee dedc <b>cde fefg
+                agfg fgfe dc<b>d c2
                 
                
 TR(2) @11 o4 l8 a>cec< fa>c<a gb>df ec<ge
                 a>cec< fa>c<a gb>dg e64g64>c64e64^16^8< e64g-64b-64>d64^16^8 <<
 
-                a>cec< fa>c<a gb>d<b >cege<
+                [4 a>cec< fa>c<a gb>d<b >cege<]
+                
                 
