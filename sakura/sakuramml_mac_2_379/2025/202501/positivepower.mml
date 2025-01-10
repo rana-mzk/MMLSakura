@@ -1,0 +1,49 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on PicoSakura)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】Positive Power
+【Composer】rana
+【Date】2025/1/10
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+少しずつ迷いが吹っ切れて
+ポジティブな力を感じるように
+なってきました.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+//_00:Setup
+TrackName     = {"Positive Power"}
+Copyright     = {"rana"}
+Tempo         = 60
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+TR(1) l8 o6 @11 [4 r1] 
+
+                gaga gabg agfa gfed
+                cdcd edc<b> c4g4c4<g4>
+
+                gaga gab>c dc<ba gfed
+                cdefgab>cdc<bagfed
+
+               
+TR(2) @11 o4 l8 fa>c<a gb>d<b a>c+ec+ ac+ec+ <
+                fa>cf gd<bg a>c+eg+ <a64>c+64e64a64^16^8^4 <
+
+                cege fa>c<a dfaf gb>d<b
+                egbg cege dfaf gb>d<b
+
+                fa>c<a gb>d<b egbg a>c+ec+< 
+                dfaf fa>c<a gb>df< f64>a64c64e64^16^8 < f64g64>c64d64^16^8
+               
