@@ -1,0 +1,39 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on PicoSakura)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】じゃんけん
+【Composer】rana
+【Date】2025/1/15-19
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+じゃんけんを出すときのような
+ちょっとしたドキドキ.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+//_00:Setup
+TrackName     = {"じゃんけん"}
+Copyright     = {"rana"}
+Tempo         = 60
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+TR(1) l8 o6 @11  [2 c8c16c16e4 d8d16d16f4 e8e16e16g4 f8f16f16d4]
+                 l16   g8.a16g8.a16 gfed e8d8 c8.d16c8.d16 cdede8d8
+                        fedc<b8>fedc<b8>fefg fedc<bab>c defa b8a8
+                
+
+               
+TR(2) @11 o4 l8  [2 r1] c8c16c16e4 d8d16d16f4 e8e16e16g4 f8f16f16d4
+             o5  l16         [3 cege]c8<g8> [3 <a>cec] <a8>e8
+                            [3 <fa>c<a>] <f8>c8 [3 <gb>d<b>] <g8>d8             
