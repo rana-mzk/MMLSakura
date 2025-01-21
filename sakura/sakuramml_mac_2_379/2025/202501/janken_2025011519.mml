@@ -29,11 +29,21 @@ TrackSync;
 
 //MML
 TR(1) l8 o6 @11  [2 c8c16c16e4 d8d16d16f4 e8e16e16g4 f8f16f16d4]
+
                  l16   g8.a16g8.a16 gfed e8d8 c8.d16c8.d16 cdede8d8
                         fedc<b8>fedc<b8>fefg fedc<bab>c defa b8a8
+
+                        e8.f16g8.a16 bagfe8d8 >e8.d16c+8.<b16agab>c8<b8
+                        g8.a16b8.>c16  d8.c16 < b8g8 >c2 
+                         
                 
 
                
 TR(2) @11 o4 l8  [2 r1] c8c16c16e4 d8d16d16f4 e8e16e16g4 f8f16f16d4
-             o5  l16         [3 cege]c8<g8> [3 <a>cec] <a8>e8
-                            [3 <fa>c<a>] <f8>c8 [3 <gb>d<b>] <g8>d8             
+
+             o5  l16       [3 cege]c8<g8> [3 <a>cec] <a8>e8
+                            [3 <fa>c<a>] <f8>c8 [3 <gb>d<b>] <g8>d8    
+
+                            [3 <a>cec] <a8>e8 [3 <a>c+ec+] a8e8
+                            [2 dfaf] [2 gb>d<b] [3 cege] c4
+                             
