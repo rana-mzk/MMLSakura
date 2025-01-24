@@ -1,0 +1,40 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on PicoSakura)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】あしぶみ
+【Composer】rana
+【Date】2025/1/20-24
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+ちょっとどたどたするような感じ？
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+//_00:Setup
+TrackName     = {"あしぶみ"}
+Copyright     = {"rana"}
+Tempo         = 60
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+TR(1) l8 o6 @11  o6 gdgdg4d4 gdgdg4ba
+           b>c<ba g4a4 gab>cd4c4
+            fedc<bab>c dedc d4c4<
+            agfed4c4 agfed4g4
+            fedc<bab>c dgb>d c<bab
+                
+
+               
+TR(2) @11 o4 l8  [2 r1]
+            o5 [6 gd]g4d4 [6 cg] c4g4  
+            [6 f>c<] f4>c4< [4 da] [2 dg] d4g4
