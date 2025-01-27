@@ -1,0 +1,39 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on PicoSakura)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】けんけんぱ
+【Composer】rana
+【Date】2025/1/25-27
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+けんけんぱのリズムで.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+//_00:Setup
+TrackName     = {"けんけんぱ"}
+Copyright     = {"rana"}
+Tempo         = 60
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+TR(1) l8 o6 @11  o6 [2 ccd4 dde4 eef4 ggfe] 
+                g4.fe4 d4 f4.ed4c4 e4.fg4>c4< b4a4g4f4
+                e4fed4g4 c4ded4<g4> cdefgab>cdc<bagfed
+                
+
+               
+TR(2) @11 l8 o5 [4 r2]
+               cegr fdcr gb>d r ec<ge
+                [2 cege] [2 <b->dfd] [2 <a>cec] [2 <gb>d<b>]
+                [2 <fa>c<a>] [2 <egbg>] [2 <dfaf>] [2 <gb>d<b>]
