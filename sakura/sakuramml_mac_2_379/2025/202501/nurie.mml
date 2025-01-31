@@ -1,0 +1,41 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on PicoSakura)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】塗り絵
+【Composer】rana
+【Date】2025/1/28-31
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+塗り絵のイメージで.
+ぬりぬり.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+//_00:Setup
+TrackName     = {"塗り絵"}
+Copyright     = {"rana"}
+Tempo         = 60
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+TR(1) l8 o6 @11  o6 ggag>c<agf ddef f4g4
+            agfgfgag fgfee8.d16d4
+            f8f16e16fg agfa>dc<ba gfed
+            c8c16d16eg b8b16>c16d<b >c1<
+                
+
+               
+TR(2) @11 l8 o5 cege fa>c<a dfaf gb>d<b
+                egbg a>cec< fa>c<a <b>dgd
+                fa>c<a gb>d<b egbg a>cec<
+               dfaf gb>d<b cege cege
