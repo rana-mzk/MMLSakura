@@ -1,0 +1,38 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on PicoSakura)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】坂道
+【Composer】rana
+【Date】2025/2/1-3
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+坂道をのぼったりくだったり.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+//_00:Setup
+TrackName     = {"坂道"}
+Copyright     = {"rana"}
+Tempo         = 52
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+TR(1) l8 o6 @11  o6 
+                    cdcde8d8 efefg8e8 fefed8g8 gagfe8d8
+            cdefg8>c8< bagfe8d8 g8.fgfea gf+ede8d8
+            cdefg8ag  b>cdc<b8a8 cdef g16.f32ed c1
+
+               
+TR(2) @11 l8 o5 [4 r2]
+          l16 cegec8r8 fa>c<af8r8 egbge8r8 df+af+d8r8
+              <a>cec<a8>r8 eg+bg+e8r8 dfaf gb>d<b [4 cege]
