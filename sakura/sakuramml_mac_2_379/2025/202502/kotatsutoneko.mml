@@ -1,0 +1,40 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on PicoSakura)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】こたつと猫
+【Composer】rana
+【Date】2025/2/4-6
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Es durを採用してみました.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+//_00:Setup
+TrackName     = {"こたつと猫"}
+Copyright     = {"rana"}
+Tempo         = 52
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+TR(1) l16 o6 @11  o6  l16 o6 [4 r1]
+                ge-ga-g8e-8>c8<b-a-g8f8
+                e-de-fe-fge- d8e-fgfe-d
+                cde-de-8g8 de-fa-g8e-8
+                e-fga- b->cde- fe-dc< b-a-gf
+
+               
+TR(2) @11 l8 o5 o5 e-gb-g fa->c<a- gb->d<b- a->ce-a-<
+                ce-ge- <b->dfd  [2 e-gb-g]
+                 e-gb-g dgb-g ce-ge- <b->dfd
+                  <a->ce-c <gb->d<b-> <a->ce-c <b->dfa-
