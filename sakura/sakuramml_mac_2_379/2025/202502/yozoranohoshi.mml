@@ -1,0 +1,47 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on PicoSakura)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】夜空の星を数えて
+【Composer】rana
+【Date】2025/2/7-10
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+スライスコードみたいなものを
+使ってみました.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+//_00:Setup
+TrackName     = {"夜空の星を数えて"}
+Copyright     = {"rana"}
+Tempo         = 52
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+TR(1) l16 o6 @11  o6  l16 o6  g8gfe8f8g8>c8<b8a8
+ l8 gfga g4f4
+ l16 f8 fga8b8 >c8d8c8<b8
+ l8 agfg e4d4
+ l16 c8cde8g8f8fga8b8
+ l8 >c<babagfe
+ cdefgfedc1
+
+               
+TR(2) @11 l8 o5 o5  cegecege
+                cfafcfaf
+                cgbgcgbg
+                cfafcege
+             <  fa>c<a gb>d<b
+                egbg a>c+ec+
+                dfaf gb>d<b
+                 cege cege
