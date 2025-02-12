@@ -36,9 +36,9 @@ TrackSync;
 
 
 //MML
-TR(1) l8 o6 @11 l64 v60 ef+ l8 v100 g+4.b16f+4..b16e4... l32 ef+g+ l8 ag+f+e
+TR(1) l8 o6 @11 l64 v60 ef+ l8 v100 g+4.b16f+4..b16e4 r8 r16 r16 r64 l64 ef+g+ l8 ag+f+e
                         c+e<b>e<a>ed+e16e8.
 
                
 TR(2) @11 o5 l8 l64 rr l8 e<bg+b> d+<bf+b> c+<g+eg+ bg+eg+
-                        a
+                        aeg+ef+c+bd+
