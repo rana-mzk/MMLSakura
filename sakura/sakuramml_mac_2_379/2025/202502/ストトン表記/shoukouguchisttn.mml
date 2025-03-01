@@ -1,0 +1,41 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on PicoSakura)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】昇降口
+【Composer】rana
+【Date】2025/2/14-16
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+バレンタインで
+なんだかあまずっぱい
+学校生活を思い出しました.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+//_00:Setup
+TrackName     = {"昇降口"}
+Copyright     = {"rana"}
+Tempo         = 52
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+TR(1) l16 o6 @11  o6   l8 [2 r1]
+                  e8.f16ef edd4 d8.e16de dc<ba
+                  gab>c defg  fede dc<ba
+                 そ8.ら16そ8.ら16そ4.れ16ど16ど1
+
+               
+TR(2) @11 l8  o5 cedf egab>c<bab agfe
+                cege c+ege < fa>c<a df+a>c<
+                gb>d<b g+b>d<b eg+bg+ a>cec<
+                 dfaf gb>d<b cegecege
