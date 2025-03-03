@@ -1,0 +1,60 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on PicoSakura)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】いたずら
+【Composer】rana
+【Date】2025/2/2?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+いたずらしてみる？
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+//_00:Setup
+TrackName     = {"いたずら"}
+Copyright     = {"rana"}
+Tempo         = 60
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+TR(1) o6 @11  l8 o6 
+           e-4e-fg4e-4
+            c4cde-4d4
+            e-4e-fga-gf
+            e-4d4e-4r4
+
+            b-4b-a-g4f4
+            e-4e-fg4f4
+            b-4g4f4e-4
+            e-4e-fg4r4
+
+             e-4e-fg4e-4
+            c4cde-4d4
+            e-4e-fga-gf
+            e-4d4e-4r4
+
+
+               
+TR(2) @11 l8 o5 e-gb-g ce-ge-
+                <a->ce-c <b->dfd
+                e-gb-g ce-ge-
+                 <a->e-<b->f e-gb-g
+                a->ce-c< gb->d<b-
+                fa->c<a- gb->d<b-
+                a->e-< g>d< f>c< e-b-
+                ce-ge- <b->dfd
+
+                e-gb-g ce-ge-
+                fa->c<a- <b->dfd
+                e-gb-g ce-ge-
+                 <a->e-<b->f e-gb-g
