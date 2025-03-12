@@ -1,0 +1,60 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on PicoSakura)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】みのり
+【Composer】rana
+【Date】2025/3/09-11
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+//_00:Setup
+TrackName     = {"実り"}
+Copyright     = {"rana"}
+Tempo         = 60
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+TR(1) o6 @11   l8 o6 [4 r1]
+                e4e8.e16eded
+                cdege4d4
+                d4d8.d16dcde
+                geded4g4
+                feded4c4
+                feded4g4
+                agfgfgfe
+                defg4edc
+
+
+                g4g8.g16agfg
+                efgag4e4
+                ab>c+dedc+<b
+                agfgf4e4
+                cdefgfed
+                cdefgabg
+                c2r2r1
+          
+
+               
+TR(2) @11 l8    o5 cgrg cder dara gfer
+                f>crc< bab>c d4<b4>c4r4
+
+            o5 [4 cgrg] [4 <f>crc]
+                 [4 dara] [4 <g>drd]
+
+                [4 cgrg] [4 <a>c+rc+]
+                 [2 dara] [2 <g>drd] [4 cgrg]
+        
+       
