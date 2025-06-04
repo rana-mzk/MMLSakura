@@ -1,0 +1,41 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on PicoSakura)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】夏風
+【Composer】rana
+【Date】2025/6/4
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+//_00:Setup
+TrackName     = {"夏風"}
+Copyright     = {"rana"}
+Tempo         = 80
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+TR(1) o6 @11  l8 o6 g4ged4ge dgagf4e4
+            c4cdefed geded4c4
+            d4efg4a4 gagfg4f4
+            efedefga bagfedc<b>
+          
+
+               
+TR(2) @11 o5  l8 cegegege <b>dfdfdfd
+            <a>cececec <gb>d<b>d<b>d<b>
+            <fa>c<a>c<a>c<a> <egbgbgbg>
+            <fa>c<a>c<a>c<a> <gb>d<b>d<b>d<b>
+       
