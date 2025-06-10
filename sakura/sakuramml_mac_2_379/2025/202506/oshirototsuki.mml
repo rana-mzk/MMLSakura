@@ -1,0 +1,41 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on PicoSakura)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】お城と月
+【Composer】rana
+【Date】2025/6/10
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+//_00:Setup
+TrackName     = {"お城と月"}
+Copyright     = {"rana"}
+Tempo         = 60
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+TR(1)  @11       l8 o5 aaaga4>e4 d4c<ag4r4
+            fga4 ga>cd e4 ged4c4 <
+            aaag ab>cd efga g4e4 
+            fede d4c<b>c1          
+          
+
+               
+TR(2) @11 l8 o4 fa>c<a gb>d<b egbg a>cec<
+                dfaf gb>d<b cege ceb-e
+                fa>c<a b>dgd< egbg a>cec<
+                dfaf gb>d<b cege ceb-e
+       
