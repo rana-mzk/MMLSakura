@@ -1,0 +1,44 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on PicoSakura)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】はちみつ
+【Composer】rana
+【Date】2025/6/16
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+//_00:Setup
+TrackName     = {"はちみつ"}
+Copyright     = {"rana"}
+Tempo         = 60
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+TR(1) o6 @11   l8 o6 [2 c<b>c4 cge4 fed4 cde4]
+             c4efg4>c4 d4c4<b4a4
+             g4f4e4f+4 g4f4e4d4
+             c4efg4>c4 d4c4<b4a4
+             g4f4e4d4c1
+
+               
+TR(2) @11 o5  l8 o5 [4 r2]
+            c<b>c4 cge4 fed4 cde4
+            cegr fa>cr< egbr a>cer<
+            dfar df+ar gb>d<r gb>d<r
+            <a>cer <gb>dr fa>c<r egbr
+            dfar gb>dr< cegr cegr
+       
+       
