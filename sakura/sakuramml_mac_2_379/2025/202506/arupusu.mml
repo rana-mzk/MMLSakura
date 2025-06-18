@@ -1,0 +1,40 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on PicoSakura)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】アルプス
+【Composer】rana
+【Date】2025/6/18
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+//_00:Setup
+TrackName     = {"アルプス"}
+Copyright     = {"rana"}
+Tempo         = 60
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+TR(1) o6 @11       l8 o6 c4cge4d4 cdefg2
+            gagfe4d4 efede4g4
+            agfed4c<b>c1
+          
+
+               
+TR(2) @11  l8 o4 cege cege fa>c<a gb>d<b
+                fa>c<a gb>d<b egbg a>cec<
+                dfaf gb>d<b cege cege 
+       
+       
