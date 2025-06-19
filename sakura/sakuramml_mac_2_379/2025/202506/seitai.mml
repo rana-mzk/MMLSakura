@@ -1,0 +1,42 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on PicoSakura)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】整体
+【Composer】rana
+【Date】2025/6/19
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+//_00:Setup
+TrackName     = {"整体"}
+Copyright     = {"rana"}
+Tempo         = 60
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+TR(1) @11   l8 o6 cgge dffa gaga g4e4
+            fede dcdc<b>cde fede
+            cgge dfa>c< bagf e4d4
+            cded c4<b4>c2r2
+          
+
+               
+TR(2) @11   l8 o4 cegr fa>c<a gb>d<b a>cec<
+                fa>c<r dfaf gb>d<b gb>d<b  
+                cegr fa>c<a gb>d<b egbg
+                fa>c<a dfgb cege cege
+       
+       
