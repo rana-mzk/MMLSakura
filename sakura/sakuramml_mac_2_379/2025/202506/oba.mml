@@ -1,0 +1,42 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on PicoSakura)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】叔母
+【Composer】rana
+【Date】2025/6/20
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+//_00:Setup
+TrackName     = {"叔母"}
+Copyright     = {"rana"}
+Tempo         = 60
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+TR(1) o6 @11         l8 o6 e4efg4r4 c4cde4r4
+            f4fed4r4 a4agf4r4
+            e4efg4a4 bag+f+e4d4
+            f4fed4g4 c1
+          
+
+               
+TR(2) @11  l8 o5 cege cege <a>cec <a>cec
+                dfaf dfaf gb>d<b gb>d<b
+                <a>cec<a>cec <a>c+ec+ <a>c+ec+
+                dfaf gb>d<b cege cege
+       
+       
