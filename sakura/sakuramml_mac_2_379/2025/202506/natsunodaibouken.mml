@@ -1,0 +1,41 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on PicoSakura)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】夏の大冒険
+【Composer】rana
+【Date】2025/6/121
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+//_00:Setup
+TrackName     = {"夏の大冒険"}
+Copyright     = {"rana"}
+Tempo         = 60
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+TR(1) o6 @11        l8 o6 e4ged4c4 e4gag4r4
+            a4gfe4d4 cdefe4r4
+            e4ged4c4 e4gab4r4
+           >c4<bag4f4 d4c<b>c4r4
+
+               
+TR(2) @11   l8 o5 cege cf+af+ cgbg <b>dgd
+                <a>cec egbg dfaf gb>d<b
+                 cege cf+af+ cgbg <b>dgd
+                <a>cec <gb>d<b> dfgb cege
+       
+       
