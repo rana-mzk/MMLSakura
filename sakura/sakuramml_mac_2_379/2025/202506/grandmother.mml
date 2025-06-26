@@ -1,0 +1,41 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on PicoSakura)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】おばあちゃん
+【Composer】rana
+【Date】2025/6/26
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+//_00:Setup
+TrackName     = {"おばあちゃん"}
+Copyright     = {"rana"}
+Tempo         = 60
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+TR(1) o6 @11       l8 o6 e4eg>c4<b4 abage4r4
+            f4fef4g4 a4gfe4r4
+            e4eg>c4d4 e4dc<b4g4
+            a4aga4gfe4d4c4r4
+
+               
+TR(2) @11   l8 o4 cegecege fa>c<a gb>d<b 
+            dfaf gb>d<b fa>c<a cege
+            cegecege fa>c<a gb>d<b
+            cege fa>c<a dfgb cege
+       
+       
