@@ -1,0 +1,58 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on PicoSakura)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】まわるまわる
+【Composer】rana
+【Date】2025/7/1
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+//_00:Setup
+TrackName     = {"まわるまわる"}
+Copyright     = {"rana"}
+Tempo         = 60
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+TR(1) o6 @11      l8 o6 <b>cdc <b2r2 r4 >g4f4e4
+            f4.d4. r4 r4 d4c4<b4>
+            cdedc2r4 g4a4b4
+           > c<babg2r2
+
+           <b>cdc <b2r2 r4 >g4f4e4
+            f4.d4. r4 r4 d4c4<b4>
+            cdedc2r4 g4a4b4
+           > c<babg2r2
+
+           <b>cdc <b2r2 r4 >g4f4e4
+            f4.d4. r4 r4 d4c4<b4>
+            cdedc2r4 g4a4b4
+           > c<babg2r2
+          
+
+               
+TR(2) @11  l8 o4  r2 [4 cegb] [4 dfa>c<]
+            [4 cegb] [4 dfa>c<]
+
+            [4 cegb] [4 dfa>c<]
+            [4 cegb] [4 dfa>c<]
+       
+
+            [4 cegb] [4 dfa>c<]
+            [4 cegb] [4 dfa>c<]
+       
+       
+       
