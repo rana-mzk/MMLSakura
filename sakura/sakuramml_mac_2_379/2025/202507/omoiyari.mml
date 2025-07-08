@@ -1,0 +1,45 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on PicoSakura)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】思いやり
+【Composer】rana
+【Date】2025/7/7
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+電子ピアノを導入しました◎
+(CASIO Privia PX-S1100)
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+//_00:Setup
+TrackName     = {"思いやり"}
+Copyright     = {"rana"}
+Tempo         = 60
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+TR(1) o6 @11      
+     l8 o6 e4efg4r4 c4cde4r4
+            f4fed4r4 a4agf4r4
+            e4efg4r4>c4cde4r4
+            d4dcd4<g4> c4r4r2 
+          
+
+               
+TR(2) @11 l128 o5 cr er gr rr r16 r8 r4 r8 c8e8g8
+                <ar> cr er rr r16 r8 r4 r8<a8>c8e8
+                <fr  ar>cr rr r16 r8 r4 c8<a8f8a8>
+                <gr  br>dr rr r16 r8 r4 d8.<b8.g8>
+           o4 l8  a>cec< a>cec< fa>c<a fa>c<a
+                dfaf gb>d<b   cege cege
+       
