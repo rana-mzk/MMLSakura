@@ -1,0 +1,45 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on PicoSakura)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】傷跡
+【Composer】rana
+【Date】2025/7/16
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+//_00:Setup
+TrackName     = {"傷跡"}
+Copyright     = {"rana"}
+Tempo         = 60
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+TR(1) o6 @11
+     l8 o6 e4ede4r4 f4fed4c4
+            <b4>c4d4e4c2r2 
+   
+            a4agf4r4 g4gfe4d4
+            c4d4c4<b4>c4r4r2
+
+               
+TR(2) @11   l8 o4 ceg4r2 fa>c<r
+                dfar gb>d<r g+b>dr<
+                a>cega2<
+                fa>c<af4r4
+                egbg a>cec<
+                dfaf gb>d<b
+                cege c2r2
+       
