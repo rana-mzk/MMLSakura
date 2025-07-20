@@ -43,7 +43,7 @@ TR(1) o6 @11
 
                
 TR(2) @11  l8 o5     l128 r2 cegr rrrr r16 r8 r4 r2
-                  <fa>cr rrrr r16 r8 r4 r2
+                  fa>cr rrrr r16 r8 r4 r2
              l8  o4   dfad gb>d<b   
                    a>cec<a4r4 
                   fa>c<af4r4  egbg a>cec<
@@ -51,7 +51,7 @@ TR(2) @11  l8 o5     l128 r2 cegr rrrr r16 r8 r4 r2
                   cegec4 r4
 
                  o5   l128  cegr rrrr r16 r8 r4 r2
-                  <fa>cr rrrr r16 r8 r4 r2
+                  fa>cr rrrr r16 r8 r4 r2
              l8  o4   dfad gb>d<b   
                    a>cec<a4r4 
                   fa>c<af4r4  egbg a>cec<
@@ -59,7 +59,7 @@ TR(2) @11  l8 o5     l128 r2 cegr rrrr r16 r8 r4 r2
                   cegec4 r4
 
                   o5  l128  cegr rrrr r16 r8 r4 r2
-                  <fa>cr rrrr r16 r8 r4 r2
+                  fa>cr rrrr r16 r8 r4 r2
              l8  o4   dfad gb>d<b   
                    a>cec<a4r4 
                   fa>c<af4r4  egbg a>cec<
