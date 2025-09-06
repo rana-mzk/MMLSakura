@@ -1,0 +1,63 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on PicoSakura)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】再会
+【Composer】rana
+【Date】2025/8
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+//_00:Setup
+TrackName     = {"再会"}
+Copyright     = {"rana"}
+Tempo         = 60
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+TR(1) @11       l8 o6 efg4c4d4e4 fedcd4r4
+            e4ee d4g4 agfgf4ed
+            efgag4r4 efga>c4<ba
+            a4g4f4.d c4r4r4
+
+           efg4c4d4e4 fedcd4r4
+            e4ee d4g4 agfgf4ed
+            efgag4r4 efga>c4<ba
+            a4g4f4.d c4r4r4
+
+            efg4c4d4e4 fedcd4r4
+            e4ee d4g4 agfgf4ed
+            efgag4r4 efga>c4<ba
+            a4g4f4.d c4r4r4
+          
+
+               
+TR(2) @11   o5 l8 r4 cege fa>c<a dfaf gb>d<b
+                   a>cec< gb>d<b fa>c<a dfaf
+                   gb>d<b dfaf gb>d<b a>cec< 
+                   fa>c<a dfgb cege cege
+       
+
+                 cege fa>c<a dfaf gb>d<b
+                   a>cec< gb>d<b fa>c<a dfaf
+                   gb>d<b dfaf gb>d<b a>cec< 
+                   fa>c<a dfgb cege cege
+
+
+                cege fa>c<a dfaf gb>d<b
+                   a>cec< gb>d<b fa>c<a dfaf
+                   gb>d<b dfaf gb>d<b a>cec< 
+                   fa>c<a dfgb cege cege
+       

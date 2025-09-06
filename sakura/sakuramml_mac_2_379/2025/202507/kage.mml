@@ -1,0 +1,40 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on PicoSakura)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】影
+【Composer】rana
+【Date】2025/7/31
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+//_00:Setup
+TrackName     = {"影"}
+Copyright     = {"rana"}
+Tempo         = 60
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+TR(1) o6 @11   
+      l8 o6 e4dc<a4r4> g4fed4c4
+            e4dc<a4b>c dc<b>dc4r4
+            e4dc<a4r4> g4fedefe
+            e4dcdege dc<b>dc4r4
+           
+               
+TR(2) @11  o4 l8
+        [4 a>cec< fa>c<a
+          gb>d<b >cege<]
+       

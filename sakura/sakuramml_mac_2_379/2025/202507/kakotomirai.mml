@@ -1,0 +1,40 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on PicoSakura)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】過去と未来
+【Composer】rana
+【Date】2025/7/22
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+//_00:Setup
+TrackName     = {"過去と未来"}
+Copyright     = {"rana"}
+Tempo         = 60
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+TR(1) o6 @11       l8 o6 e4ede4g4 e4edc4d4
+            e4g4b4>d4c4.<a a4g4
+            aga4 gf4g fedf efg>c<
+            b>cde fede c2r2
+
+               
+TR(2) @11  l8 o5 cegec4r4 fa>c<a gb>d<b
+            a>cec< gb>d<b fa>c<a gb>d<b
+            fa>c<r gb>d<b egbr a>ce<r
+          dfar gb>d<r cege cege
+       

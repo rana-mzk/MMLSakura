@@ -1,0 +1,52 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on PicoSakura)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】行進
+【Composer】rana
+【Date】2025/8/4
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+//_00:Setup
+TrackName     = {"行進"}
+Copyright     = {"rana"}
+Tempo         = 60
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+TR(1) o6 @11   
+     l16 o6 [2 r1]
+         efge d8g8c4<b8g8
+         ab>cd edc<b a8g8f8e8 >
+         efga dagf e8d8c8d8
+         f8fed8c8 d4r4
+
+        efge d8g8 >c8d8e8c8
+        fedf edce dc<b>d c<bag
+        fefga8g8 f8e8d8g8
+        c2r2
+               
+TR(2) @11  
+        o5 l8
+        [2 cc16c16c<g>c4r4]
+
+          [3 cc16c16c<g>c4r4]
+           dd16d16d<a>d4r4
+
+         [2 cc16c16c<g>c4r4]
+           dd16d16d<a> 
+           gg16g16gd
+          cc16c16c<g>c4r4

@@ -1,0 +1,42 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on PicoSakura)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】昔話
+【Composer】rana
+【Date】2025/7/28
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+家のリフォームで
+窓が新しくなりました◎
+
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+//_00:Setup
+TrackName     = {"昔話"}
+Copyright     = {"rana"}
+Tempo         = 60
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+TR(1) o6 @11   
+
+   l8 o6 c4 g4cg f4e4 d4e4f4r4
+            g4fe fedc c4ded4r4
+            c4defe4d c4efgf4e
+            c4fgagfe edcd c4r4
+               
+TR(2) @11  o4 l8  r4 cege cege fa>c<a dfaf
+             gb>d<b egbg dfaf gb>d<b
+            [3 fa>c<a egbg] df gb cege 
+       

@@ -1,0 +1,63 @@
+//------------------------------------------------------------------------------
+// テキスト音楽「サクラ」 Text Music Sakura(on PicoSakura)
+//------------------------------------------------------------------------------
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Title】馴染みのお店
+【Composer】rana
+【Date】2025/08
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+
+
+//_00:Setup
+TrackName     = {"馴染みのお店"}
+Copyright     = {"rana"}
+Tempo         = 60
+TimeSignature = 4,4;
+ResetGS;
+ResetXG;
+ResetGM;
+TrackSync;
+
+
+//MML
+TR(1) o6 @11   l8 o6 
+          <ab>c4 cde4 efg4 fed4 r4
+            g4fe defe e4dc d4r4
+            e4fg a4>c4 e4dc<a4r4
+            d4ef gfef d4<b4>c4
+
+        <ab>c4 cde4 efg4 fed4 r4
+            g4fe defe e4dc d4r4
+            e4fg a4>c4 e4dc<a4r4
+            d4ef gfef d4<b4>c4
+
+         <ab>c4 cde4 efg4 fed4 r4
+            g4fe defe e4dc d4r4
+            e4fg a4>c4 e4dc<a4r4
+            d4ef gfef d4<b4>c4
+               
+TR(2) @11 o5  l8 
+        r4 cege egbg fa>c<a dfaf
+               gb>d<b egbg fa>c<a gb>d<b
+               cege a>cec< fa>c<a dfaf
+               gb>d<b egbg dfgb cege
+
+                cege egbg fa>c<a dfaf
+               gb>d<b egbg fa>c<a gb>d<b
+               cege a>cec< fa>c<a dfaf
+               gb>d<b egbg dfgb cege
+       
+
+        cege egbg fa>c<a dfaf
+               gb>d<b egbg fa>c<a gb>d<b
+               cege a>cec< fa>c<a dfaf
+               gb>d<b egbg dfgb cege
+       
+       
