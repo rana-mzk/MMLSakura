@@ -1,0 +1,32 @@
+// チャンス
+
+TR(1) TEMPO=60 @11 
+      l8 o6  ef+g+4.g+ag+f+e d+4c+4<b4>r4
+                e4.e f+ef+a g+4a4b4 ef+
+                g+4f+g+ ag+a>c+ e4d+4c+4<b4
+                a4.a g+f+ed+ e4r4 r4
+
+                 ef+g+4.g+ag+f+e d+4c+4<b4>r4
+                e4.e f+ef+a g+4a4b4 ef+
+                g+4f+g+ ag+a>c+ e4d+4c+4<b4
+                a4.a g+f+ed+ e4r4 r4
+
+                 ef+g+4.g+ag+f+e d+4c+4<b4>r4
+                e4.e f+ef+a g+4a4b4 ef+
+                g+4f+g+ ag+a>c+ e4d+4c+4<b4
+                a4.a g+f+ed+ e4r4 r4
+                
+TR(2) @11 o5 l8 r4 eg+bg+ f+a>c+<a [2 <b>d+f+d+]
+                   c+eg+e <a>c+ec+ [2 <b>d+f+d+]
+                  <g+b>d+<b> <a>c+ec+ <b>d+f+d+ c+eg+e
+                  f+a>c+<a <b>d+f+d+ [2 eg+bg+] 
+
+                  eg+bg+ f+a>c+<a [2 <b>d+f+d+]
+                   c+eg+e <a>c+ec+ [2 <b>d+f+d+]
+                  <g+b>d+<b> <a>c+ec+ <b>d+f+d+ c+eg+e
+                  f+a>c+<a <b>d+f+d+ [2 eg+bg+] 
+
+                  eg+bg+ f+a>c+<a [2 <b>d+f+d+]
+                   c+eg+e <a>c+ec+ [2 <b>d+f+d+]
+                  <g+b>d+<b> <a>c+ec+ <b>d+f+d+ c+eg+e
+                  f+a>c+<a <b>d+f+d+ [2 eg+bg+] 

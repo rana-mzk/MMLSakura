@@ -1,0 +1,55 @@
+// 待つ
+
+TR(1) TEMPO=60 @11 
+      l8 o6    <ab>c+4 c+de4r4
+               e4ef+edc+<b>
+               <ab>c+<ba4>e4
+               d4c+4<b4g+4
+               a4ab>c+4a4
+               g+4f+4e4d4
+               c+4<b4a4g+4a4r4r4
+
+         o6       <ab>c+4 c+de4r4
+               e4ef+edc+<b>
+               <ab>c+<ba4>e4
+               d4c+4<b4g+4
+               a4ab>c+4a4
+               g+4f+4e4d4
+               c+4<b4a4g+4a4r4r4
+
+         o6       <ab>c+4 c+de4r4
+               e4ef+edc+<b>
+               <ab>c+<ba4>e4
+               d4c+4<b4g+4
+               a4ab>c+4a4
+               g+4f+4e4d4
+               c+4<b4a4g+4a4r4r4
+
+
+
+TR(2) @11 o5 l8 r4 <a>c+ec+<a4>e4
+                   <df+af+ eg+bg+
+                   f+a>c+<a eg+bg+
+                   df+af+ eg+bg+
+                   df+af+ eg+bg+
+                   c+g+bg+ f+a>c+<a
+                   b>df+d eg+bg+
+                   <a>c+ec+<a>c+ec+
+
+                   <a>c+ec+<a4>e4
+                   <df+af+ eg+bg+
+                   f+a>c+<a eg+bg+
+                   df+af+ eg+bg+
+                   df+af+ eg+bg+
+                   c+g+bg+ f+a>c+<a
+                   b>df+d eg+bg+
+                   <a>c+ec+<a>c+ec+
+
+                   <a>c+ec+<a4>e4
+                   <df+af+ eg+bg+
+                   f+a>c+<a eg+bg+
+                   df+af+ eg+bg+
+                   df+af+ eg+bg+
+                   c+g+bg+ f+a>c+<a
+                   b>df+d eg+bg+
+                   <a>c+ec+<a>c+ec+
