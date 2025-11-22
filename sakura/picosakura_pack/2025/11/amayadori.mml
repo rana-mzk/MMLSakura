@@ -1,0 +1,12 @@
+// 雨宿り
+
+TR(1) TEMPO=60 @11 
+      l8 o6  e4d4c+4<b4 a4b>c+<f+4r4
+             g+4ab>c+4r4 <b4>c+de4r4
+             f+4e4d4c+4 d4c+4<b4a4>
+            c+4<b4a4g+4a4r8r4
+TR(2) @11 o5 l8 <a>c+ec+ df+df+ eg+bg+ <b>df+d
+               < eg+bg+ > <a64>c+64e64 r64 r16 r8 r4
+                <b>df+d a64>c+64e64 r64 r16 r8 r4
+                f+a>c+<a df+ad <bg+eg+ <a>c+ec+ 
+                <b>df+d eg+bg+ <a>c+ec+ <a>c+ec+

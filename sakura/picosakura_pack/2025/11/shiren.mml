@@ -1,0 +1,12 @@
+// 試練
+
+TR(1) TEMPO=60 @11 
+      l8 o6 g+4g+ab4e4 c+4c+d+e4r4
+            f+4f+ef+4a4 g+4r4r2
+            c+4c+d+e4r4 f+4f+ef+4a4
+            g+4f+4e4d+4e4r4
+TR(2) @11 o5 l8 eg+bg+e4r4 <a>c+ec+<a4r4> 
+              <b>d+f+d+<b4>d+4 eg+bg+e4r4 
+              c+eg+ec+4<b4 a>c+ec+<a4g+4
+              f+a>c+<a b > d+f+d+
+              eg+bg+e4r4

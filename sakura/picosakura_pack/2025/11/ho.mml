@@ -1,0 +1,11 @@
+// 帆
+
+TR(1) TEMPO=60 @11 
+      l8 o6  c+4<a4b4>e4 d4c+<b>c+4r4
+            <a4b>c+ <b4a4 a4b>c+<b4r4>
+             c+4def+4a4 g+4f+4e4d4
+             c+4.dc+4<bg+a4r4
+TR(2) @11 o5 l8 <a>c+ec+ df+af+ <gb>d<b> <a>c+ec+
+                <f+a>c+<a> df+af+ <f+a>c+<a> eg+bg+
+                <a>c+ec+  df+af+ eg+bg+ <a>c+ec+
+                <b>df+d eg+bg+ <a>c+ec+ <a>c+ec+

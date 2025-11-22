@@ -1,0 +1,12 @@
+// 時計
+
+TR(1) TEMPO=60 @11 
+      l8 o6   c+4c+de4c+4 f+4edc+4<b4
+              a4ab>c+4<a4 b4r4r4r4
+              a4ab>c+4f+4 e4d4c+4<b4
+             >c+4<b4a4g+4a4r4r2
+TR(2) @11 o5 l8  <a>c+ec+ec+ec+ df+af+ <a>c+ec+ 
+                <f+a>c+<a> df+af+ <gb>d<b> eg+bg+
+                 <f+a>c+<a> e64g+64b16.r8 r4 
+                 df+af+ c+64e64g+16. r8 r4
+                 <b>df+d eg+bg+ [2 <a>c+ec+]          

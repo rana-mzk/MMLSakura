@@ -1,0 +1,17 @@
+// テスト
+
+TR(1) TEMPO=60 @11 
+      l8 o6 efefefge fedcd4r4
+            c4cd edcd e4f4g4r4
+            agfgfgfe d4efg4e4
+           feded4c<b>c4r4 
+TR(2) @11 o5 l8 cege dfaf egbg 
+                f64a64>c64r64r16r8r4<
+                dfaf gbgb               c64e64g64b64r16r8r4
+                c64e64g64b-64r16r8r4
+               fa>c<a
+                g64b64>d64r64r16r8r4<
+               egbg
+                a64>c64e64r64r16r8r4<
+                dfaf gbgb
+                cegecege
