@@ -1,0 +1,16 @@
+//　追いかけっこ
+
+TR(1) TEMPO=60 @11 
+      l8 o6 l8  c8.c16c8.c16cder
+                 d8.d16dg fedc
+              <  b8.b16bb b>cdr
+                 c<b8.a16b g4r4>
+
+                c8.c16c8.c16cder
+                a8.g16fg fgfe
+                c8.c16cc cdef
+                ede<b>c4r4
+TR(2) @11 o5 l8 cegr fa>cr< dfar gb>dr<
+                egbr <a>cer df+ar <gb>dr
+                <a>cer fa>cr< dfar gb>d<r
+                cegr fa>cr< dfgb cegr
