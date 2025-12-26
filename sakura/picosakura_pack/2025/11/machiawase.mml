@@ -1,0 +1,11 @@
+//　待ち合わせ
+
+TR(1) TEMPO=60 @11 
+      l8 o6 l8  c4c<g>c4d4ecegf4r4
+                c4c4c<bab>c4.d<b4r4>
+                c4d4e4g4 fefdc4<b4>
+                c4d4e4d4 c4<b4>c4r4
+TR(2) @11 o5 l8 cegr <b->dfr <a>cer <gb>dr
+                <fa>cr dfar <gb>dr egbr 
+                 <fa>cr egbr dfar <gb>dr
+                 <fa>cr dfar <gb>dr cegr
